@@ -1,0 +1,215 @@
+main {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* the details part */
+div.details-container {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    color: rgb(230, 255, 237);
+    background-color: rgba(3, 24, 50, 0.867);
+}
+.details-container h1 {
+    margin: 0;
+    padding: 1em;
+    padding-top: 30vh;
+    font-size: larger;
+}
+.details-container p {
+    font-size: small;
+    line-height: 2em;
+}
+div.details {
+    width: 47%;
+   
+}
+div.name {
+    height: 100vh;
+    background: linear-gradient(to right, rgba(121, 121, 121, 0.201), rgba(1, 32, 1, 0.078));
+    border-radius:  0 0 0 1em;
+}
+
+div.images {
+    width: 53%;
+    padding-top: 10vh;
+    background: linear-gradient(to left, rgba(1, 26, 6, 0.524), rgba(1, 32, 1, 0.078));
+    border-radius:  0 0 1em;
+}
+.images img {
+    margin: 1em;
+}
+
+
+
+/* the careers part */
+div.career-container {
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(0, 255, 60, 0);
+    
+}
+div.data {
+    height: 100vh;
+    padding: 20%;
+    padding-top: 10%;
+    text-indent: 1em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, rgba(2, 2, 40, 0.702),rgba(0, 0, 0, 0.642), rgba(0, 128, 0, 0.37));
+    font-weight: bold;
+    font-size: larger;
+}
+div.careers {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    gap: 2em;   
+    justify-content: center; 
+    align-items: center;
+}
+.careers H2 {
+    font-size: smaller;
+    color: aquamarine;
+}
+.careers div {
+    width: 30%;
+    height: 40vh;
+    background-color: rgba(1, 13, 28, 0.938);
+    color: rgb(188, 221, 214);
+    font-size: smaller;
+    border-radius: 1em;
+    border-style: double;
+    padding: 10px;
+    border-spacing: 10px;
+    border-color: rgb(1, 18, 23);
+    border-width: thick;
+    float:left;
+}
+.careers img {
+    float: right;
+    padding-top: 3em;
+}
+
+/* the projects part */
+div.projects-container {
+    width: 100%;
+    height: 300vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.903),rgba(0, 0, 0, 0.903), rgba(1, 43, 1, 0.331))
+}
+.projects-container h3 {
+    text-indent: 5em;
+    color: rgb(254, 254, 254);
+    text-decoration: underline;
+}
+div.project1 {
+    width: 100%;
+    height: 70vh;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.text-preview {
+    margin: 2em;
+    padding: 2em;
+    width: 50%;
+    box-sizing: border-box;
+    height: 65vh;
+}
+.preview {
+    margin: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    box-sizing: border-box;
+    float: right;
+    height: 60vh;
+    border-style: solid;
+    border-radius: 2em;
+    border-color: rgb(4, 81, 33);
+}
+.preview img {
+    float: right;
+    border-radius: 1em;
+}
+
+/* floating button */
+.floating-button{
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+}
+.floating-button button{
+    background-color: rgba(46, 62, 76, 0.674);
+    border-radius: 1em;
+}
+.floating-button button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.737);
+}
+.floating-button img {
+    border-radius: 2em;
+}
+
+/* floating div */
+div.email-me {
+    display: none;
+    width: 30%;
+    height: 70vh;
+    padding: 2em;
+    position: fixed;
+    right: 5em;
+    bottom: 4.5em;
+    background-color: rgba(37, 56, 56, 0.961);
+    border-radius: 1em 1em 0 1em;
+    color: antiquewhite;
+}
+
+input {
+    all: initial;
+    width: 90%;
+    border-style: solid;
+    padding: 1em;
+    border-color: cadetblue;
+    color: antiquewhite;
+    border-width: 0.2em;
+    border-radius: 1em;
+}
+textarea {
+    all: initial;
+    width: 90%;
+    height: 20vh;
+    border-style: solid;
+    border-color: cadetblue;
+    border-width: 0.2em;
+    border-radius: 1em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding: 1em;
+    color: antiquewhite;
+}
+.send   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .send button {
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: rgb(50, 91, 7);
+    border: none;
+    border-radius: 1em;
+    font-size: 1em;
+    color: aliceblue;
+}
+.send button:hover {
+    background-color: rgba(0, 0, 0, 0.69);
+    cursor: pointer;
+}

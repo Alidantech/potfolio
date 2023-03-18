@@ -1,0 +1,63 @@
+header {
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+    display: flex;
+    background: linear-gradient(to left, rgb(2, 33, 53), rgba(0, 2, 2, 0.927) );
+}
+/* the logo of the page */
+div.logo {
+    width: 20%;
+    height: 15vh;
+    max-height: 15vh;
+    font-size: medium;
+    overflow: hidden;
+}
+.logo img {
+    float: left;
+    margin: 0.6em;
+    margin-right: 0.2em;
+}
+.logo img:hover {
+    cursor: pointer;
+}
+.logo p {
+    margin: 1em;
+    margin-left: 0.2em;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.logo p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+/* The links part */
+div.links {
+    width: 80%;
+    padding-left: 25%;
+    top: 0;
+}
+.links  div {
+    height: 10vh;
+    float: left;
+    padding: 2em;
+}
+.links div:hover {
+    background-color: rgba(0, 0, 0, 0.423);
+}
+.links a {
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+.links a:hover {
+    color: rgb(16, 142, 176);
+    
+}
+.links img {
+    width: 1vw;
+    height: 1vw;
+    margin-right: 0.5em;
+}
