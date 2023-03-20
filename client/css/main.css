@@ -113,7 +113,8 @@ div.careers {
 }
 .careers div {
     width: 30%;
-    height: 45vh;
+    min-height: 45vh;
+    height: auto;
     color: rgb(255, 255, 255);
     font-size: smaller;
     border-radius: 1em;
