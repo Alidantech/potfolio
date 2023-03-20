@@ -1,29 +1,37 @@
 header {
     width: 100%;
-    height: 10vh;
+    height: auto;
     overflow: hidden;
     display: flex;
+    position: fixed;
     background: linear-gradient(to left, rgb(2, 33, 53), rgba(0, 2, 2, 0.927) );
 }
 /* the logo of the page */
 div.logo {
     width: 20%;
-    height: 15vh;
+    padding: 1em;
+    margin: 0;
     max-height: 15vh;
     font-size: medium;
     overflow: hidden;
 }
-c
+.logo img {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
 .logo img:hover {
     cursor: pointer;
 }
 .logo p {
-    margin: 1em;
-    margin-left: 0.2em;
+    padding: 0;
+    margin: 0;
+    margin-left: 2em;
     font-family: cursive;
     font-size: small;
     font-weight: bold;
-    color: rgb(255, 255, 255);
+    color: rgb(14, 176, 38);
 }
 .logo p:hover {
     text-decoration: underline;
@@ -43,16 +51,22 @@ div.links {
 }
 .links div:hover {
     background-color: rgba(0, 0, 0, 0.423);
+    border-bottom: 2px solid rgb(10, 95, 33);
 }
 .links a {
     text-decoration:none;
     color: rgb(255, 255, 255);
+}
+.links a p {
+    padding: 0;
+    margin: 0;
 }
 .links a:hover {
     color: rgb(16, 142, 176);
     
 }
 .links img {
+    display: none;
     width: 1vw;
     height: 1vw;
     margin-right: 0.5em;
@@ -76,6 +90,9 @@ div.links {
         align-items: center;
     }
     .links a {
+        display: block;
+    }
+    .links a p {
         display: none;
     }
     .links  div {
@@ -84,6 +101,7 @@ div.links {
         height: auto;
     }
     .links img {
+        display: block;
         padding: 0;
         float: none;
         width: 5vw;

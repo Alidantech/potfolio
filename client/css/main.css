@@ -2,7 +2,7 @@ main {
     width: 100%;
     height: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(42, 40, 40, 0.955);
+    background-color: rgba(4, 35, 62, 0.955);
 }
 
 /* the details part */
@@ -33,7 +33,7 @@ div.name {
 }
 div.images {
     width: 53%;
-    padding-top: 5vh;
+    padding-top: 10vh;
     border-radius:  0 0 1em;
 }
 .images img {
@@ -91,7 +91,7 @@ div.data {
     padding-bottom: 30%;
     text-indent: 1em;
     text-align: center;
-    color: rgb(187, 247, 252);
+    color: rgb(166, 152, 255);
     font-weight: bold;
     font-size: medium;
     line-height: 3em;
@@ -114,14 +114,14 @@ div.careers {
 .careers div {
     width: 30%;
     height: 45vh;
-    color: rgb(78, 110, 128);
+    color: rgb(255, 255, 255);
     font-size: smaller;
     border-radius: 1em;
     border-style: double;
     padding: 10px;
     border-spacing: 10px;
-    border-color: rgb(1, 18, 23);
-    background-color: rgba(0, 15, 15, 0.248);
+    border-color: rgb(3, 66, 62);
+    background-color: rgb(2, 43, 43);
     border-width: thick;
     line-height: 2em;
     float:left;
@@ -129,7 +129,6 @@ div.careers {
 }
 .careers img {
     float: right;
-
 }
 /* for small screens */
 @media (max-width: 600px) {
@@ -158,7 +157,6 @@ div.careers {
         width: 100%;
         height: auto;
         display: block;
-        
     }
     .careers H2 {
         margin: 0;
@@ -180,7 +178,7 @@ div.careers {
 /* the projects part */
 div.projects-container {
     width: 100%;
-    height: 300vh;
+    height: auto;
     padding-bottom: 10%;
 }
 .projects-container h3 {
@@ -191,39 +189,94 @@ div.projects-container {
 }
 div.project1 {
     width: 100%;
-    height: 70vh;
-    margin-top: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5%;
 
 }
-.text-preview {
-    margin: 2em;
-    padding: 2em;
-    width: 50%;
-    box-sizing: border-box;
-    height: auto;
-    color: rgb(86, 126, 153);
+.projects-container h5 {   
+     font-size: small;
+    float:none ;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 .preview {
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 75%;
     box-sizing: border-box;
     float: right;
     height: auto;
     border-style: solid;
-    border-color: rgb(4, 81, 33);
+    border-color: rgb(4, 72, 81);
 }
 .preview img {
     float: right;
     border-radius: 0.1em;
     width: 100%;
 }
-
+.grades-table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .grades-table th, .grades-table td {
+    padding: 12px;
+    border: 1px solid #bcabab;
+  }
+  
+  .grades-table th {
+    background-color: #1234136c;
+    color: rgb(218, 186, 186);
+  }
+  
+  .grades-table tr:nth-child(even) {
+    background-color: #03464c75;
+  }
+  
+  .grades-table tr:hover {
+    background-color: #0219019b;
+  }
+  
+  .grades-table td {
+    font-weight: bold;
+  }
+  
+  .job-list {
+    margin: 20px;
+    border: 1px solid #0e6d17;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .job-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .job-description ol {
+    list-style: blue;
+    margin: 0;
+    padding: 1em;
+    color: #7fccd3;
+  }
+  
+  .job-duty {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    background: #1c4a4091;
+    border-left: 4px solid #22a93f;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
 @media (max-width: 600px){
     div.projects-container {
         width: 100%;
@@ -268,11 +321,26 @@ div.project1 {
         border-radius: 0;
         background-color: rgba(4, 4, 0, 0.746);
     }
+    .projects-container h5 {
+        font-size: small;
+        float:none ;
+        text-align: center;
+    }
     .preview img {
         float: none;
         border-radius: 0em;
         width: 90%;
     }
+    .grades-table {
+        border-collapse: collapse;
+        width: 100%;
+        height: 30vh;
+        text-align: center;
+      }
+      .grades-table th, .grades-table td {
+        padding: 0;
+        border: 1px solid #bcabab;
+      }
 }
 
 
@@ -344,9 +412,12 @@ textarea {
     border-radius: 1em;
     font-size: 1em;
     color: aliceblue;
+    background-color: rgb(5, 71, 68);
 }
 .send button:hover {
     cursor: pointer;
+    background-color: rgb(6, 99, 95);
+
 }
 
 @media (max-width: 600px){

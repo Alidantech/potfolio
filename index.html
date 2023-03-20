@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="/client/css/header.css">
     <link rel="stylesheet" href="/client/css/main.css">
     <link rel="stylesheet" href="/client/css/foooter.css">
+    <link rel="stylesheet" href="/client/css/map.css">
     <link rel="shortcut icon" href="/client/img/dev-icon.svg" type="image/x-icon">
     <script src="/client/js/script.js"></script>
     <title>Alidante's Website</title>
 </head>
 <body bgcolor="#00000">
     <div id="page-container">
+
+        <!-- the header part of the page -->
         <header id="header">
             <div class="logo">
                 <img src="/client/img/dev-icon.svg" width="20vw" height="20vw" alt="">
@@ -21,24 +24,26 @@
             </div>
             <div class="links">
                 <div class="home-link">
-                    <img src="/client/img/home-icon.svg">  <a href=""> HOME</a>
+                    <a href="/client/htm/index.html"> <img src="/client/img/home-icon.svg">  <p>HOME</p>  </a>
                 </div>
                 <div class="details-link">
-                    <img src="/client/img/details-icon.svg"> <a href=""> DETAILS</a>
+                    <img src="/client/img/details-icon.svg"> <a href="#details-container"> <p>DETAILS</p></a>
                 </div>
                 <div class="career-link">
-                    <img src="/client/img/career-icon.svg"> <a href="">CAREER</a>
+                    <img src="/client/img/career-icon.svg"> <a href="#career-container"><p>CAREER</p></a>
                 </div>
                 <div class="projects-link">
-                    <img src="/client/img/projects-icon.svg"> <a href="">PROJECTS</a>
+                    <img src="/client/img/projects-icon.svg"> <a href="#projects-container"><p>PROJECTS</p></a>
                 </div>
                 <div class="footer-link">
-                    <img src="/client/img/contact-icon.svg">   <a href="">CONTACT</a>
+                    <img src="/client/img/contact-icon.svg">   <a href="#footer"><p>CONTACT</p></a>
                 </div>
             </div>
         </header>
+
+        <!-- the main part of the page -->
         <main id="main">
-            <div class="details-container">
+            <div class="details-container" id="details-container">
                 <div class="details">
                     <div class="name">
                         <span class="name">
@@ -53,7 +58,7 @@
                  
                 </div>
             </div>
-            <div class="career-container">
+            <div class="career-container" id="career-container">
                 <div class="data">
                     <p>
                     When it comes to web development and mobile development, I am a skilled and experienced professional who has worked on numerous projects throughout my career. In terms of web development, I am proficient in various programming languages, including HTML, CSS, JavaScript, and PHP, among others. I have experience with front-end frameworks like React, Angular, and Vue.js, and have also worked with back-end frameworks like Node.js and Laravel.
@@ -62,7 +67,7 @@
                      My mobile development skills are equally impressive. I have extensive experience with both Android and iOS app development, using tools like Android Studio, Xcode, and React Native. I am well-versed in the latest mobile development trends and technologies, such as mobile-first design, responsive design, and cross-platform development.
                      </p>
                 </div>
-                <div class="careers">
+                <div class="careers" id="careers">
                     <div class="software">
                         <h2>>>> SOFTWARE ENGINEER</h2>
                         <span>
@@ -88,43 +93,82 @@
                       </div>
                     </div>
             </div>
-            <div class="projects-container">
-                <h3>MAJOR PROJECTS</h3>
+            <div class="projects-container" id="projects-container">
+                <h5>My grades</h5><br>
                 <div class="project1">
-                    
                     <div class="preview">
-                        <img src="/client/img/dark-wechat.png" width="">
-                    </div>
-                  
-                </div>
-                <div class="project1">
+                        <!-- <img src="/client/img/dark-wechat.png" width=""> -->
                        
-                    <div class="preview">
-                        <img src="/client/img/light-wechat.png" width="">
+                        <table class="grades-table">
+                            <tr>
+                              <th>Course</th>
+                              <th>Grade</th>
+                            </tr>
+                            <tr>
+                              <td>Web</td>
+                              <td>90%</td>
+                            </tr>
+                            <tr>
+                              <td>Data Structures</td>
+                              <td>85%</td>
+                            </tr>
+                            <tr>
+                              <td>Networking</td>
+                              <td>95%</td>
+                            </tr>
+                          </table>
                     </div>
-                   
-                </div>
                 </div>
                 <div class="project1">
-                   
                     <div class="preview">
-                        <img src="/client/img/dark-wechat.png" width="">
+                        <div class="job-list">
+                            <div class="job-title">Software Developer</div>
+                            <div class="job-description">
+                              <ol type="i">
+                                <li class="job-duty">Designing and developing software applications</li>
+                                <li class="job-duty">Writing and maintaining clean, efficient, and well-documented code</li>
+                                <li class="job-duty">Collaborating with cross-functional teams to identify and solve complex software problems</li>
+                                <li class="job-duty">Debugging and troubleshooting software issues</li>
+                                <li class="job-duty">Performing code reviews and providing feedback to improve code quality</li>
+                                <li class="job-duty">Working with databases and data structures</li>
+                                <li class="job-duty">Staying up-to-date with emerging trends and technologies in software development</li>
+                              </ol>
+                            </div>
+                          </div> 
                     </div>
-                    
+                </div>
+                <h5>Mapped image</h5><br>
+                <h6 align=center>the mouse, the tablet, the keyboard and the monitor</h6>
+                <div class="project1">
+                    <div class="preview">
+                                                <!-- Image Map Generated by http://www.image-map.net/ -->
+                        <img src="/client/img/img-mapping.jpg" usemap="#image-map">
+
+                        <map name="image-map">
+                            <area target="_blank" alt="computer monitor" title="computer monitor" href="https://en.wikipedia.org/wiki/Computer_monitor" coords="224,37,422,312" shape="rect">
+                            <area target="_blank" alt="a tablet" title="a tablet" href="https://en.wikipedia.org/wiki/Tablet_computer" coords="90,900,0,12" shape="rect">
+                            <area target="_blank" alt="a keyboard" title="a keyboard" href="https://en.wikipedia.org/wiki/Computer_keyboard" coords="" shape="rect">
+                            <area target="_blank" alt="a mouse" title="a mouse" href="https://en.wikipedia.org/wiki/Computer_mouse" coords="" shape="rect">
+                        </map>
+                    </div>
                 </div>
             </div>
         </main>
+
+        <!-- the footer of the page -->
         <footer id="footer">
             <h4>contact me</h4>
             <div class="social">
-                <img src="/client/img/twitter-icon.svg" width="30vw">
-                <img src="/client/img/github-icon.svg" width="35vw">
-                <img src="/client/img/linkedin-icon.svg" width="30vw">
-                <img src="/client/img/ig-icon.svg" width="30vw">
-                <img src="/client/img/whatsapp-icon.svg" width="30vw">
+                <a href="https://twitter.com/Alidante_254"> <img  src="/client/img/twitter-icon.svg" width="30vw"></a>
+                <a href="https://github.com/Alidante254"><img src="/client/img/github-icon.svg" width="35vw"></a>
+                <a href="https://www.linkedin.com/in/peter-irungu-91119225b/"><img src="/client/img/linkedin-icon.svg" width="30vw"></a>
+                <a href="https://www.instagram.com/alidante_254/"><img src="/client/img/ig-icon.svg" width="30vw"></a>
+                <a href=""><img src="/client/img/whatsapp-icon.svg" width="30vw"></a>
             </div>
-           
+            <a href="/client/htm/hire.html">hire me now</a>
         </footer>
+
+        <!-- the floating box -->
         <div class="floating-button">
             <button onclick="showEmailBox();"><img src="/client/img/email-icon.svg" width="30vw"></button>
         </div>
@@ -139,6 +183,7 @@
                 <button >send</button>
             </div>
         </div>
+
     </div>
 </body>
 </html>

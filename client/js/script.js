@@ -6,3 +6,6 @@ function showEmailBox(){
         emailBox.style.display = "none";
     }
 }
+function imageMap(){
+    
+}
