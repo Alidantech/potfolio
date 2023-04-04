@@ -1,96 +1,151 @@
-@keyframes example {
-    0%   {background-color: rgba(255, 0, 0, 0.083);}
-    25%  {background-color: rgba(255, 255, 0, 0.056);}
-    50%  {background-color: rgba(0, 0, 255, 0.086);}
-    100% {background-color: rgba(0, 128, 0, 0.1);}
+/* Define the keyframes for the background color animation */
+@keyframes bg-animation {
+  0% {
+    background-color: rgba(255, 0, 0, 0.083);
   }
-div.logo {
-    animation-name: example;
-    animation-duration: 4s;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-
+  25% {
+    background-color: rgba(255, 255, 0, 0.056);
   }
-
-  div.links {
-    animation-name: example;
-    animation-duration: 4s;
-    animation-delay: 0;
-    animation-iteration-count: infinite;
-
+  50% {
+    background-color: rgba(0, 0, 255, 0.086);
   }
-
-
-div.textanimation {
-    animation-name: textanimation;
-    animation-duration: 4s;
-    animation-delay: 0;
-    animation-iteration-count: 6s;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
+  100% {
+    background-color: rgba(0, 128, 0, 0.1);
+  }
 }
 
-@keyframes textanimation {
-    0%   {
-        background-color: rgba(255, 0, 0, 0.083);
-        top: 0;
-        left: 0;
-        width:100px;
-        }
-    25%  {
-        background-color: rgba(255, 255, 0, 0.056);
-        top: 0;
-        left: 200px;
-        width: 250px;
-    }
-    50%  {
-        bottom: 0;
-        left: 300px;
-        background-color: rgba(0, 0, 255, 0.086);
-
-        width: 200px;
-    }
-    100% {
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(6, 36, 68, 0.092);
-    }
+/* Define the keyframes for the logo and links animation */
+@keyframes logo-links-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
   }
-
-  div.images {
-    animation-name: textanimation;
-    animation-duration: 4s;
-    animation-delay: 0;
-    animation-iteration-count: 6s;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-
-
-
-
-  .careers div {
-    animation-name: textanimation;
-    animation-duration: 8s;
-    animation-delay: 0;
-    animation-iteration-count: 1;
 }
-  @keyframes careers-animation {
-    0%   {
-        width:10%;
-        }
-    25%  {
-       
-        width: 15%;
-    }
-    50%  {
-        
-        width: 20%;
-    }
-    100% {
-        width: 25%;
-    }
+
+/* Define the keyframes for the text animation */
+@keyframes text-animation {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
   }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Define the keyframes for the careers animation */
+@keyframes careers-animation {
+  0% {
+    width: 10%;
+  }
+  25% {
+    width: 15%;
+  }
+  50% {
+    width: 20%;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+/* Apply the animations to the relevant elements */
+div.logo, div.links {
+  animation-name: logo-links-animation;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+div.textanimation, div.images {
+  animation-name: text-animation;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+.careers div {
+  animation-name: careers-animation;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+
+/* Set up default states for elements */
+.animated {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-out;
+}
+
+/* Define animation styles for each type of animation */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Apply animations to elements as they come into view */
+.animated.fade-in.is-visible {
+  animation-name: fade-in;
+}
+
+.animated.slide-in-left.is-visible {
+  animation-name: slide-in-left;
+}
+
+.animated.slide-in-right.is-visible {
+  animation-name: slide-in-right;
+}
+
+/* Define keyframe animations for each animation type */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
