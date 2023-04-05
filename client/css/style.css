@@ -1,4 +1,632 @@
-* {
+header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    background: linear-gradient(to left, rgb(2, 33, 53), rgba(0, 2, 2, 0.927) );
+}
+/* the logo of the page */
+div.logo {
+    width: 20%;
+    padding: 1em;
+    margin: 0;
+    max-height: 15vh;
+    font-size: medium;
+    overflow: hidden;
+}
+.logo img {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.logo img:hover {
+    cursor: pointer;
+}
+.logo p {
+    padding: 0;
+    margin: 0;
+    margin-left: 2em;
+    font-family: cursive;
+    font-size: small;
+    font-weight: bold;
+    color: rgb(14, 176, 38);
+}
+.logo p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+  
+/* The links part */
+div.links {
+    width: 80%;
+    padding-left: 20%;
+    top: 0;
+}
+.links  div {
+    height: 10vh;
+    float: left;
+    padding: 2em;
+}
+.links div:hover {
+    background-color: rgba(0, 0, 0, 0.423);
+    border-bottom: 2px solid rgb(10, 95, 33);
+}
+.links a {
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+.links a p {
+    padding: 0;
+    margin: 0;
+}
+.links a:hover {
+    color: rgb(16, 142, 176);
+    
+}
+.links img {
+    display: none;
+    width: 1vw;
+    height: 1vw;
+    margin-right: 0.5em;
+}
+
+/*styling for screens less than 600 px  */
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        overflow: hidden;
+    }
+    div.logo {
+        display: none;
+    }
+    div.links {
+        width: 100%;
+        top: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .links a {
+        display: block;
+    }
+    .links a p {
+        display: none;
+    }
+    .links  div {
+        margin: 0;
+        padding: 1em;
+        height: auto;
+    }
+    .links img {
+        display: block;
+        padding: 0;
+        float: none;
+        width: 5vw;
+        height: 5vw;
+    }
+    
+ }
+ 
+
+
+
+main {
+    width: 100%;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(4, 35, 62, 0.955);
+}
+
+/* the details part */
+div.details-container {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    color: rgb(24, 235, 84);
+}
+.details-container h1 {
+    margin: 0;
+    padding: 1em;
+    padding-top: 30vh;
+    font-size: larger;
+}
+.details-container p {
+    font-size: small;
+    line-height: 2em;
+}
+div.details {
+    width: 47%;
+   
+}
+div.name {
+    height: 100vh;
+    border-radius:  0 0 0 1em;
+}
+div.images {
+    width: 53%;
+    padding-top: 10vh;
+    border-radius:  0 0 1em;
+}
+.images img {
+    margin: 1em;
+    width: 50%;
+}
+/* the  */
+@media (max-width: 600px) {
+    main {
+        width:auto;
+        height: auto;
+    }
+    div.details-container {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .details-container h1 {
+        padding-top: 10vh;
+    }
+    div.details {
+        width: 100%;
+    }
+    div.name {
+        width: 100%;
+        clear: both;
+        height: auto;
+        background: none;
+    }
+    div.images {
+        width: 100%;
+        height: auto;
+        clear: both;
+        padding-top: 10vh;
+        border-radius:  0 0 1em;
+        background: none;
+    }
+    div.images img {
+        width: 80%;
+        border-radius: 1em;
+    }
+ }
+ 
+ 
+  
+
+/* the careers part */
+div.career-container {
+    width: 100%;
+    height: 200vh;
+}
+div.data {
+    height: 100vh;
+    padding: 20%;
+    padding-top: 10%;
+    padding-bottom: 30%;
+    text-indent: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(233, 236, 192);
+    font-weight: bold;
+    font-size: medium;
+    line-height: 3em;
+}
+div.careers {
+    padding-top: 20%;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1em;
+}
+.careers H2 {
+    margin: 0;
+    padding: 1em;
+    font-size: smaller;
+    color: rgb(73, 248, 38);
+}
+.careers div {
+    width: 25%;
+    min-height: 45vh;
+    height: auto;
+    color: rgb(185, 192, 182);
+    font-size: smaller;
+    border-radius: 1em;
+    border-style: double;
+    padding: 10px;
+    border-spacing: 10px;
+    border-color: rgba(15, 83, 160, 0.644);
+    background: linear-gradient(to bottom, rgba(4, 63, 2, 0.144), rgba(22, 85, 6, 0.336));
+    border-width: thick;
+    line-height: 2em;
+    float:left;
+    margin: 0;
+}
+ .careers button {
+    color: #0cff49;
+    font-size: larger;
+    background-color: #47aa0e0c;
+    border: 2px solid rgb(13, 156, 25);
+    height: fit-content;
+    margin: 10% 35%;
+    padding: 1em;
+    width: 40%;
+    cursor: pointer;
+    border-radius: 11em;
+}
+.careers button:hover {
+    background-color: #0ca81c1a;
+    animation-name: rotating-colors;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+.careers div:hover {
+   scale: 1.05;
+    animation-name: rotating-colors;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+@keyframes rotating-colors {
+    0% {
+      border-color: rgba(10, 194, 19, 0.555);
+    }
+    25% {
+        border-color: rgba(0, 128, 0, 0.541);
+    }
+    50% {
+        border-color: rgba(97, 8, 35, 0.514);
+    }
+    75% {
+        border-color: rgba(22, 45, 177, 0.466);
+    }
+    100% {
+        border-color: rgba(7, 117, 121, 0.514);
+    }
+  }
+  
+.careers img {
+    float: right;
+}
+/* for small screens */
+@media (max-width: 600px) {
+    div.career-container {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        padding-bottom: 10vh;
+    }
+    div.data {
+        padding: 10%;
+        padding-top: 20%;
+        padding-bottom: 30%;
+        height: auto;
+        font-size: small;
+        font-weight: lighter;
+        text-align-last: center;
+        text-indent: 0;
+        width: 96%;
+        margin: 0 2%;
+        line-height: 2em;
+    }
+    div.careers {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .careers H2 {
+        margin: 0;
+    }
+    .careers div {
+        width: 90%;
+        margin:  0 5%;
+        margin-top: 10%;
+        line-height: 2em;
+        height: auto;
+        min-height: 30vh;
+        float:none;
+    }
+    .careers div:hover {
+        scale: 1.1;
+        cursor: pointer;
+        margin: 1em;
+     }
+    .careers img {
+        display: none;
+    }
+ }
+ 
+/* the projects part */
+div.projects-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+}
+.projects-container h3 {
+    margin: 0;
+    padding: 0;
+    color: rgb(44, 135, 51);
+    text-align: center;
+}
+div.project1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+
+}
+.projects-container h5 {   
+     font-size: small;
+    float:none ;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.preview {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    box-sizing: border-box;
+    float: right;
+    height: auto;
+    border-style: solid;
+    border-color: rgb(4, 72, 81);
+}
+.preview img {
+    float: right;
+    border-radius: 0.1em;
+    width: 100%;
+}
+.grades-table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .grades-table th, .grades-table td {
+    padding: 12px;
+    border: 1px solid #bcabab;
+  }
+  
+  .grades-table th {
+    background-color: #1234136c;
+    color: rgb(218, 186, 186);
+  }
+  
+  .grades-table tr:nth-child(even) {
+    background-color: #03464c75;
+  }
+  
+  .grades-table tr:hover {
+    background-color: #0219019b;
+  }
+  
+  .grades-table td {
+    font-weight: bold;
+  }
+  
+  .job-list {
+    margin: 20px;
+    border: 1px solid #0e6d17;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .job-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .job-description ol {
+    list-style: blue;
+    margin: 0;
+    padding: 1em;
+    color: #7fccd3;
+  }
+  
+  .job-duty {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    background: #1c4a4091;
+    border-left: 4px solid #22a93f;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+@media (max-width: 600px){
+    div.projects-container {
+        width: 100%;
+        height: auto;
+        padding-top: 35%;
+        padding-bottom: 0%;
+        margin: 0;
+    }
+    .projects-container h3 {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 3%;
+        text-indent: 1em;
+        text-align: center;
+    }
+    div.project1 {
+        width: 100%;
+        padding-top: 2vh;
+        padding-bottom: 5vh;
+        height: auto;
+        margin: 0;
+        display: block;    
+    }
+    .text-preview {
+        margin: 0;
+        padding: 1em;
+        text-align: start;
+        font-size: small;
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+    }
+    .preview {
+        margin: 0 3%;
+        padding: 0.3em;
+        display: flex;
+        width: 94%;
+        box-sizing: border-box;
+        float: none;
+        height: auto;
+        min-height: 30vh;
+        border-radius: 0;
+        background-color: rgba(4, 4, 0, 0.746);
+    }
+    .projects-container h5 {
+        font-size: small;
+        float:none ;
+        text-align: center;
+    }
+    .preview img {
+        float: none;
+        border-radius: 0em;
+        width: 90%;
+    }
+    .grades-table {
+        border-collapse: collapse;
+        width: 100%;
+        height: 30vh;
+        text-align: center;
+      }
+      .grades-table th, .grades-table td {
+        padding: 0;
+        border: 1px solid #bcabab;
+      }
+}
+
+
+
+
+/* floating button */
+.floating-button{
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+   
+}
+.floating-button button{
+    border-radius: 1em;
+    border: none;
+    background-color: #20ff0c38;
+}
+.floating-button button:hover{
+    cursor: pointer;
+}
+.floating-button img {
+    border-radius: 2em;
+}
+
+/* floating div */
+div.email-me {
+    display: none;
+    width: 30%;
+    height: 70vh;
+    padding: 2em;
+    position: fixed;
+    right: 5em;
+    bottom: 4.5em;
+    border-radius: 1em 1em 0 1em;
+    color: antiquewhite;
+    background-color: rgba(2, 29, 20, 0.96);
+}
+
+input {
+    all: initial;
+    width: 90%;
+    border-style: solid;
+    padding: 1em;
+    border-color: cadetblue;
+    color: antiquewhite;
+    border-width: 0.2em;
+    border-radius: 1em;
+}
+textarea {
+    all: initial;
+    width: 90%;
+    height: 20vh;
+    border-style: solid;
+    border-color: cadetblue;
+    border-width: 0.2em;
+    border-radius: 1em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding: 1em;
+    color: antiquewhite;
+}
+.send   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .send button {
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: none;
+    border-radius: 1em;
+    font-size: 1em;
+    color: aliceblue;
+    background-color: rgb(5, 71, 68);
+}
+.send button:hover {
+    cursor: pointer;
+    background-color: rgb(6, 99, 95);
+
+}
+
+@media (max-width: 600px){
+    div.email-me {
+        display: none;
+        width: 100%;
+        height: 90vh;
+        padding: 2em;
+        position: fixed;
+        right: 0em;
+        bottom: 4em;
+        border-radius: 0;
+        color: antiquewhite;
+    }
+    .floating-button{
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+    }
+}
+
+area {
+    border: 1px solid #843030;
+    position: relative;
+    z-index: 100;
+    width: auto;
+    height: 10vh;
+  }
+  
+  area:hover {
+    cursor: pointer;
+    border: 1px solid #bd0606;
+    
+
+  }
+
+
+
+  * {
     box-sizing: border-box;
   }
 html, body {
@@ -25,3 +653,117 @@ html, body {
    
   
 }
+
+
+footer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.916);
+    text-align: center;
+    
+}
+h4 {
+    padding: 20%;
+    margin: 0;
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social img {
+    padding: 0.1em;
+    margin: 0 1em;
+}
+.social img:hover {
+    cursor: pointer;
+    background-color: rgba(27, 74, 112, 0.579);
+    border-radius: 0.2em;
+}
+
+@media (max-width: 600px){
+    footer {
+        padding-top: 10vh;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(20, 1, 1, 0.941);
+        text-align: center;
+        
+    }
+}
+a:hover {
+    color: aqua;
+  }
+
+
+  /* Define the keyframes for the background color animation */
+@keyframes bg-animation {
+    0% {
+      background-color: rgba(255, 0, 0, 0.083);
+    }
+    25% {
+      background-color: rgba(255, 255, 0, 0.056);
+    }
+    50% {
+      background-color: rgba(0, 0, 255, 0.086);
+    }
+    100% {
+      background-color: rgba(0, 128, 0, 0.1);
+    }
+  }
+  
+  /* Define the keyframes for the logo and links animation */
+  @keyframes logo-links-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Define the keyframes for the text animation */
+  @keyframes text-animation {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Define the keyframes for the careers animation */
+  @keyframes careers-animation {
+    0% {
+      width: 10%;
+    }
+    25% {
+      width: 15%;
+    }
+    50% {
+      width: 20%;
+    }
+    100% {
+      width: 25%;
+    }
+  }
+  
+  /* Apply the animations to the relevant elements */
+  div.logo, div.links {
+    animation-name: logo-links-animation;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+  }
+  
+  div.textanimation, div.images {
+    animation-name: text-animation;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+  }
+  

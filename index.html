@@ -27,7 +27,7 @@
                 </div>
                 <div class="links" class="animated fade-in">
                     <div class="home-link">
-                        <a href="/client/htm/index.html"> <img src="/client/img/home-icon.svg">  <p>HOME</p>  </a>
+                        <a href="#"> <img src="/client/img/home-icon.svg">  <p>HOME</p>  </a>
                     </div>
                     <div class="details-link">
                         <img src="/client/img/details-icon.svg"> <a href="#details-container"> <p>DETAILS</p></a>
@@ -70,36 +70,37 @@
             <div class="career-container" id="career-container">
                 <div class="data">
                     <p id="describe">
-                    When it comes to web development and mobile development, I am a skilled and experienced professional who has worked on numerous projects throughout my career. In terms of web development, I am proficient in various programming languages, including HTML, CSS, JavaScript, and PHP, among others. I have experience with front-end frameworks like React, Angular, and Vue.js, and have also worked with back-end frameworks like Node.js and Laravel.
-                   <br><br>
-                     My mobile development skills are equally impressive. I have extensive experience with both Android and iOS app development, using tools like Android Studio, Xcode, and React Native. I am well-versed in the latest mobile development trends and technologies, such as mobile-first design, responsive design, and cross-platform development.
-                     </p>
                 </div>
-                <div class="careers" id="careers">
-                    <div class="software">
-                        <h2>>>> SOFTWARE ENGINEER</h2>
-                        <span class="career-text">
-                          I am a skilled software engineer with experience in developing and maintaining complex software systems. My expertise includes programming languages such as Java and Python, as well as database technologies like MySQL and MongoDB. I am passionate about building high-quality, scalable software solutions that meet the needs of users and businesses alike.
-                        </span>
-                        <img src="/client/img/software-icon.svg" width="50vw">
-                      </div>
+               <div class="careers" id="careers">
+                <div class="software card">
+                    <h2>@ SOFTWARE ENGINEER</h2>
+                    <span class="career-text">
+                    I am a skilled software engineer with experience in developing and maintaining complex software systems. My expertise includes programming languages such as Java and Python, as well as database technologies like MySQL and MongoDB. I am passionate about building high-quality, scalable software solutions that meet the needs of users.
+                  
+                        <button>projects</button>
+                     
+                </div>
+
+                <div class="editing card">
+                    <h2>@ ANDROID DEVELOPER</h2>
+                    <span class="career-text">
+                    As an Android developer, I have experience developing mobile applications for a variety of industries. My technical skills include proficiency in Java, Kotlin, and Android Studio. I am dedicated to creating engaging, intuitive user experiences that enhance the functionality and usability of Android apps.
+                    </span>
+                  
+                        <button>apps</button>
                       
-                      <div class="editing">
-                        <h2>>>> ANDROID DEVELOPER</h2>
-                        <span class="career-text">
-                          As an Android developer, I have experience developing mobile applications for a variety of industries. My technical skills include proficiency in Java, Kotlin, and Android Studio. I am dedicated to creating engaging, intuitive user experiences that enhance the functionality and usability of Android apps.
-                        </span>
-                        <img src="/client/img/android-icon.svg" width="50vw">
-                      </div>
-                      
-                      <div class="networking">
-                        <h2>>>> WEB DEVELOPER</h2>
-                        <span class="career-text">
-                          I am a skilled web developer with experience in HTML, CSS, JavaScript, and various web development frameworks. My expertise includes building responsive and user-friendly websites that meet the needs of clients and users. I am dedicated to staying up-to-date with the latest web development trends and technologies to create cutting-edge websites.
-                        </span>
-                        <img src="/client/img/web-icon.svg" width="50vw">
-                      </div>
-                    </div>
+                </div>
+
+                <div class="networking card">
+                    <h2>@ WEB DEVELOPER</h2>
+                    <span class="career-text">
+                    I am a skilled web developer with experience in HTML, CSS, JavaScript, and various web development frameworks. My expertise includes building responsive and user-friendly websites that meet the needs of clients and users. I am dedicated to staying up-to-date with the latest web development trends and technologies to create cutting-edge websites.
+                    </span>
+                 
+                    <button>websites</button>
+                  
+                </div>
+                </div>
             </div>
             <div class="projects-container" id="projects-container">
                 <h5>My grades</h5><br>
@@ -204,12 +205,40 @@
 
   <!-- Setup and start animation! -->
   <script>
-    var strng1 = " When it comes to web development and mobile development, I am a skilled and experienced professional who has worked on numerous projects throughout my career. In terms of web development, I am proficient in various programming languages, including HTML, CSS, JavaScript, and PHP, among others. I have experience with front-end frameworks like React, Angular, and Vue.js, and have also worked with back-end frameworks like Node.js and Laravel.<br><br>My mobile development skills are equally impressive. I have extensive experience with both Android and iOS app development, using tools like Android Studio, Xcode, and React Native. I am well-versed in the latest mobile development trends and technologies, such as mobile-first design, responsive design, and cross-platform development";
+    var strng1 = " My mobile development skills are equally impressive. I have extensive experience with both Android and iOS app development, using tools like Android Studio, Xcode, and React Native. I am well-versed in the latest mobile development trends and technologies, such as mobile-first design, responsive design, and cross-platform development";
     var typed = new Typed('#describe', {
       strings: ['<i>First</i> sentence.', strng1],
-      typeSpeed: 30,
+      typeSpeed:10,
     });
-   
+            
+                // Get all card elements
+            const cards = document.querySelectorAll('.card');
+
+            // Function to check if element is in view
+            const isInView = (el) => {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+            }
+
+            // Function to add "show" class to cards in view
+            const showCards = () => {
+            cards.forEach((card) => {
+                if (isInView(card)) {
+                card.classList.add('show');
+                
+                }
+            });
+            }
+
+            // Initial check for cards in view
+            showCards();
+
+            // Check for cards in view on scroll
+            window.addEventListener('scroll', showCards);
+
   </script>
   
 </body>
