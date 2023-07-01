@@ -21,11 +21,10 @@ Welcome to my portfolio website! This is a showcase of my work, including projec
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/my-website.git
+   git clone https://github.com/your-username/potfolio.git
    ```
 2. Install dependencies:
    ```bash
-      cd my-website
       npm install
    ```
    
