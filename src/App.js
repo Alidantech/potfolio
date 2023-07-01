@@ -6,12 +6,12 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Music from './components/Music';
 import Home from './components/Home';
-
+import "./App.css"
 
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="container-fluid">
         <Header />
 
         <main>
