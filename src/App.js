@@ -11,7 +11,7 @@ import "./App.css"
 const App = () => {
   return (
     <Router>
-      <div className="container-fluid">
+      <div className="container-fluid bg-dark text-light">
         <Header />
 
         <main>

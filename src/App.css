@@ -2,13 +2,15 @@
       border: 2px solid rgb(7, 184, 169);
       padding: 0.21rem;
       border-radius: 50px;
-      box-shadow: 0 0 0 2px rgba(1, 41, 35, 0.384);
+      box-shadow: 0 0 0 2px rgba(180, 6, 122, 0.582);
 }
 
-main {
-      min-height: 80vh;
+img {
+     min-width: 250px;
+      margin: 4vw;
+      min-height: 250px;
+      border-radius: 200px;
 }
-
 section {
-      min-height: 80vh;
+      min-height: 90vh;
 }

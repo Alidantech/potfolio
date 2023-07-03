@@ -4,9 +4,17 @@ const Home = () => {
   return (
     <div className="container">
       <section>
-        <div className="p-5">
-          <h2 className="p-5">PETER IRUNGU</h2>
-          <p className="lead pb-5 mt-5">Welcome to my portfolio website!</p>
+        <div className='row'>
+          <div className="m-5 p-5 col">
+            <h2 className="p-5">PETER IRUNGU</h2>
+            <p className="lead pb-5 mt-5">Welcome to my portfolio website!</p>
+          </div>
+          <div className='col p-5'>
+            <img src='public/bg.jpg' className='img-responsive border bg-success' alt='profile'></img>
+          </div>
+        </div>
+        <div className='row text-center'>
+          
         </div>
       </section>
       <section>

@@ -10,13 +10,16 @@ const About = () => {
   return (
     <div className="container">
       <section>
-        <h2><FontAwesomeIcon icon={faUser} /> About</h2>
-        <p className="text-muted">Welcome to my portfolio! I'm a passionate web developer with expertise in frontend technologies. I have experience building modern and responsive web applications using React and other frameworks.</p>
-        <p>In this section, you'll find more information about my background, skills, and professional experience. Feel free to explore and learn more about me.</p>
+      <div className='p-5'>
+        <h2 className='p-5'><FontAwesomeIcon className='m-2 mt-0 mb-0' icon={faUser} /> About</h2>
+        <p className='lead pb-5 mt-5'>Welcome to my portfolio! I'm a passionate web developer with expertise in frontend technologies. I have experience building modern and responsive web applications using React and other frameworks.</p>
+        <p className='lead pb-5 mt-5'>In this section, you'll find more information about my background, skills, and professional experience. Feel free to explore and learn more about me.</p>
+      </div>
+        
       </section>
        <section>
       <h3>Skills</h3>
-      <ul>
+          <ul>
             <li>Data Science</li>
             <li>Web Development</li>
             <li>Object Oriented Programming</li>
