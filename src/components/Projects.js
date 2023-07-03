@@ -80,19 +80,19 @@ const Projects = () => {
       </section>
       <section>
         <h3>OOP And Mobile Applications</h3>
-        <p></p>
+        <p>With the rise in mobile usage and popularity I have not been left behind and thats why I have developed some of this amazing apps for mobile.</p>
         <ul className="list-group">
           <li className="list-group-item m-2 bg-primary">
             <h3>Mochat</h3>
             <p>Description of the project and its features.</p>
           </li>
           <li className="list-group-item m-2 bg-primary">
-            <h3>Project 2</h3>
-            <p>Description of the project and its features.</p>
+            <h3>Farmer App</h3>
+            <p>A mobile app for the farm-AI app that the user can use on the mobile after downloading it from the google playstore.</p>
           </li>
           <li className="list-group-item m-2 bg-primary">
-            <h3>Project 3</h3>
-            <p>Description of the project and its features.</p>
+            <h3>Up-Music</h3>
+            <p>Incoporates all the power of the upcoming AI to the mobile app which the user can access after downloading the app.</p>
           </li>
         </ul>
       </section>
