@@ -13,7 +13,7 @@ const Music = () => {
       <section className='row'>
         <div className="p-5 col">
           <h2 className="p-5"><FontAwesomeIcon className='m-2 mt-0 mb-0' icon={faMusic} /> Music</h2>
-          <p className="lead pb-5 mt-5">Discover some of my favorite music tracks:</p>
+          <p className="lead pb-5 mt-5 text-center">Discover some of my favorite music tracks:</p>
         </div>
         <div className='col'>
           <p className='lead pb-5 mt-5'>Feel free to listen to these tracks and enjoy the melodies!</p>
