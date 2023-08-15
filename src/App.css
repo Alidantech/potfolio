@@ -1,16 +1,14 @@
 .logo {
-      border: 2px solid rgb(7, 184, 169);
       padding: 0.21rem;
       border-radius: 50px;
       box-shadow: 0 0 0 2px rgba(180, 6, 122, 0.582);
 }
 
 img {
-     min-width: 250px;
+      width: 300px;
+      height: 300px;
       margin: 4vw;
-      min-height: 250px;
-      border-radius: 200px;
+      border-radius: 1000px;
 }
-section {
-      min-height: 90vh;
-}
+
+

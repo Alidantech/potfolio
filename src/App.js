@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <Router>
-      <animated.div style={backgroundAnimation} className="container-fluid bg-dark text-light">
+      <animated.div style={backgroundAnimation} className="container-fluid">
         <Header />
 
         <main>

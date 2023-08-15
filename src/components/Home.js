@@ -10,7 +10,7 @@ const Home = () => {
             <p className="lead pb-5 mt-5">Welcome to my portfolio website!</p>
           </div>
           <div className='col p-5'>
-            <img src='public/bg.jpg' className='img-responsive border bg-success' alt='profile'></img>
+            <img src='bg.jpg' className='img-responsive border' alt='profile'></img>
           </div>
         </div>
         <div className='row text-center'>
