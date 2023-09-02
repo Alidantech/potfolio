@@ -1,8 +1,14 @@
 
 function Home() {
   const WelcomeHeading: string = "Welcome to My potfolio, Feel free to EXPLORE!";
-  const Bio: string = '"I am a versatile professional with a passion for technology and design. As a software developer and engineer, I create innovative solutions that solve complex problems. I am also a data scientist, turning data into insights that drive informed decisions. With a keen eye for design, I craft user experiences that are both beautiful and functional. I thrive on challenges and enjoy pushing the boundaries of what is possible in the world of technology and design."';
+  const Bio: string = '"I am a versatile professional with a passion for technology.boundaries of what is possible in the world of technology and design."';
   const ButtonText:String = "Lets Get in Touch"
+  const Projects: { Title: string; Description: string; ImageLink: string }[] = [
+    { Title: 'Data Science', Description: 'Farm ai an ai tool.', ImageLink: 'https://picsum.photos/300/200?random=ai' },
+    { Title: 'UI/UX', Description: 'A very nice user interface', ImageLink: "https://picsum.photos/300/200?random=ui" },
+    { Title: 'Web Development', Description: 'my own website.', ImageLink: "https://picsum.photos/300/200?random=website" },
+    { Title: 'Software Engineering', Description: 'An engineering project.', ImageLink: "https://picsum.photos/300/200?random=home" },
+  ];
 
   return( 
      <div>
@@ -10,16 +16,30 @@ function Home() {
             <div className="container">
                <div className="row">
                   <div className="col-md-6 p-3">
-                        <h1>{WelcomeHeading}</h1>
-                        <p className="mt-5">{Bio}</p>
+                        <h1 className="text-success">{WelcomeHeading}</h1>
+                        <p className="mt-5 mb-5 bio">{Bio}</p>
                   </div>
                   <div className="col-md-6 d-flex align-items-center justify-content-center">
-                        <button className="btn border p-3">
+                        <button className="btn btn-success p-3">
                               {ButtonText}
                         </button>
                   </div>
                </div>
             </div>
+        </div>
+        <div className="text-center text-success p-5">
+            <h2 className="mb-5 text-dark">PETER IRUNGU</h2>
+            <h3 className="mb-5">Software Developer</h3>
+            <h3>Data Scientist</h3>
+        </div>
+        <div className="container row p-2">
+            {Projects.map((project, index) => (
+                  <div key={index} className="card m-2 col-md-6">
+                        <img src={project.ImageLink} alt={project.Title} />
+                        <h2>{project.Title}</h2>
+                        <span>{project.Description}</span>
+                  </div>
+          ))}
         </div>
     </div>
   );

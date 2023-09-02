@@ -79,7 +79,7 @@ function App() {
                 {contactLinks.map((link, index) => (
                   <a key={index} href={link.url} className='nav-link  text-success'>
                     <i className={`m-2 bi bi-${link.icon.toLowerCase()}`}></i>
-                    {": "+link.url}
+                    {" "+link.url}
                   </a>
                 ))}
             </div>
