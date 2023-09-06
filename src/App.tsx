@@ -8,7 +8,7 @@ function App() {
   const links: { label: string; url: string; icon: string }[] = [
     { label: 'Music', url: 'https://google.com', icon: 'music-note' },
     { label: 'Home', url: 'https://example.com', icon: 'house-door' },
-    { label: 'Alidante_254', url: 'https://github.com', icon: 'person' },
+    { label: 'Alidante', url: 'https://github.com', icon: 'person' },
     { label: 'Twitter', url: 'https://github.com', icon: 'twitter' },
     { label: 'Light', url: 'https://github.com', icon: 'moon' },
   ];
@@ -52,7 +52,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <>
       {/* The navigation bar containing links */}
       <header className={` ${isScrolled ? 'scrolled' : ''}`}>
         <nav className="navbar container p-3 text-primary">
@@ -118,7 +118,7 @@ function App() {
               <p> Alidante_254 LTD</p>
           </div>
       </footer>
-    </div>
+    </>
   );
 }
 

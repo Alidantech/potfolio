@@ -1,6 +1,6 @@
 header {
       position: fixed;
-      /* background-color: rgba(243, 255, 247, 0.589); */
+      background-color: rgba(156, 255, 239, 0.185);
       backdrop-filter: blur(20px);
       box-shadow: 1px 2px 2px rgba(43, 41, 41, 0.164);
       width: 98%;
@@ -27,15 +27,25 @@ a {
 }
 
 .welcome {
-      background:url("https://picsum.photos/1600/900");
-      background-repeat: no-repeat;
+      background:url("https://images.pexels.com/photos/7293095/pexels-photo-7293095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+      /* Cover the entire div, maintaining aspect ratio */
       background-position: center;
+      /* Center the background image */
+      background-repeat: no-repeat;
+      /* Do not repeat the background image */
       padding: 20vh 0 35vh 0;
       overflow: hidden;
 }
 
 .bio {
       font-size: 1.1em;
-      color:rgb(74, 77, 72);
+      color: white;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.proj {
+      border: 1px solid brown;
+      width: fit-content;
+      margin-right: 4px;
 }

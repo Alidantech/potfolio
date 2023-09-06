@@ -4,15 +4,15 @@ function Home() {
   const Bio: string = '"I am a versatile professional with a passion for technology.boundaries of what is possible in the world of technology and design."';
   const ButtonText:String = "Lets Get in Touch"
   const Projects: { Title: string; Description: string; ImageLink: string }[] = [
-    { Title: 'Data Science', Description: 'Farm ai an ai tool.', ImageLink: 'https://picsum.photos/300/200?random=ai' },
-    { Title: 'UI/UX', Description: 'A very nice user interface', ImageLink: "https://picsum.photos/300/200?random=ui" },
-    { Title: 'Web Development', Description: 'my own website.', ImageLink: "https://picsum.photos/300/200?random=website" },
-    { Title: 'Software Engineering', Description: 'An engineering project.', ImageLink: "https://picsum.photos/300/200?random=home" },
+    { Title: 'Data Science', Description: 'Farm ai an ai tool.', ImageLink: 'https://picsum.photos/300/200?random=computer' },
+    { Title: 'UI/UX', Description: 'A very nice user interface', ImageLink: "https://picsum.photos/300/200?random=statistics" },
+    { Title: 'Web Development', Description: 'my own website.', ImageLink: "https://picsum.photos/300/200?random=technology" },
+    { Title: 'Software Engineering', Description: 'An engineering project.', ImageLink: "https://picsum.photos/300/200?random=mathematics" },
   ];
 
   return( 
-     <div>
-        <div className="welcome d-flex align-items-center justify-content-center">
+     <>
+     <section className="welcome d-flex align-items-center justify-content-center">
             <div className="container">
                <div className="row">
                   <div className="col-md-6 p-3">
@@ -26,17 +26,17 @@ function Home() {
                   </div>
                </div>
             </div>
-        </div>
-        <div className="container row p-2 align-items-center justify-content-space-between">
+        </section>
+        <section className="row container-fluid">
             {Projects.map((project, index) => (
-                  <div key={index} className="card m-2 col">
+                  <div key={index} className="col mt-3 mb-3 proj">
                         <img src={project.ImageLink} alt={project.Title} />
-                        <h2>{project.Title}</h2>
+                        <h4>{project.Title}</h4>
                         <span>{project.Description}</span>
                   </div>
           ))}
-        </div>
-    </div>
+        </section>
+    </>
   );
 }
 
