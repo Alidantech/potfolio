@@ -27,14 +27,9 @@ function Home() {
                </div>
             </div>
         </div>
-        <div className="text-center text-success p-5">
-            <h2 className="mb-5 text-dark">PETER IRUNGU</h2>
-            <h3 className="mb-5">Software Developer</h3>
-            <h3>Data Scientist</h3>
-        </div>
-        <div className="container row p-2">
+        <div className="container row p-2 align-items-center justify-content-space-between">
             {Projects.map((project, index) => (
-                  <div key={index} className="card m-2 col-md-6">
+                  <div key={index} className="card m-2 col">
                         <img src={project.ImageLink} alt={project.Title} />
                         <h2>{project.Title}</h2>
                         <span>{project.Description}</span>
