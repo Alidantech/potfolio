@@ -25,27 +25,3 @@ a {
       text-decoration: underline;
       color: yellow;
 }
-
-.welcome {
-      background:url("https://images.pexels.com/photos/7293095/pexels-photo-7293095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-      background-size: cover;
-      /* Cover the entire div, maintaining aspect ratio */
-      background-position: center;
-      /* Center the background image */
-      background-repeat: no-repeat;
-      /* Do not repeat the background image */
-      padding: 20vh 0 35vh 0;
-      overflow: hidden;
-}
-
-.bio {
-      font-size: 1.1em;
-      color: white;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.proj {
-      border: 1px solid brown;
-      width: fit-content;
-      margin-right: 4px;
-}

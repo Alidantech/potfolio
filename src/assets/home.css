@@ -1,0 +1,61 @@
+.welcome {
+      background: url("https://images.pexels.com/photos/7293095/pexels-photo-7293095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-size: cover;
+      /* Cover the entire div, maintaining aspect ratio */
+      background-position: center;
+      /* Center the background image */
+      background-repeat: no-repeat;
+      /* Do not repeat the background image */
+      padding: 20vh 0 35vh 0;
+      overflow: hidden;
+}
+
+.bio {
+      font-size: 1.1em;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-box {
+      display: grid;
+      align-items: center;
+      justify-content: space-around;
+      padding: 2em;
+      flex-direction: row;
+      overflow: hidden;
+      grid-template-columns:25% 25% 25% 25%;
+}
+@media screen and (max-width: 1200px) {
+      .card-box {
+            
+            grid-template-columns: 33.3% 33.33% 33.33%;
+      }
+}
+@media screen and (max-width: 990px) {
+      .card-box {
+            grid-template-columns: 50% 50%;
+      }
+}
+@media screen and (max-width: 600px) {
+      .card-box {
+            grid-template-columns: 100%;
+      }
+}
+
+.custom-card {
+      border: 1px solid rgb(221, 221, 221);
+      box-shadow: 1px 2px 2px rgba(187, 187, 187, 0.315);
+      border-radius: 0 10px 10px 0;
+      overflow: hidden;
+      border-left: 4px solid rgba(12, 104, 40, 0.322);
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      width: fit-content;
+      padding: 0;
+      margin-right: 4px;
+      max-width: 300px;
+      margin: auto;
+}
+
+
+/* Career section */
