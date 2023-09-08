@@ -55,7 +55,7 @@ function App() {
     <>
       {/* The navigation bar containing links */}
       <header className={` ${isScrolled ? 'scrolled' : ''}`}>
-        <nav className="navbar container p-3 text-light">
+        <nav className="navbar container p-3 text-primary">
           {links.map((link, index) => (
             <a key={index} href={link.url} className='nav-link'>
               <i className={`m-2 bi bi-${link.icon.toLowerCase()}`}></i>
