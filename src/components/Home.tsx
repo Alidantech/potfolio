@@ -1,12 +1,12 @@
 import '../assets/home.css';
 
 function Home() {
-      const steps = [
-            { description: 'Step 1: Start' },
-            { description: 'Step 2: Progressing' },
-            { description: 'Step 3: Almost there' },
-            { description: 'Step 4: Completed' },
-      ];
+      // const steps = [
+      //       { description: 'Step 1: Start' },
+      //       { description: 'Step 2: Progressing' },
+      //       { description: 'Step 3: Almost there' },
+      //       { description: 'Step 4: Completed' },
+      // ];
 
 
   //text strings to fill the potfolio home page  
