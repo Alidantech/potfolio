@@ -4,13 +4,10 @@ Welcome to my portfolio website! This is a showcase of my work, including projec
 
 ## Technologies Used 🚀
 
-- React: ⚛️ JavaScript library for building user interfaces
-- Sass: 💅 CSS extension language that adds power and elegance to the basic CSS
-- JavaScript: 🖥️ Programming language used to add interactivity and functionality to web pages
+- React-ts: ⚛️ JavaScript library for building user interfaces
+- TypeScript: 🖥️ Programming language used to add interactivity and functionality to web pages
 - HTML: 🌐 Standard markup language for creating web pages
 - Bootstrap: 🎨 Popular CSS framework that provides pre-designed components and responsive layouts
-- jQuery: 🕹️ Fast and concise JavaScript library for simplifying HTML document traversal, event handling, and more
-
 ## Features ✨
 
 - Projects: 📂 Explore the various projects I have worked on. Each project includes a description, technologies used, and a link to view the project.
@@ -30,7 +27,7 @@ Welcome to my portfolio website! This is a showcase of my work, including projec
    
 3. Start the development server:
    ```bash
-      npm start
+      npm run dev
    ```
    The website will be running at http://localhost:3000. 🚀
 
