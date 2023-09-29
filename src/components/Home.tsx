@@ -7,8 +7,6 @@ function Home() {
       //       { description: 'Step 3: Almost there' },
       //       { description: 'Step 4: Completed' },
       // ];
-
-
   //text strings to fill the potfolio home page  
 
   //section 1  
