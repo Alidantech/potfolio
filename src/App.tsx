@@ -71,7 +71,7 @@ function App() {
       </main>
 
       {/* The footer */}
-      <footer className="bg-dark text-light py-4">
+      <footer className="py-4">
         <div className="container">
           <nav className="row">
             <div className="col-6 col-sm-3 mt-2">
