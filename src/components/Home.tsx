@@ -1,13 +1,6 @@
 import '../assets/home.css';
 
 function Home() {
-      // const steps = [
-      //       { description: 'Step 1: Start' },
-      //       { description: 'Step 2: Progressing' },
-      //       { description: 'Step 3: Almost there' },
-      //       { description: 'Step 4: Completed' },
-      // ];
-  //text strings to fill the potfolio home page  
 
   //section 1  
   const WelcomeHeading: string = "Welcome to My potfolio, Feel free to EXPLORE!";
