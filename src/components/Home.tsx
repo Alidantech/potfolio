@@ -1,15 +1,6 @@
 import '../assets/home.css';
 
 function Home() {
-      // const steps = [
-      //       { description: 'Step 1: Start' },
-      //       { description: 'Step 2: Progressing' },
-      //       { description: 'Step 3: Almost there' },
-      //       { description: 'Step 4: Completed' },
-      // ];
-
-
-  //text strings to fill the potfolio home page  
 
   //section 1  
   const WelcomeHeading: string = "Welcome to My potfolio, Feel free to EXPLORE!";
@@ -76,14 +67,8 @@ function Home() {
             </div>
         </section>
           
-        <section className='text-center bg-dark text-light p-5'>
-                  <h2>{officialName}</h2>
-                  {
-                        careers.map((career, index) => (
-                              <p key={index} className=''>
-                                    {career.Title}
-                              </p>
-                   ))}
+        <section className='text-center p-5'>
+                  
         </section>
         <section className="card-box  container-fluid">
             {Projects.map((project, index) => (
@@ -95,26 +80,7 @@ function Home() {
           ))}
         </section>
         <section>
-                  <hr />
-                  
-                  <div className='container animation p-5'>
-                        <div className='step step-left'>
-                              <div id='step1'>Step 1</div>
-                              <div id='step3'>Step 3</div>
-                        </div>
-                        <div className='justify-content-center d-flex align-items-center'>
-                               <div className='line d-flex align-items-center'>
-                                    <div></div> 
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                              </div>
-                        </div>
-                        <div className='step step-right'>
-                              <div id='step2'>Step 2</div>
-                              <div id='step4'>Step 4</div>
-                        </div>
-                  </div>
+                 
         </section>
         <section>
       <div className="wrapper">

@@ -15,3 +15,9 @@ body {
     margin: 0;
     padding: 0;
 }
+
+section {
+  min-height: 90vh;
+  border: 1px solid magenta;
+  margin: 2px;
+}
