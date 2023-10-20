@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, 'poppins', sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -17,7 +19,15 @@ body {
 }
 
 section {
-  min-height: 90vh;
-  border: 1px solid magenta;
+  min-height: 80vh;
   margin: 2px;
+}
+
+button {
+  background-color: none;
+  border: none;
+}
+
+a:hover {
+  color: blue;
 }

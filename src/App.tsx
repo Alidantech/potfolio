@@ -6,11 +6,11 @@ import Home from './components/Home';
 
 function App() {
   const links: { label: string; url: string; icon: string }[] = [
-    { label: 'Music', url: 'https://google.com', icon: 'music-note' },
-    { label: 'Home', url: 'https://example.com', icon: 'house-door' },
-    { label: 'Alidante', url: 'https://github.com', icon: 'person' },
-    { label: 'Twitter', url: 'https://github.com', icon: 'twitter' },
-    { label: 'Light', url: 'https://github.com', icon: 'moon' },
+    { label: 'HOME', url: '', icon: 'music-note' },
+    { label: 'PROJECTS', url: '', icon: 'house-door' },
+    { label: 'NEWS', url: '', icon: 'person' },
+    { label: 'SKILLS', url: '', icon: 'twitter' },
+    { label: 'ABOUT', url: '', icon: 'moon' },
   ];
   const contactLinks = [
     { label: 'Email', url: 'Send Email', icon: 'envelope-fill' },
@@ -55,14 +55,20 @@ function App() {
     <>
       {/* The navigation bar containing links */}
       <header className={` ${isScrolled ? 'scrolled' : ''}`}>
-        <nav className="navbar container p-3 text-primary">
+        <div className="logo">
+           <img src="/src/assets/1598876904162478198015-128.png" alt="logo"/>
+        </div>
+        <nav className="">
           {links.map((link, index) => (
             <a key={index} href={link.url} className='nav-link'>
-              <i className={`m-2 bi bi-${link.icon.toLowerCase()}`}></i>
+              <i className={`m- bi bi-${link.icon.toLowerCase()}`}></i>
               <span className="d-none d-sm-inline">{link.label}</span>
             </a>
           ))}
         </nav>
+        <div className="hire-btn">
+          <button className='btn-hire'>Hire Me</button>
+        </div>
       </header>
 
       {/* The main content */}

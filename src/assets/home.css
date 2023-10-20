@@ -1,4 +1,113 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
+.section-1 {
+      display: grid;
+      grid-template-rows: 70% 30%;
+}
+
+.desc {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+}
+
+.text-desc {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: column;
+}
+
+/* email button */
+.btn-email {
+      background-color: transparent;
+      border: 2px solid rgb(6, 64, 129);
+      color: rgb(6, 64, 129);
+      padding: 0.7vw 2vw;
+      border-radius: 0 10px;
+}
+
+
+
+
+.img-desc {
+      width: 30%;
+      height: 100%;
+      overflow: hidden;
+}
+
+.img-desc img {
+      width: 100%;
+      height: auto;
+}
+
+.link-desc {
+      width: 15%;
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+      flex-direction: column;
+}
+
+.tech a {
+      text-decoration: none;
+}
+
+.tech {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ::selection {
       background: rgba(23, 162, 184, 0.3);
 }

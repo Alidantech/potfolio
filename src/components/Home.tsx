@@ -51,20 +51,31 @@ function Home() {
 
   return( 
      <>
-     <section className="welcome d-flex align-items-center justify-content-center">
-            <div className="container">
-               <div className="row">
-                  <div className="col-md-6 p-3">
-                        <h1 className="text-success">{WelcomeHeading}</h1>
-                        <p className="mt-5 mb-5 bio">{Bio}</p>
-                  </div>
-                  <div className="col-md-6 d-flex align-items-center justify-content-center">
-                        <button className="btn btn-success p-3">
-                              {ButtonText}
-                        </button>
-                  </div>
-               </div>
+        <section className='section-1'>
+          <div className='desc'>
+            <div className='text-desc'>
+                <h1>I am a passionate developer with various skills</h1>
+                <p>You can view my potfolio and see my various skill.</p>
+                <button className='btn-email'>Email Me</button>
             </div>
+            <div className='img-desc'>
+                  <img src="src/assets/sec1-pic.png" alt="bacground image" />
+            </div>
+            <div className='link-desc'>
+                <a href="">PROJECTS</a>
+                <p>What drives me</p>
+                <h2>Passion<br />Persistence</h2>
+                <a href="">Explore</a>
+            </div>
+          </div>
+          <div className=' tech'>
+               <a href="">Django</a>
+               <a href="">Machine Learning</a>
+               <a href="">Java</a>
+               <a href="">Typescript</a>
+               <a href="">React</a>
+               <a href="">Python</a>
+          </div>
         </section>
           
         <section className='text-center p-5'>
