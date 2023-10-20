@@ -2,18 +2,7 @@ import '../assets/home.css';
 
 function Home() {
 
-  //section 1  
-  const WelcomeHeading: string = "Welcome to My potfolio, Feel free to EXPLORE!";
-  const Bio: string = '"I am a versatile professional with a passion for technology.boundaries of what is possible in the world of technology and design."';
-  const ButtonText:String = "Lets Get in Touch"
-
-  //section 2
-  const officialName: String = "PETER IRUNGU"
-  const careers:{Title: String} [] = [
-      {Title:"Software Engineer"},
-      {Title:"Web Developer"},
-      {Title:"Data Science"},
-  ] 
+  
 
   //section 3
   const Projects: { Title: string; Description: string; ImageLink: string }[] = [
