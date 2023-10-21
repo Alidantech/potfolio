@@ -51,6 +51,12 @@ function App() {
     };
   }, []);
 
+  const [showLinks, setShowLinks] = useState(false);
+
+  const toggleLinks = () => {
+    setShowLinks(!showLinks);
+  };
+
   return (
     <>
       {/* The navigation bar containing links */}
@@ -58,13 +64,14 @@ function App() {
         <div className="logo">
            <img src="1598876904162478198015-128.png" alt="logo"/>
         </div>
-        <nav className="">
+        <nav className={`nav-links ${showLinks ? 'show' : ''}`}>
           {links.map((link, index) => (
             <a key={index} href={link.url} className=''>
-              <span className="d-none d-sm-inline">{link.label}</span>
+              <span className="">{link.label}</span>
             </a>
           ))}
         </nav>
+        <button className='DropDown' onClick={toggleLinks}>Current <i className="bi bi-caret-down"></i></button>
         <div className="hire-btn">
           <button className='btn-hire'>Hire Me</button>
         </div>

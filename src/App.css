@@ -3,7 +3,6 @@ header {
      align-items: center;
      justify-content: space-around;
      height: 15vh;
-     overflow: hidden;
      width: 100%;
      margin: 0;
      transition: height 1s ease-in-out, position 0.2s ease-in-out;
@@ -39,6 +38,58 @@ header nav a:hover {
       text-decoration: none;
 }
 
+/* Drop Down menu button */
+.DropDown {
+      display: none;
+      color: rgb(23, 224, 198);
+      padding: 0.7vw 1.5vw;
+      background-color: transparent;
+}
+
+@media screen and (max-width: 908px) {
+      .nav-links {
+            top: 11vh;
+            width: 100%;
+            overflow: hidden;
+            z-index: 10;
+            position: fixed;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgba(15, 136, 184, 0.897);
+            color: white !important;
+            backdrop-filter: blur(20px);
+            transition: height 0.3s ease-in-out, visibility 0.3s ease-in-out;
+            height: 0;
+            animation: animate-links 1s;
+      }
+            header nav a {
+                  color: rgb(255, 255, 255);
+                  text-decoration: none;
+            }
+      
+      .scrolled .nav-links {
+            top: 100%;
+      }
+
+      .show {
+            visibility:visible;
+            display: flex;
+            height: 4vh;
+      }
+
+      .DropDown {
+            display: block;
+      }
+}
+
+@keyframes animate-links {
+      0% {
+            height: 0;
+      }
+      100% {
+            height: 4vh;
+      }
+}
 
 /* the hire button */
 .btn-hire {

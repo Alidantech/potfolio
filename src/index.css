@@ -25,10 +25,6 @@ body {
     color: rgb(43, 43, 43);
 }
 
-section {
-  min-height: 80vh;
-}
-
 button {
   background-color: none;
   border: none;

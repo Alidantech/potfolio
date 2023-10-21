@@ -43,9 +43,10 @@ function Home() {
         <section className='section-1'>
           <div className='desc'>
             <div className='text-desc'>
-                <h1>I am a passionate developer with various skills</h1>
-                <p>You can view my potfolio and see my various skill.</p>
-                <button className='btn-email'>Email Me</button>
+              <h1>Welcome to My Portfolio</h1>
+              <p>Discover the work of an experienced developer with a diverse skill set
+              Explore the projects I've created across various domains and technologies, showcasing a commitment to excellence and a passion.</p>
+              <button className='btn-email'>Contact Me</button>
             </div>
             <div className='img-desc'>
                   <img src="sec1-pic.png" alt="bacground image" />
