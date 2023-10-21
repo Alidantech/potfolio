@@ -48,7 +48,7 @@ function Home() {
                 <button className='btn-email'>Email Me</button>
             </div>
             <div className='img-desc'>
-                  <img src="src/assets/sec1-pic.png" alt="bacground image" />
+                  <img src="sec1-pic.png" alt="bacground image" />
             </div>
             <div className='link-desc'>
                 <a href="">PROJECTS</a>

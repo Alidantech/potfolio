@@ -56,7 +56,7 @@ function App() {
       {/* The navigation bar containing links */}
       <header className={` ${isScrolled ? 'scrolled' : ''}`}>
         <div className="logo">
-           <img src="/src/assets/1598876904162478198015-128.png" alt="logo"/>
+           <img src="1598876904162478198015-128.png" alt="logo"/>
         </div>
         <nav className="">
           {links.map((link, index) => (
