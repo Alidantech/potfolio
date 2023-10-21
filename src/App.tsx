@@ -60,8 +60,7 @@ function App() {
         </div>
         <nav className="">
           {links.map((link, index) => (
-            <a key={index} href={link.url} className='nav-link'>
-              <i className={`m- bi bi-${link.icon.toLowerCase()}`}></i>
+            <a key={index} href={link.url} className=''>
               <span className="d-none d-sm-inline">{link.label}</span>
             </a>
           ))}

@@ -6,11 +6,15 @@ header {
      overflow: hidden;
      width: 100%;
      margin: 0;
-     font-size: small;
+     transition: height 1s ease-in-out, position 0.2s ease-in-out;
 }
 
 .scrolled{
+      position: fixed;
+      height: 7.5vh;
       background-color: rgba(255, 255, 255, 0.596);
+      box-shadow: 1px 4px  rgba(0, 0, 0, 0.021);
+      backdrop-filter: blur(20px);
 }
 
 header .logo img {
@@ -26,9 +30,15 @@ header > nav {
       justify-content: space-around;
 }
 
+header nav a {
+      color: black;
+      text-decoration: none;
+}
 header nav a:hover {
       color: blue;
+      text-decoration: none;
 }
+
 
 /* the hire button */
 .btn-hire {

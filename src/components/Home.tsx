@@ -53,18 +53,19 @@ function Home() {
             <div className='link-desc'>
                 <a href="">PROJECTS</a>
                 <p>What drives me</p>
-                <h2>Passion<br />Persistence</h2>
+                <b>Passion<br />Persistence</b>
                 <a href="">Explore</a>
             </div>
           </div>
-          <div className=' tech'>
-               <a href="">Django</a>
-               <a href="">Machine Learning</a>
-               <a href="">Java</a>
-               <a href="">Typescript</a>
-               <a href="">React</a>
-               <a href="">Python</a>
+          <div className='tech'>
+              <a href="#"><i className="bi bi-code-slash"></i></a>
+              <a href="#"><i className="bi bi-bar-chart-line"></i></a>
+              <a href="#"><i className="bi bi-cup-straw"></i></a>
+              <a href="#"><i className="bi bi-code"></i></a>
+              <a href="#"><i className="bi bi-react">R</i></a>
+              <a href="#"><i className="bi bi-python">dj</i></a>
           </div>
+
         </section>
           
         <section className='text-center p-5'>
