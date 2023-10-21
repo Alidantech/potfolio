@@ -71,7 +71,7 @@ function App() {
             </a>
           ))}
         </nav>
-        <button className='DropDown' onClick={toggleLinks}>Current <i className="bi bi-caret-down"></i></button>
+        <button className='DropDown' onClick={toggleLinks}>HOME <i className="bi bi-caret-down"></i></button>
         <div className="hire-btn">
           <button className='btn-hire'>Hire Me</button>
         </div>
@@ -87,7 +87,7 @@ function App() {
         <div className="container">
           <nav className="row">
             <div className="col-6 col-sm-3 mt-2">
-              <h5>Direct Contact Links</h5>
+              <h5>Direct Contact</h5>
                 {contactLinks.map((link, index) => (
                   <a key={index} href={link.url} className='nav-link  text-success'>
                     <i className={`m-2 bi bi-${link.icon.toLowerCase()}`}></i>
@@ -114,7 +114,7 @@ function App() {
                 ))}
             </div>
             <div className="col-6 col-sm-3 mt-2">
-              <h5>Website Links</h5>
+              <h5>Website Pages</h5>
                 {links.map((link, index) => (
                   <a key={index} href={link.url} className='nav-link text-success'>
                     <i className={`m-2 bi bi-${link.icon.toLowerCase()}`}></i>
@@ -127,7 +127,7 @@ function App() {
         <hr className='m-2 text-primary' />
           <div className='text-center pt-3 pb-1'>
               <b className='mb-3'>&copy; {new Date().getFullYear()}</b>
-              <p> Alidante_254 LTD</p>
+              <p>Alidante254</p>
           </div>
       </footer>
     </>

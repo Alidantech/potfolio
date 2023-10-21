@@ -43,28 +43,42 @@ function Home() {
         <section className='section-1'>
           <div className='desc'>
             <div className='text-desc'>
-              <h1>Welcome to My Portfolio</h1>
-              <p>Discover the work of an experienced developer with a diverse skill set
-              Explore the projects I've created across various domains and technologies, showcasing a commitment to excellence and a passion.</p>
+              <div>
+                <h1>A Software Developer and a Data Scientist.</h1>
+                <p>Discover the work of an experienced developer with a diverse skill set
+                Explore the projects I've created across various domains and technologies, showcasing a commitment to excellence and a passion.</p>
+              </div>
               <button className='btn-email'>Contact Me</button>
             </div>
             <div className='img-desc'>
                   <img src="sec1-pic.png" alt="bacground image" />
             </div>
             <div className='link-desc'>
-                <a href="">PROJECTS</a>
-                <p>What drives me</p>
+                <a className='proj-link' href="">PROJECTS</a>
+                <p>Driven BY</p>
                 <b>Passion<br />Persistence</b>
-                <a href="">Explore</a>
+                <a className='exp-link' href="">Explore</a>
             </div>
           </div>
           <div className='tech'>
-              <a href="#"><i className="bi bi-code-slash"></i></a>
-              <a href="#"><i className="bi bi-bar-chart-line"></i></a>
-              <a href="#"><i className="bi bi-cup-straw"></i></a>
-              <a href="#"><i className="bi bi-code"></i></a>
-              <a href="#"><i className="bi bi-react">R</i></a>
-              <a href="#"><i className="bi bi-python">dj</i></a>
+              <a href="#">
+                <iframe src="https://lottie.host/?file=c3773401-bd0e-463c-b40c-10fca3d8bb26/keuFXPbmXu.json" width="100px">
+                </iframe>
+              </a>
+              <a href="#">
+                <iframe src="https://lottie.host/?file=006a1cc3-969a-4544-8942-0c71aa4a2793/3Jz48sWM5y.json" width="100px"></iframe>
+              </a>
+              <a href="#">
+                <iframe src="https://lottie.host/?file=5a1c7285-51c2-40a2-930d-493865e3954f/pnQ5sY6aKu.json" width="100px"></iframe>
+              </a>
+              <a href="#">
+                <iframe src="https://lottie.host/?file=bb71dcd2-8f95-4ef8-b997-070589bc96e1/XMW1Ur76sG.json" width="100px"></iframe>
+              </a>
+              <a href="#">
+                <iframe src="https://lottie.host/?file=b6d96d37-2763-4c49-b079-fe7d63e56e93/Wzfyp4LCXq.json"
+                 width="100px"></iframe>
+              </a>
+      
           </div>
 
         </section>
