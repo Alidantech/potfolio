@@ -1,0 +1,72 @@
+[
+      {
+            "label": "Email",
+            "url": "Send Email",
+            "icon": "envelope-fill"
+      },
+      {
+            "label": "Phone",
+            "url": "+254748311679",
+            "icon": "phone-fill"
+      },
+      {
+            "label": "WhatsApp",
+            "url": "+254746977253",
+            "icon": "whatsapp"
+      },
+      {
+            "label": "Telegram",
+            "url": "+254746977253",
+            "icon": "telegram"
+      },
+      {
+            "label": "Twitter",
+            "url": "twitter.com",
+            "icon": "twitter"
+      },
+      {
+            "label": "Facebook",
+            "url": "facebook.com",
+            "icon": "facebook"
+      },
+      {
+            "label": "Instagram",
+            "url": "instagram.com",
+            "icon": "instagram"
+      },
+      {
+            "label": "TikTok",
+            "url": "tiktok.com",
+            "icon": "tiktok"
+      },
+      {
+            "label": "YouTube",
+            "url": "youtube.com",
+            "icon": "youtube"
+      },
+      {
+            "label": "LinkedIn",
+            "url": "linkedin.com",
+            "icon": "linkedin"
+      },
+      {
+            "label": "Upwork",
+            "url": "upwork.com",
+            "icon": "bag-check"
+      },
+      {
+            "label": "Freelancer",
+            "url": "freelancer.com",
+            "icon": "briefcase-fill"
+      },
+      {
+            "label": "GitHub",
+            "url": "github.com",
+            "icon": "github"
+      },
+      {
+            "label": "Kaggle",
+            "url": "kaggle.com",
+            "icon": "file-code"
+      }
+]
