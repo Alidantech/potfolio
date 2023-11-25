@@ -1,9 +1,7 @@
+import { FootBar } from "./styled/widgets/Widgets";
+
 const Footer = () => {
-  return (
-    <footer>
-      
-    </footer>
-  );
+  return <FootBar></FootBar>;
 };
 
 export default Footer;

@@ -1,17 +1,22 @@
 import { useState, useEffect } from "react";
 import { HeaderLink } from "./styled/links/links";
-import { LinkIcon } from "./styled/icons/icons";
-import { NavBar } from "./styled/widgets/Widgets";
-
+import { ButtonIcon } from "./styled/icons/icons";
+import { NavBar, Logo, AppBar } from "./styled/widgets/Widgets";
+import { LogoImage } from "./styled/images/images";
+import { IconButton, TextButton } from "./styled/buttons/buttons";
 
 interface Link {
   label: string;
   url: string;
-  icon: string;
 }
 
-const Header = () => {
-  
+interface HeaderProps {
+  currentPage: string;
+}
+
+
+const Header: React.FC<HeaderProps> = ({ currentPage }) => {
+  //FETCH JSON DATA FROM A JSON FILE
   const [links, setLinks] = useState<Link[]>([]);
 
   useEffect(() => {
@@ -27,6 +32,8 @@ const Header = () => {
 
     fetchData();
   }, []);
+
+  // Change the header props when use scrolls
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +50,7 @@ const Header = () => {
     };
   }, []);
 
+  // Toggle navbar for smaller screens
   const [showLinks, setShowLinks] = useState(false);
 
   const toggleLinks = () => {
@@ -50,25 +58,23 @@ const Header = () => {
   };
 
   return (
-    <header className={` ${isScrolled ? "scrolled" : ""}`}>
-      <div className="logo">
-        <img src="assets/favicon.png" alt="logo" />
-      </div>
-      <NavBar className={`nav-links ${showLinks ? "show" : ""}`}>
+    <AppBar $isScrolled={isScrolled}>
+      <Logo>
+        <LogoImage src="assets/favicon.png" alt="logo" />
+      </Logo>
+      <NavBar $showLinks={showLinks}>
         {links.map((link) => (
-          <HeaderLink key={link.label} href={link.url} className="">
-            <LinkIcon className={`fa fa-${link.icon}`} />
+          <HeaderLink key={link.label} href={link.url}>
             {link.label}
           </HeaderLink>
         ))}
       </NavBar>
-      <button className="DropDown" onClick={toggleLinks}>
-        HOME <i className="bi bi-caret-down"></i>
-      </button>
-      <div className="hire-btn">
-        <button className="btn-hire">Hire Me</button>
-      </div>
-    </header>
+      <IconButton onClick={toggleLinks}>
+        {currentPage}
+        <ButtonIcon className="fas fa-caret-down" />
+      </IconButton>
+      <TextButton>Hire Me</TextButton>
+    </AppBar>
   );
 };
 
