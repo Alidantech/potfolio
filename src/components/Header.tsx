@@ -1,4 +1,8 @@
 import { useState, useEffect } from "react";
+import { HeaderLink } from "./styled/links/links";
+import { LinkIcon } from "./styled/icons/icons";
+import { NavBar } from "./styled/widgets/Widgets";
+
 
 interface Link {
   label: string;
@@ -50,14 +54,14 @@ const Header = () => {
       <div className="logo">
         <img src="assets/favicon.png" alt="logo" />
       </div>
-      <nav className={`nav-links ${showLinks ? "show" : ""}`}>
+      <NavBar className={`nav-links ${showLinks ? "show" : ""}`}>
         {links.map((link) => (
-          <a key={link.label} href={link.url} className="">
-            <span className={`fa fa-${link.icon}`}></span>
-            <span className="">{link.label}</span>
-          </a>
+          <HeaderLink key={link.label} href={link.url} className="">
+            <LinkIcon className={`fa fa-${link.icon}`} />
+            {link.label}
+          </HeaderLink>
         ))}
-      </nav>
+      </NavBar>
       <button className="DropDown" onClick={toggleLinks}>
         HOME <i className="bi bi-caret-down"></i>
       </button>
