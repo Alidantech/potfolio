@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("src/data/links.json");
+        const response = await fetch("data/links.json");
         const data = await response.json();
         setLinks(data["Pages-Links"]);
       } catch (error) {
