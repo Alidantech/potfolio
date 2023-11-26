@@ -3,7 +3,7 @@ import { HeaderLink } from "./styled/links/links";
 import { ButtonIcon } from "./styled/icons/icons";
 import { NavBar, Logo, AppBar } from "./styled/widgets/Widgets";
 import { LogoImage } from "./styled/images/images";
-import { TextButton, DropDownButton } from "./styled/buttons/buttons";
+import { PrimaryButton, DropDownButton } from "./styled/buttons/buttons";
 
 interface Link {
   label: string;
@@ -13,7 +13,6 @@ interface Link {
 interface HeaderProps {
   currentPage: string;
 }
-
 
 const Header: React.FC<HeaderProps> = ({ currentPage }) => {
   //FETCH JSON DATA FROM A JSON FILE
@@ -59,9 +58,12 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
 
   return (
     <AppBar $isScrolled={isScrolled}>
-      <Logo>
-        <LogoImage src="assets/favicon.png" alt="logo" />
-      </Logo>
+      <a href="/">
+        <Logo>
+          <LogoImage src="assets/favicon.png" alt="logo" />
+          lidante
+        </Logo>
+      </a>
       <NavBar $showLinks={showLinks}>
         {links.map((link) => (
           <HeaderLink key={link.label} href={link.url}>
@@ -73,7 +75,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
         {currentPage}
         <ButtonIcon className="fas fa-caret-down" />
       </DropDownButton>
-      <TextButton>Hire Me</TextButton>
+      <PrimaryButton>Hire Me</PrimaryButton>
     </AppBar>
   );
 };

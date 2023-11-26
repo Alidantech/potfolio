@@ -13,5 +13,4 @@ export const TextButton = styled(Button)`
   border-radius: 10px;
   box-shadow: 1px 1px 2px 2px #00000047;
   padding: 10px;
-  color: blue;
 `;

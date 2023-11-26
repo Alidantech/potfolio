@@ -25,7 +25,7 @@ const withCurrentPage = (
 const HomeWithCurrentPage = withCurrentPage(Home, "HOME");
 const ProjectsWithCurrentPage = withCurrentPage(Projects, "PROJECTS");
 const ContactWithCurrentPage = withCurrentPage(Contact, "CONTACT");
-const MusicWithCurrentPage = withCurrentPage(Music, "CONTACTS");
+const MusicWithCurrentPage = withCurrentPage(Music, " MUSIC");
 const AboutWithCurrentPage = withCurrentPage(About, "ABOUT");
 
 const Page: React.FC<PageProps> = ({ setCurrentPage }) => {

@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const FootBar = styled.footer`
-    min-height: 70dvh;
-    background-color: black;
+    height: 60dvh;
+    background-color: #494949;
+    position: relative;
 `;
