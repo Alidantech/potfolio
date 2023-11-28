@@ -21,18 +21,6 @@ const Footer = () => {
           <FooterLink>My Link</FooterLink>
           <FooterLink>My Link</FooterLink>
         </FooterNav>
-        <FooterNav>
-          <FooterNavHeading>My Links are here</FooterNavHeading>
-          <FooterLink>My Link</FooterLink>
-          <FooterLink>My Link</FooterLink>
-          <FooterLink>My Link</FooterLink>
-        </FooterNav>
-        <FooterNav>
-          <FooterNavHeading>My Links are here</FooterNavHeading>
-          <FooterLink>My Link</FooterLink>
-          <FooterLink>My Link</FooterLink>
-          <FooterLink>My Link</FooterLink>
-        </FooterNav>
       </FlexColumns>
     </FootBar>
   );
