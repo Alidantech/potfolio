@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 export const AppBar = styled.header<{ $isScrolled?: Boolean }>`
   position: ${(props) => (props.$isScrolled ? "fixed" : "initial")};
   width: 100%;
+  z-index: 100;
   height: 10vh;
   display: flex;
   align-items: center;
