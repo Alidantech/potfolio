@@ -33,7 +33,6 @@ const Footer = () => {
       <FlexColumns>
         <FooterNav>
           <FooterNavHeading>About Alidante</FooterNavHeading>
-
           <PrimaryButton>Learn More</PrimaryButton>
         </FooterNav>
         <FooterNav>
@@ -58,7 +57,7 @@ const Footer = () => {
       </FlexColumns>
       <Divider />
       <Credits>
-        <CopyRights>&copy; Alidante</CopyRights>
+        <CopyRights>&copy; 2023 &nbsp; Alidante</CopyRights>
         <FlexColumns>
           <IconLink href="/">IG</IconLink>
           <IconLink href="/">FB</IconLink>
