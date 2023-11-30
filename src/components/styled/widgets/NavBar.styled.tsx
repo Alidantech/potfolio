@@ -5,15 +5,20 @@ export const NavBar = styled.nav<{ $showLinks?: Boolean }>`
   align-items: center;
   justify-content: space-evenly;
   width: 60%;
-
+  transition: visibility .5s, height .5s;
   @media (max-width: 768px) {
     visibility: ${(props) => (props.$showLinks ? "visible" : "hidden")};
+    /* transform: ${(props) =>
+      props.$showLinks ? "translateY(0)" : "translateY(-100%)"}; */
+    order: 0;
     position: absolute;
     color: white;
     width: 100vw;
     top: 100%;
     left: 0;
-    height: 100%;
+    overflow: hidden;
+    height: ${(props) =>
+      props.$showLinks ? "100%" : "0"};
     background-color: #000000;
   }
 `;

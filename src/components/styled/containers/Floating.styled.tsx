@@ -3,11 +3,12 @@ import { styled } from "styled-components";
 export const Floating = styled.div`
   position: inherit;
   backdrop-filter: blur(105px);
-  background-color: #000000b5;
+  background-color: #000000e8;
   box-shadow: 1px 1px 3px 3px #0090b426;
   top: -10vh;
   z-index: 0;
   height: 20vh;
+  min-height: 120px;
   clear: both;
   width: 90%;
   margin: 0 5%;

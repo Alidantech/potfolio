@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LinkIcon = styled.span`
-  margin: 0 10px;
+  margin-right:10px;
   position: relative;
   display: inline-block;
   background: linear-gradient(to left, #bafffc, #ceffce, #ffc8fc);

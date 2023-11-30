@@ -1,5 +1,5 @@
 import  { useState, useEffect } from "react";
-import { Header, Page, Footer } from "./components/Components";
+import { Header, Page, Footer, ScrollProgress } from "./components/Components";
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState<string>("");
@@ -16,6 +16,7 @@ const App = () => {
 
   return (
     <>
+      <ScrollProgress />
       <Header currentPage={currentPage} />
       <Page setCurrentPage={handleSetCurrentPage} />
       <Footer />
@@ -24,3 +25,4 @@ const App = () => {
 };
 
 export default App;
+

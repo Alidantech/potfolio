@@ -6,6 +6,7 @@ export const AppBar = styled.header<{ $isScrolled?: Boolean }>`
   width: 100%;
   z-index: 100;
   height: ${(props) => (props.$isScrolled ? "6.5vh" : "10vh")};
+  min-height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
