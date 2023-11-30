@@ -10,11 +10,10 @@ export const NavBar = styled.nav<{ $showLinks?: Boolean }>`
     visibility: ${(props) => (props.$showLinks ? "visible" : "hidden")};
     position: absolute;
     color: white;
-    width: 99vw;
-    margin: 0.5vw;
+    width: 100vw;
     top: 100%;
     left: 0;
     height: 100%;
-    background-color: #00ffff;
+    background-color: #000000;
   }
 `;

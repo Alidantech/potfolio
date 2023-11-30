@@ -1,27 +1,27 @@
 {
       "Pages-Links": [
             {
-                  "label": "HOME",
+                  "label": "Home",
                   "url": "/",
                   "icon": "house"
             },
             {
-                  "label": "PROJECTS",
+                  "label": "Projects",
                   "url": "/projects",
                   "icon": "book"
             },
             {
-                  "label": "MUSIC",
+                  "label": "Music",
                   "url": "/music",
                   "icon": "music-note"
             },
             {
-                  "label": "CONTACT",
+                  "label": "Contact",
                   "url": "/contact",
                   "icon": "phone"
             },
             {
-                  "label": "ABOUT",
+                  "label": "About",
                   "url": "/about",
                   "icon": "moon"
             }

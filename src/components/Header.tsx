@@ -3,7 +3,7 @@ import { HeaderLink } from "./styled/links/links";
 import { ButtonIcon } from "./styled/icons/icons";
 import { NavBar, Logo, AppBar } from "./styled/widgets/Widgets";
 import { LogoImage } from "./styled/images/images";
-import { PrimaryButton, DropDownButton } from "./styled/buttons/buttons";
+import { SecondaryButton, DropDownButton } from "./styled/buttons/buttons";
 
 interface Link {
   label: string;
@@ -75,7 +75,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
         {currentPage}
         <ButtonIcon className="fas fa-caret-down" />
       </DropDownButton>
-      <PrimaryButton>Hire Me</PrimaryButton>
+      <SecondaryButton>Hire Me</SecondaryButton>
     </AppBar>
   );
 };

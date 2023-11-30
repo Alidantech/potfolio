@@ -8,6 +8,8 @@ import {
   Credits,
   CopyRights,
 } from "./styled/containers/containers";
+
+import {LinkIcon} from './styled/icons/icons';
 import { PrimaryButton } from "./styled/buttons/buttons";
 import { FooterLink, IconLink } from "./styled/links/links";
 import { FooterNavHeading, ProgressTitle } from "./styled/text/text";
@@ -59,10 +61,18 @@ const Footer = () => {
       <Credits>
         <CopyRights>&copy; 2023 &nbsp; Alidante</CopyRights>
         <FlexColumns>
-          <IconLink href="/">IG</IconLink>
-          <IconLink href="/">FB</IconLink>
-          <IconLink href="/">X</IconLink>
-          <IconLink href="/">TT</IconLink>
+          <IconLink href="/">
+            <LinkIcon className="fab fa-twitter" />
+          </IconLink>
+          <IconLink href="/">
+            <LinkIcon className="fab fa-facebook" />
+          </IconLink>
+          <IconLink href="/">
+            <LinkIcon className="fab fa-instagram" />
+          </IconLink>
+          <IconLink href="/">
+            <LinkIcon className="fab fa-tiktok" />
+          </IconLink>
         </FlexColumns>
       </Credits>
     </FootBar>
