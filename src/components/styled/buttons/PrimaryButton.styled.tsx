@@ -13,7 +13,7 @@ const Button = styled.button`
 `;
 
 export const PrimaryButton = styled(Button)`
-  padding: 1.5vh 2.5vh;
+  padding: 1vh 2.5vh;
   background-color: #0077ff;
   color: white;
   font-weight: bold;

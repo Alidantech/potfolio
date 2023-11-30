@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { HeaderLink } from "./styled/links/links";
 import { ButtonIcon } from "./styled/icons/icons";
 import { NavBar, Logo, AppBar } from "./styled/widgets/Widgets";
@@ -49,15 +49,30 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
     };
   }, []);
 
-  // Toggle navbar for smaller screens
+  //Toggle the navbar for smaller devices and its events
   const [showLinks, setShowLinks] = useState(false);
+  const navRef = useRef<HTMLDivElement>(null);
 
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
 
+  const handleOutsideClick = (event: MouseEvent) => {
+    if (navRef.current && !navRef.current.contains(event.target as Node)) {
+      setShowLinks(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleOutsideClick);
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
+  
   return (
-    <AppBar $isScrolled={isScrolled}>
+    <AppBar $isScrolled={isScrolled} ref={navRef}>
       <a href="/">
         <Logo>
           <LogoImage src="assets/favicon.png" alt="logo" />

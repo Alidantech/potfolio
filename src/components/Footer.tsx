@@ -37,7 +37,7 @@ const Footer = () => {
           <FooterNavHeading>About Myself</FooterNavHeading>
           <SmallText>
             Passionate developer with expertise in Data Science, OOP, and Web
-            Development.
+            Development...
           </SmallText>
           <a href="/about">
             <PrimaryButton>Learn More</PrimaryButton>
