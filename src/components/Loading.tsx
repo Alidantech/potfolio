@@ -6,7 +6,7 @@ import {
   SpacedColumns,
 } from "./styled/containers/containers";
 import { AnimatedIcon, AnimatedGif } from "./styled/icons/icons";
-import { ProgressBar } from "./styled/widgets/Widgets";
+import { ProgressBar, FullProgressBar } from "./styled/widgets/Widgets";
 import { PageName } from "./styled/text/text";
 
 interface LoadingProps {
@@ -14,7 +14,7 @@ interface LoadingProps {
   incomingPage: string;
 }
 
-const Loading: React.FC<LoadingProps> = ({ previousPage, incomingPage }) => {
+const Loading: React.FC<LoadingProps> = ({  }) => {
   const [loadingProgress, setLoadingProgress] = useState<number>(0);
 
   useEffect(() => {
@@ -35,14 +35,16 @@ const Loading: React.FC<LoadingProps> = ({ previousPage, incomingPage }) => {
       <Center>
         <LoaderBox>
           <AnimatedIcon move={loadingProgress} src="assets/walk.gif" />
-          <ProgressBar
-            width={loadingProgress}
-            customstyles="position: inherit; height: 6px; background-color: green;"
-          />
+          <FullProgressBar>
+            <ProgressBar
+              width={loadingProgress}
+              customstyles="position: inherit; height: 3px; background-color: green;"
+            />
+          </FullProgressBar>
           <SpacedColumns>
-            <PageName color="gray">{previousPage}</PageName>
+            <PageName color="gray">{"Previous"}</PageName>
             <AnimatedGif src="assets/loading.gif" />
-            <PageName color="green">{incomingPage}</PageName>
+            <PageName color="green">{"Next"}</PageName>
           </SpacedColumns>
         </LoaderBox>
       </Center>

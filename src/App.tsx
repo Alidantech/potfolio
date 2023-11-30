@@ -1,22 +1,12 @@
-import { useState, useEffect, lazy, Suspense } from "react";
-import {
-  Header,
-  Footer,
-  ScrollProgress,
-  Loading,
-} from "./components/Components";
-
-// Lazy-loaded Page component
-const LazyPage = lazy(() => import("./components/Page"));
+import { useState, useEffect } from "react";
+import { Header, Footer, ScrollProgress, Loading, Page } from "./components/Components";
 
 const App = () => {
-  const [currentPage, setCurrentPage] = useState<string>("");
-  const [previousPage, setPreviousPage] = useState<string>("Loading");
-  const [incomingPage, setIncomingPage] = useState<string>("Loaded");
+  const [currentPage, setCurrentPage] = useState<string>("Home");
   const [loading, setLoading] = useState(true);
+  const [myArray, setMyArray] = useState<string[]>([currentPage, currentPage]);
 
   const handleSetCurrentPage = (page: string) => {
-    setPreviousPage(currentPage);
     setCurrentPage(page);
   };
 
@@ -26,26 +16,29 @@ const App = () => {
     const fetchData = async () => {
       await new Promise((resolve) => setTimeout(resolve, 2000));
       setLoading(false);
-      setIncomingPage(currentPage);
     };
 
     fetchData();
   }, [currentPage]);
 
+  useEffect(() => {
+    setMyArray([myArray[1], currentPage]);
+  }, [currentPage]);
+
   return (
-      <Suspense fallback={<div>Loading...</div>}>
-        {loading ? (
-          <Loading previousPage={previousPage} incomingPage={incomingPage} />
-        ) : (
-          <>
-            {/* Components for the loaded content */}
-            <ScrollProgress />
-            <Header currentPage={currentPage} />
-            <LazyPage setCurrentPage={handleSetCurrentPage} />
-            <Footer />
-          </>
-        )}
-      </Suspense>
+    <>
+      {loading ? (
+        <Loading previousPage={myArray[0]} incomingPage={myArray[1]} />
+      ) : (
+        <>
+          {/* Components for the loaded content */}
+          <ScrollProgress />
+          <Header currentPage={currentPage} />
+          <Page setCurrentPage={handleSetCurrentPage} />
+          <Footer />
+        </>
+      )}
+    </>
   );
 };
 
