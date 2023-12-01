@@ -38,13 +38,13 @@ const Loading: React.FC<LoadingProps> = ({  }) => {
           <FullProgressBar>
             <ProgressBar
               width={loadingProgress}
-              customstyles="position: inherit; height: 3px; background-color: green;"
+              customstyles="position: inherit; height: 5px; background-color: rgb(7, 133, 172);"
             />
           </FullProgressBar>
           <SpacedColumns>
             <PageName color="gray">{"Previous"}</PageName>
             <AnimatedGif src="assets/loading.gif" />
-            <PageName color="green">{"Next"}</PageName>
+            <PageName color="rgb(7, 133, 172)">{"Next"}</PageName>
           </SpacedColumns>
         </LoaderBox>
       </Center>

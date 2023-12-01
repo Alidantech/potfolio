@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
 export const FootBar = styled.footer`
-    background-color: #000000;
-    position: relative;
+  background-color: rgb(1, 50, 65);
+  position: relative;
 `;

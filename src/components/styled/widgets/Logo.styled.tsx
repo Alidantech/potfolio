@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const Logo = styled.div`
   width: auto;
-  color: #008cff;
+  color: rgb(7, 133, 172);
   font-weight: bold;
   font-size: small;
   display: flex;

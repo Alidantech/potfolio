@@ -15,12 +15,12 @@ const Button = styled.button`
 export const SecondaryButton = styled(Button)`
   padding: 1vh 2.5vh;
   background-color: transparent;
-  color: #0077ff;
+  color: rgb(7, 133, 172);
   font-weight: bold;
-  border: 2px solid #0077ff;
+  border: 2px solid rgb(7, 133, 172);
   border-radius: 10px 5px;
   &:hover {
-    background-color: #0077ff;
+    background-color: rgb(7, 133, 172);
     color: #ffffff;
   }
 `;

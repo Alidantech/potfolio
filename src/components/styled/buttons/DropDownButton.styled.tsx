@@ -4,7 +4,7 @@ export const DropDownButton = styled.button`
   position: relative;
   background: none;
   border: none;
-  color: green;
+  color: rgb(7, 133, 172);
   cursor: pointer;
   display: none;
   @media (max-width: 768px) {

@@ -76,7 +76,13 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
       <a href="/">
         <Logo>
           <LogoImage src="assets/favicon.png" alt="logo" />
-          lidante
+          <LogoImage src="assets/l.png" alt="logo" />
+          <LogoImage src="assets/i.png" alt="logo" />
+          <LogoImage src="assets/d.png" alt="logo" />
+          <LogoImage src="assets/favicon.png" alt="logo" />
+          <LogoImage src="assets/n.png" alt="logo" />
+          <LogoImage src="assets/t.png" alt="logo" />
+          <LogoImage src="assets/e.png" alt="logo" />
         </Logo>
       </a>
       <NavBar $showLinks={showLinks}>
