@@ -37,7 +37,7 @@ Once the development server is running, open your web browser and navigate to ht
 I appreciate any feedback, suggestions, or contributions! If you find a bug or have an improvement in mind, please submit an issue or a pull request. 🙏
 
 ## License 📝
-This project is licensed under the MIT License. 📄
+This project is licensed under the GNU [License](LICENSE). 📄
 
 ## Contact 📞
 You can reach me through the following channels:
@@ -45,5 +45,5 @@ You can reach me through the following channels:
 Email: peteralidante254@gmail.com 📧
 Twitter: @Alidante_254 🐦
 LinkedIn: PETER IRUNGU 💼
-Website: www.My-website.com 🌐
+Website: alidante.netlify.app 🌐
 Thank you for visiting my portfolio! 😊
