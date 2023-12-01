@@ -10,7 +10,7 @@ export const ProfileImage = styled.img`
     display: flex;
     flex-wrap: wrap;
     width: 95vw;
-    width: 120px;
-    height: 120px;
+    width: 45vw;
+    height: 45vw;
   }
 `;
