@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const InfoCard = styled.div`
-  width: 90vw;
+  width: 85vw;
   padding: 3.5vw;
   border: 1px solid rgba(7, 134, 172, 0.082);
   display: grid;

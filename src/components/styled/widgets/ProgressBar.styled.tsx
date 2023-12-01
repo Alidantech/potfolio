@@ -29,6 +29,6 @@ export const ProgressBar = styled.div.attrs<ProgressBarProps>((props) => ({
 export const FullProgressBar = styled.div`
   width: 100%;
   height: fit-content;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid rgb(7, 133, 172);
 `;

@@ -7,7 +7,4 @@ export const ProfileBox = styled.div`
   gap: 20px;
   justify-content: space-between;
   flex-wrap: nowrap;
-   @media screen and (max-width: 900px) {
-    font-size: small;
-  } 
 `;
