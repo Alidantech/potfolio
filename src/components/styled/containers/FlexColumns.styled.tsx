@@ -7,7 +7,5 @@ export const FlexColumns = styled.div`
   gap: 20px;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* @media screen and (max-width: 900px) {
-    
-  } */
+  
 `;

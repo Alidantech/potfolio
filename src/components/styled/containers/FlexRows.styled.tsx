@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const FlexRows = styled.div`
   display: flex;
-  align-items: start;
+  align-items: center;
   gap: 20px;
   flex-direction: column;
   justify-content: space-around;

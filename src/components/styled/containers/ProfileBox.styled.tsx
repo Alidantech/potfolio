@@ -5,6 +5,7 @@ export const ProfileBox = styled.div`
   align-items: center;
   align-content: space-between;
   gap: 20px;
+  padding-right:4vw;
   justify-content: space-between;
   flex-wrap: nowrap;
 `;

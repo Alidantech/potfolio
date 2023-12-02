@@ -7,7 +7,7 @@ import {
 } from "../styled/sections/sections";
 import { ProfileImage } from "../styled/images/images";
 import { Heading1, Paragraph, InfoData, InfoLabel } from "../styled/text/text";
-import { StackCard, InfoCard } from "../styled/cards/cards";
+import { StackCard, InfoCard, SkillCard } from "../styled/cards/cards";
 import {
   FlexColumns,
   FlexRows,
@@ -17,6 +17,7 @@ import {
   SkillsBox,
   ProfileBox
 } from "../styled/containers/containers";
+import { SkillIcon } from "../styled/icons/icons";
 import { FullProgressBar, ProgressBar } from "../styled/widgets/Widgets";
 
 function Home() {
@@ -38,11 +39,11 @@ function Home() {
                 </ListItem>
                 <ListItem>
                   <InfoLabel>Profile:</InfoLabel>
-                  <InfoData>Developer</InfoData>
+                  <InfoData>Web, Software Developer</InfoData>
                 </ListItem>
                 <ListItem>
                   <InfoLabel>Email:</InfoLabel>
-                  <InfoData>254@gmail.com</InfoData>
+                  <InfoData>peteralidante254@gmail.com</InfoData>
                 </ListItem>
                 <ListItem>
                   <InfoLabel>Phone:</InfoLabel>
@@ -51,13 +52,13 @@ function Home() {
               </InfoList>
             </ProfileBox>
             <SkillsBox>
-              <h2>Skills & Langs</h2>
+              <h2>Skills & Languages</h2>
 
               <InfoData>Java</InfoData>
               <FullProgressBar>
                 <ProgressBar
                   width={99}
-                  customstyles="position: inherit; height: 8px; background-color: rgb(7, 133, 172);"
+                  customstyles="position: inherit; height: 10px; background-color: rgb(7, 133, 172);"
                 />
               </FullProgressBar>
 
@@ -65,7 +66,7 @@ function Home() {
               <FullProgressBar>
                 <ProgressBar
                   width={79}
-                  customstyles="position: inherit; height: 8px; background-color: rgb(7, 133, 172);"
+                  customstyles="position: inherit; height: 10px; background-color: rgb(7, 133, 172);"
                 />
               </FullProgressBar>
 
@@ -73,7 +74,7 @@ function Home() {
               <FullProgressBar>
                 <ProgressBar
                   width={99}
-                  customstyles="position: inherit; height: 8px; background-color: rgb(7, 133, 172);"
+                  customstyles="position: inherit; height: 10px; background-color: rgb(7, 133, 172);"
                 />
               </FullProgressBar>
 
@@ -81,13 +82,13 @@ function Home() {
               <FullProgressBar>
                 <ProgressBar
                   width={89}
-                  customstyles="position: inherit; height: 8px; background-color: rgb(7, 133, 172);"
+                  customstyles="position: inherit; height: 10px; background-color: rgb(7, 133, 172);"
                 />
               </FullProgressBar>
             </SkillsBox>
           </InfoBox>
           <InfoBox>
-            <h2>About</h2>
+            <h2>About me</h2>
             <FlexRows>
               <Paragraph>
                 Hello, my name is Peter. I am a passionate web developer and
@@ -114,7 +115,58 @@ function Home() {
         </InfoCard>
       </PersonalInfo>
       <Skills>
-        <Heading1>Various Skills I have</Heading1>
+        <Heading1>Services Offered</Heading1>
+        <Paragraph>I offer the following services</Paragraph>
+        <FlexColumns>
+          <SkillCard>
+            <FlexRows>
+              <SkillIcon className="fas fa-book" />
+              <Heading1>WEB DEVELOPER</Heading1>
+              <Paragraph>I want a web developer with <br />
+              and skilled well in the field.</Paragraph>
+            </FlexRows>
+          </SkillCard>
+          <SkillCard>
+            <FlexRows>
+              <SkillIcon className="fas fa-book" />
+              <Heading1>WEB DEVELOPER</Heading1>
+              <Paragraph>I want a web developer with <br />
+              and skilled well in the field.</Paragraph>
+            </FlexRows>
+          </SkillCard>
+          <SkillCard>
+            <FlexRows>
+              <SkillIcon className="fas fa-book" />
+              <Heading1>WEB DEVELOPER</Heading1>
+              <Paragraph>I want a web developer with <br />
+              and skilled well in the field.</Paragraph>
+            </FlexRows>
+          </SkillCard>
+          <SkillCard>
+            <FlexRows>
+              <SkillIcon className="fas fa-book" />
+              <Heading1>WEB DEVELOPER</Heading1>
+              <Paragraph>I want a web developer with <br />
+              and skilled well in the field.</Paragraph>
+            </FlexRows>
+          </SkillCard>
+          <SkillCard>
+            <FlexRows>
+              <SkillIcon className="fas fa-book" />
+              <Heading1>WEB DEVELOPER</Heading1>
+              <Paragraph>I want a web developer with <br />
+              and skilled well in the field.</Paragraph>
+            </FlexRows>
+          </SkillCard>
+          <SkillCard>
+            <FlexRows>
+              <SkillIcon className="fas fa-book" />
+              <Heading1>WEB DEVELOPER</Heading1>
+              <Paragraph>I want a web developer with <br />
+              and skilled well in the field.</Paragraph>
+            </FlexRows>
+          </SkillCard>
+        </FlexColumns>
       </Skills>
       <Stacks>
         <Heading1>My Technology Stacks</Heading1>

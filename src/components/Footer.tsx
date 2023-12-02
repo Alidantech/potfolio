@@ -24,11 +24,11 @@ const Footer = () => {
           <RoundProgressBar>155</RoundProgressBar>
         </ProgressBox>
         <ProgressBox>
-          <ProgressTitle>Songs</ProgressTitle>
-          <RoundProgressBar>15</RoundProgressBar>
+          <ProgressTitle>Websites</ProgressTitle>
+          <RoundProgressBar>35</RoundProgressBar>
         </ProgressBox>
         <ProgressBox>
-          <ProgressTitle>Companies</ProgressTitle>
+          <ProgressTitle>Mobile Apps</ProgressTitle>
           <RoundProgressBar>7</RoundProgressBar>
         </ProgressBox>
       </Floating>
