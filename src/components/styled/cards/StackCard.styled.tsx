@@ -6,7 +6,8 @@ export const StackCard = styled.div`
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   min-width: 450px;
   margin: 0 0;
-  min-height: 300px;
+  height: 400px;
+  overflow: hidden;
   @media screen and (max-width: 400px) {
     min-width: 250px;
   }

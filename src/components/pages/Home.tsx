@@ -16,6 +16,7 @@ import {
   InfoBox,
   SkillsBox,
   ProfileBox,
+  Center,
 } from "../styled/containers/containers";
 import { StackCardImage } from "../styled/images/images";
 import { SkillIcon } from "../styled/icons/icons";
@@ -116,84 +117,106 @@ function Home() {
         </InfoCard>
       </PersonalInfo>
       <Skills>
-        <Heading1>Services Offered</Heading1>
-        <Paragraph>I offer the following services</Paragraph>
-        <FlexColumns>
-          <SkillCard>
-            <FlexRows>
-              <SkillIcon className="fas fa-book" />
-              <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>
-                I want a web developer with <br />
-                and skilled well in the field.
-              </Paragraph>
-            </FlexRows>
-          </SkillCard>
-          <SkillCard>
-            <FlexRows>
-              <SkillIcon className="fas fa-book" />
-              <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>
-                I want a web developer with <br />
-                and skilled well in the field.
-              </Paragraph>
-            </FlexRows>
-          </SkillCard>
-          <SkillCard>
-            <FlexRows>
-              <SkillIcon className="fas fa-book" />
-              <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>
-                I want a web developer with <br />
-                and skilled well in the field.
-              </Paragraph>
-            </FlexRows>
-          </SkillCard>
-          <SkillCard>
-            <FlexRows>
-              <SkillIcon className="fas fa-book" />
-              <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>
-                I want a web developer with <br />
-                and skilled well in the field.
-              </Paragraph>
-            </FlexRows>
-          </SkillCard>
-          <SkillCard>
-            <FlexRows>
-              <SkillIcon className="fas fa-book" />
-              <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>
-                I want a web developer with <br />
-                and skilled well in the field.
-              </Paragraph>
-            </FlexRows>
-          </SkillCard>
-          <SkillCard>
-            <FlexRows>
-              <SkillIcon className="fas fa-book" />
-              <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>
-                I want a web developer with <br />
-                and skilled well in the field.
-              </Paragraph>
-            </FlexRows>
-          </SkillCard>
-        </FlexColumns>
+        <FlexRows>
+          <Heading1>Services Offered</Heading1>
+          <Paragraph>I offer the following services</Paragraph>
+          <FlexColumns>
+            <SkillCard>
+              <FlexRows>
+                <SkillIcon className="fas fa-mobile-alt" />
+                <Heading1>Mobile Development</Heading1>
+                <Paragraph>
+                  Mobile developer with  experience in building responsive{" "}
+                  
+                  and user-friendly mobile applications.
+                </Paragraph>
+              </FlexRows>
+            </SkillCard>
+            <SkillCard>
+              <FlexRows>
+                <SkillIcon className="fas fa-globe" />
+                <Heading1>Web Developement</Heading1>
+                <Paragraph>
+                  Web developer with expertise in 
+                  building modern and scalable web 
+                  applications using the latest technologies.
+                </Paragraph>
+              </FlexRows>
+            </SkillCard>
+            <SkillCard>
+              <FlexRows>
+                <SkillIcon className="fas fa-chart-line" />
+                <Heading1>Data Science</Heading1>
+                <Paragraph>
+                  Data scientist with 
+                  strong analytical skills and experience 
+                  in extracting insights from large datasets.
+                </Paragraph>
+              </FlexRows>
+            </SkillCard>
+            <SkillCard>
+              <FlexRows>
+                <SkillIcon className="fas fa-paint-brush" />
+                <Heading1>UI/UX Design</Heading1>
+                <Paragraph>
+                  UI/UX designer with the ability
+                  
+                  to create visually appealing 
+                  and intuitive user interfaces.
+                </Paragraph>
+              </FlexRows>
+            </SkillCard>
+            <SkillCard>
+              <FlexRows>
+                <SkillIcon className="fas fa-chart-bar" />
+                <Heading1>Data Analysis</Heading1>
+                <Paragraph>
+                  Data analyst with 
+                  expertise in analyzing and interpreting data  to support
+                  informed business decisions.
+                </Paragraph>
+              </FlexRows>
+            </SkillCard>
+            <SkillCard>
+              <FlexRows>
+                <SkillIcon className="fas fa-bug" />
+                <Heading1>Bug Fixing</Heading1>
+                <Paragraph>
+                  <Center>
+                    Developer with strong  debugging skills and the
+                    ability to identify and 
+                    fix software bugs efficiently.
+                  </Center>
+                </Paragraph>
+              </FlexRows>
+            </SkillCard>
+          </FlexColumns>
+        </FlexRows>
       </Skills>
       <Stacks>
-        <Heading1>My Technology Stacks</Heading1>
-        <FlexColumns>
-          <StackCard>
-            <StackCardImage src="https://picsum.photos/200/300" />
-          </StackCard>
-          <StackCard>
-            <StackCardImage src="https://picsum.photos/200/300" />
-          </StackCard>
-          <StackCard>
-            <StackCardImage src="https://picsum.photos/200/300" />
-          </StackCard>
-        </FlexColumns>
+        <FlexRows>
+          <Heading1>My Technology Stacks</Heading1>
+          <FlexColumns>
+            <StackCard>
+              <StackCardImage src="https://picsum.photos/1080" />
+              <FlexColumns>
+                <Heading1>WEB</Heading1> <p>IHHI</p>
+              </FlexColumns>
+            </StackCard>
+            <StackCard>
+              <StackCardImage src="https://picsum.photos/1080" />
+              <FlexColumns>
+                <Heading1>WEB</Heading1> <p>IHHI</p>
+              </FlexColumns>
+            </StackCard>
+            <StackCard>
+              <StackCardImage src="https://picsum.photos/1080" />
+              <FlexColumns>
+                <Heading1>WEB</Heading1> <p>IHHI</p>
+              </FlexColumns>
+            </StackCard>
+          </FlexColumns>
+        </FlexRows>
       </Stacks>
       <Testimonials>
         <Heading1>Refferences and testimonials</Heading1>
