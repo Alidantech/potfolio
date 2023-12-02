@@ -2,13 +2,16 @@ import { styled } from "styled-components";
 
 export const SkillCard = styled.div`
   border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  min-width: 400px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  min-width:  400px;
   margin: 0 0;
   min-height: 300px;
   padding: 2vh 2vw;
+  &img{
+    
+  }
   @media screen and (max-width: 400px) {
-    min-width: 250px;
+    min-width: 75vw;
   }
 `;

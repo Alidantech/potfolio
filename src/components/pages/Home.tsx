@@ -15,8 +15,9 @@ import {
   InfoList,
   InfoBox,
   SkillsBox,
-  ProfileBox
+  ProfileBox,
 } from "../styled/containers/containers";
+import { StackCardImage } from "../styled/images/images";
 import { SkillIcon } from "../styled/icons/icons";
 import { FullProgressBar, ProgressBar } from "../styled/widgets/Widgets";
 
@@ -122,48 +123,60 @@ function Home() {
             <FlexRows>
               <SkillIcon className="fas fa-book" />
               <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>I want a web developer with <br />
-              and skilled well in the field.</Paragraph>
+              <Paragraph>
+                I want a web developer with <br />
+                and skilled well in the field.
+              </Paragraph>
             </FlexRows>
           </SkillCard>
           <SkillCard>
             <FlexRows>
               <SkillIcon className="fas fa-book" />
               <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>I want a web developer with <br />
-              and skilled well in the field.</Paragraph>
+              <Paragraph>
+                I want a web developer with <br />
+                and skilled well in the field.
+              </Paragraph>
             </FlexRows>
           </SkillCard>
           <SkillCard>
             <FlexRows>
               <SkillIcon className="fas fa-book" />
               <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>I want a web developer with <br />
-              and skilled well in the field.</Paragraph>
+              <Paragraph>
+                I want a web developer with <br />
+                and skilled well in the field.
+              </Paragraph>
             </FlexRows>
           </SkillCard>
           <SkillCard>
             <FlexRows>
               <SkillIcon className="fas fa-book" />
               <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>I want a web developer with <br />
-              and skilled well in the field.</Paragraph>
+              <Paragraph>
+                I want a web developer with <br />
+                and skilled well in the field.
+              </Paragraph>
             </FlexRows>
           </SkillCard>
           <SkillCard>
             <FlexRows>
               <SkillIcon className="fas fa-book" />
               <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>I want a web developer with <br />
-              and skilled well in the field.</Paragraph>
+              <Paragraph>
+                I want a web developer with <br />
+                and skilled well in the field.
+              </Paragraph>
             </FlexRows>
           </SkillCard>
           <SkillCard>
             <FlexRows>
               <SkillIcon className="fas fa-book" />
               <Heading1>WEB DEVELOPER</Heading1>
-              <Paragraph>I want a web developer with <br />
-              and skilled well in the field.</Paragraph>
+              <Paragraph>
+                I want a web developer with <br />
+                and skilled well in the field.
+              </Paragraph>
             </FlexRows>
           </SkillCard>
         </FlexColumns>
@@ -171,9 +184,15 @@ function Home() {
       <Stacks>
         <Heading1>My Technology Stacks</Heading1>
         <FlexColumns>
-          <StackCard>WEB DEVELOPMENT</StackCard>
-          <StackCard>MOBILE DEVELOPMENT</StackCard>
-          <StackCard>DATA SCIENCE</StackCard>
+          <StackCard>
+            <StackCardImage src="https://picsum.photos/200/300" />
+          </StackCard>
+          <StackCard>
+            <StackCardImage src="https://picsum.photos/200/300" />
+          </StackCard>
+          <StackCard>
+            <StackCardImage src="https://picsum.photos/200/300" />
+          </StackCard>
         </FlexColumns>
       </Stacks>
       <Testimonials>

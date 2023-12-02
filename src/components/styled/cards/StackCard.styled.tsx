@@ -7,7 +7,6 @@ export const StackCard = styled.div`
   min-width: 450px;
   margin: 0 0;
   min-height: 300px;
-  padding: 10vh 2vw;
   @media screen and (max-width: 400px) {
     min-width: 250px;
   }
