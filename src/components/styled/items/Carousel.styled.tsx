@@ -14,6 +14,9 @@ export const Slide = styled.div`
   width: 300vw;
   height: 100%;
   transition: transform 0.5s ease;
+  & div {
+    padding: 0 20px;
+  }
 `;
 
 export const IndicatorWrapper = styled.div`
