@@ -2,6 +2,6 @@ import { styled } from "styled-components";
 
 export const CopyRights = styled.div`
   text-align: center;
-  color: gray;
+  color: #cecece;
   font-style: italic;
 `;

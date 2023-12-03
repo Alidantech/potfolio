@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const RoundProgressBar = styled.div`
-  border: 10px solid rgb(7, 133, 172);
+  border: 10px solid rgb(0, 10, 14);
   height: 80px;
   width: 80px;
   font-weight: bold;

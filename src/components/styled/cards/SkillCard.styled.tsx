@@ -10,7 +10,10 @@ export const SkillCard = styled.div`
   min-height: 300px;
   padding: 2vh 2vw;
   text-align: center;
-  &img {
+  &:hover span {
+    border: 10px solid rgb(171, 245, 255);
+    background-color: rgb(7, 153, 172);
+    color: white;
   }
   @media screen and (max-width: 400px) {
     min-width: 75vw;

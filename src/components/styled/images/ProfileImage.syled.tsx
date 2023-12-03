@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 export const ProfileImage = styled.img`
   width: 200px;
   height: 200px;
-  border-radius: 20px;
+  border-radius: 150px;
   background-clip: content-box;
   @media screen and (max-width: 1000px) {
     display: flex;
@@ -12,3 +12,5 @@ export const ProfileImage = styled.img`
     height: 45vw;
   }
 `;
+
+

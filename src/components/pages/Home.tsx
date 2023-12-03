@@ -5,11 +5,24 @@ import {
   Stacks,
   Testimonials,
 } from "../styled/sections/sections";
-import { ProfileImage } from "../styled/images/images";
-import { Heading1, Paragraph, InfoData, InfoLabel } from "../styled/text/text";
-import { StackCard, InfoCard, SkillCard } from "../styled/cards/cards";
+import { ProfileImage, StickyImage } from "../styled/images/images";
+import {
+  Heading1,
+  Heading2,
+  Paragraph,
+  InfoData,
+  InfoLabel,
+} from "../styled/text/text";
+import {
+  StackCard,
+  InfoCard,
+  SkillCard,
+  StackCardDetails,
+  StackCardInfo,
+} from "../styled/cards/cards";
 import {
   FlexColumns,
+  SpacedColumns,
   FlexRows,
   ListItem,
   InfoList,
@@ -18,15 +31,18 @@ import {
   ProfileBox,
   Center,
 } from "../styled/containers/containers";
-import { StackCardImage } from "../styled/images/images";
-import { SkillIcon } from "../styled/icons/icons";
+import { DecoratedUnderline, TransparentBg } from "../styled/items/items";
+import { StackCardImage, ImageBox } from "../styled/images/images";
+import { ButtonIcon, SkillIcon } from "../styled/icons/icons";
 import { FullProgressBar, ProgressBar } from "../styled/widgets/Widgets";
+import { IconButton } from "../styled/buttons/buttons";
 
 function Home() {
   return (
     <>
       <Welcome>
         <Heading1>Welcome to my potfolio</Heading1>
+        <DecoratedUnderline />
         <Paragraph>I am a web developer and software engineer</Paragraph>
       </Welcome>
       <PersonalInfo>
@@ -54,7 +70,7 @@ function Home() {
               </InfoList>
             </ProfileBox>
             <SkillsBox>
-              <h2>Skills & Languages</h2>
+              <Heading2>Skills & Languages</Heading2>
 
               <InfoData>Java</InfoData>
               <FullProgressBar>
@@ -90,7 +106,8 @@ function Home() {
             </SkillsBox>
           </InfoBox>
           <InfoBox>
-            <h2>About me</h2>
+            <Heading2>About me</Heading2>
+            <DecoratedUnderline />
             <FlexRows>
               <Paragraph>
                 Hello, my name is Peter. I am a passionate web developer and
@@ -120,15 +137,15 @@ function Home() {
         <FlexRows>
           <Heading1>Services Offered</Heading1>
           <Paragraph>I offer the following services</Paragraph>
+          <DecoratedUnderline />
           <FlexColumns>
             <SkillCard>
               <FlexRows>
                 <SkillIcon className="fas fa-mobile-alt" />
                 <Heading1>Mobile Development</Heading1>
                 <Paragraph>
-                  Mobile developer with  experience in building responsive{" "}
-                  
-                  and user-friendly mobile applications.
+                  Mobile developer with experience in building responsive and
+                  user-friendly mobile applications.
                 </Paragraph>
               </FlexRows>
             </SkillCard>
@@ -137,9 +154,8 @@ function Home() {
                 <SkillIcon className="fas fa-globe" />
                 <Heading1>Web Developement</Heading1>
                 <Paragraph>
-                  Web developer with expertise in 
-                  building modern and scalable web 
-                  applications using the latest technologies.
+                  Web developer with expertise in building modern and scalable
+                  web applications using the latest technologies.
                 </Paragraph>
               </FlexRows>
             </SkillCard>
@@ -148,9 +164,8 @@ function Home() {
                 <SkillIcon className="fas fa-chart-line" />
                 <Heading1>Data Science</Heading1>
                 <Paragraph>
-                  Data scientist with 
-                  strong analytical skills and experience 
-                  in extracting insights from large datasets.
+                  Data scientist with strong analytical skills and experience in
+                  extracting insights from large datasets.
                 </Paragraph>
               </FlexRows>
             </SkillCard>
@@ -159,9 +174,7 @@ function Home() {
                 <SkillIcon className="fas fa-paint-brush" />
                 <Heading1>UI/UX Design</Heading1>
                 <Paragraph>
-                  UI/UX designer with the ability
-                  
-                  to create visually appealing 
+                  UI/UX designer with the ability to create visually appealing
                   and intuitive user interfaces.
                 </Paragraph>
               </FlexRows>
@@ -171,9 +184,8 @@ function Home() {
                 <SkillIcon className="fas fa-chart-bar" />
                 <Heading1>Data Analysis</Heading1>
                 <Paragraph>
-                  Data analyst with 
-                  expertise in analyzing and interpreting data  to support
-                  informed business decisions.
+                  Data analyst with expertise in analyzing and interpreting data
+                  to support informed business decisions.
                 </Paragraph>
               </FlexRows>
             </SkillCard>
@@ -183,9 +195,8 @@ function Home() {
                 <Heading1>Bug Fixing</Heading1>
                 <Paragraph>
                   <Center>
-                    Developer with strong  debugging skills and the
-                    ability to identify and 
-                    fix software bugs efficiently.
+                    Developer with strong debugging skills and the ability to
+                    identify and fix software bugs efficiently.
                   </Center>
                 </Paragraph>
               </FlexRows>
@@ -193,34 +204,138 @@ function Home() {
           </FlexColumns>
         </FlexRows>
       </Skills>
+      <Testimonials>
+        <Heading1>Refferences and testimonials</Heading1>
+        <StickyImage src="https://picsum.photos/1080" />
+        <TransparentBg>
+          <Center>
+            <FlexRows>
+              <ProfileImage src="https://picsum.photos/300/300" />
+              <Heading2>Bug Fixing</Heading2>
+              <Paragraph>
+                Developer with strong debugging skills and the ability to
+                identify and fix <br /> software bugs efficiently.
+              </Paragraph>
+            </FlexRows>
+          </Center>
+        </TransparentBg>
+      </Testimonials>
       <Stacks>
         <FlexRows>
           <Heading1>My Technology Stacks</Heading1>
+          <DecoratedUnderline />
           <FlexColumns>
             <StackCard>
-              <StackCardImage src="https://picsum.photos/1080" />
-              <FlexColumns>
-                <Heading1>WEB</Heading1> <p>IHHI</p>
-              </FlexColumns>
+              <ImageBox>
+                <StackCardImage src="https://picsum.photos/980" />
+              </ImageBox>
+              <StackCardDetails>
+                <SpacedColumns>
+                  <StackCardInfo>
+                    <Heading2>Organizer</Heading2>
+                    <p>
+                      <a href="">Mobile Development</a> / 18 Jun. 2023
+                    </p>
+                  </StackCardInfo>
+                  <IconButton>
+                    <ButtonIcon className="fas fa-arrow-right" />
+                  </IconButton>
+                </SpacedColumns>
+              </StackCardDetails>
             </StackCard>
             <StackCard>
-              <StackCardImage src="https://picsum.photos/1080" />
-              <FlexColumns>
-                <Heading1>WEB</Heading1> <p>IHHI</p>
-              </FlexColumns>
+              <ImageBox>
+                <StackCardImage src="https://picsum.photos/1080" />
+              </ImageBox>
+              <StackCardDetails>
+                <SpacedColumns>
+                  <StackCardInfo>
+                    <Heading2>Dev Auto</Heading2>
+                    <p>
+                      <a href="">Python</a> / 12 Jan. 2022
+                    </p>
+                  </StackCardInfo>
+                  <IconButton>
+                    <ButtonIcon className="fas fa-arrow-right" />
+                  </IconButton>
+                </SpacedColumns>
+              </StackCardDetails>
             </StackCard>
             <StackCard>
-              <StackCardImage src="https://picsum.photos/1080" />
-              <FlexColumns>
-                <Heading1>WEB</Heading1> <p>IHHI</p>
-              </FlexColumns>
+              <ImageBox>
+                <StackCardImage src="https://picsum.photos/1180" />
+              </ImageBox>
+              <StackCardDetails>
+                <SpacedColumns>
+                  <StackCardInfo>
+                    <Heading2>Webchat</Heading2>
+                    <p>
+                      <a href="">Web Development</a> / 10 Mar. 2023
+                    </p>
+                  </StackCardInfo>
+                  <IconButton>
+                    <ButtonIcon className="fas fa-arrow-right" />
+                  </IconButton>
+                </SpacedColumns>
+              </StackCardDetails>
+            </StackCard>
+            <StackCard>
+              <ImageBox>
+                <StackCardImage src="https://picsum.photos/900" />
+              </ImageBox>
+              <StackCardDetails>
+                <SpacedColumns>
+                  <StackCardInfo>
+                    <Heading2>Upcoming AI</Heading2>
+                    <p>
+                      <a href="">Data Science</a> / 20 Feb. 2023
+                    </p>
+                  </StackCardInfo>
+                  <IconButton>
+                    <ButtonIcon className="fas fa-arrow-right" />
+                  </IconButton>
+                </SpacedColumns>
+              </StackCardDetails>
+            </StackCard>
+            <StackCard>
+              <ImageBox>
+                <StackCardImage src="https://picsum.photos/1800" />
+              </ImageBox>
+              <StackCardDetails>
+                <SpacedColumns>
+                  <StackCardInfo>
+                    <Heading2>Sprianto IQ</Heading2>
+                    <p>
+                      <a href="">Web Development</a> / 13 Jul. 2023
+                    </p>
+                  </StackCardInfo>
+                  <IconButton>
+                    <ButtonIcon className="fas fa-arrow-right" />
+                  </IconButton>
+                </SpacedColumns>
+              </StackCardDetails>
+            </StackCard>
+            <StackCard>
+              <ImageBox>
+                <StackCardImage src="https://picsum.photos/1000" />
+              </ImageBox>
+              <StackCardDetails>
+                <SpacedColumns>
+                  <StackCardInfo>
+                    <Heading2>Farm AI</Heading2>
+                    <p>
+                      <a href="">Data Science</a> / 7 Nov. 2023
+                    </p>
+                  </StackCardInfo>
+                  <IconButton>
+                    <ButtonIcon className="fas fa-arrow-right" />
+                  </IconButton>
+                </SpacedColumns>
+              </StackCardDetails>
             </StackCard>
           </FlexColumns>
         </FlexRows>
       </Stacks>
-      <Testimonials>
-        <Heading1>Refferences and testimonials</Heading1>
-      </Testimonials>
     </>
   );
 }
