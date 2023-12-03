@@ -283,6 +283,7 @@ function Home() {
       <Stacks>
         <FlexRows>
           <Heading1>Completed Projects</Heading1>
+          <Paragraph>In the last two years</Paragraph>
           <DecoratedUnderline />
           <FlexColumns>
             <StackCard>

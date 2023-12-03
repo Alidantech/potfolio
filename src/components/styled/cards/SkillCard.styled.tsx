@@ -15,7 +15,12 @@ export const SkillCard = styled.div`
     background-color: rgb(7, 153, 172);
     color: white;
   }
-  @media screen and (max-width: 400px) {
-    min-width: 75vw;
+  @media screen and (max-width: 1000px) {
+    min-width: 45vw;
+    max-width: 45vw;
+  }
+  @media screen and (max-width: 650px) {
+    min-width: 85vw;
+    max-width: 85vw;
   }
 `;

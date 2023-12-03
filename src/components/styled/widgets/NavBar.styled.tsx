@@ -19,6 +19,9 @@ export const NavBar = styled.nav<{ $showLinks?: Boolean }>`
     overflow: hidden;
     height: ${(props) =>
       props.$showLinks ? "100%" : "0"};
-    background-color: #000000;
+    background-color: rgb(7, 133, 172);
+    & a {
+      color: white;
+    }
   }
 `;

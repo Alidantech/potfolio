@@ -22,7 +22,13 @@ export const StackCard = styled.div`
   &:hover img {
     transform: scale(1.2);
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1100px) {
+    min-width: 45vw;
+    max-width: 45vw;
+    font-size: xx-small;
+    height: 250px;
+  }
+  @media screen and (max-width: 700px) {
     min-width: 45vw;
     max-width: 45vw;
     font-size: xx-small;
