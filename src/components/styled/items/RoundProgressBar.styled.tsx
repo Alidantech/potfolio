@@ -5,7 +5,7 @@ export const RoundProgressBar = styled.div`
   height: 80px;
   width: 80px;
   font-weight: bold;
-  font-size: x-small;
+  font-size: large;
   color: white;
   border-radius: 100px;
   justify-content: center;

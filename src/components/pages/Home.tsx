@@ -46,7 +46,7 @@ function Home() {
    const slides = [
        <FlexRows>
          <ProfileImage src="https://picsum.photos/300/300" />
-         <Heading2>Anthony Maina</Heading2>
+         <Heading2>John Doe</Heading2>
          <Paragraph>
            Developer with strong debugging skills and the ability to identify
            and fix <br /> software bugs efficiently.
@@ -55,7 +55,7 @@ function Home() {
      ,
      <FlexRows>
        <ProfileImage src="https://picsum.photos/300/300" />
-       <Heading2>Anthony Maina</Heading2>
+       <Heading2>Jane Williams</Heading2>
        <Paragraph>
          Developer with strong debugging skills and the ability to identify and
          fix <br /> software bugs efficiently.
