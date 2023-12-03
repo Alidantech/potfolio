@@ -12,6 +12,7 @@ import {
   Paragraph,
   InfoData,
   InfoLabel,
+  ProgressTitle,
 } from "../styled/text/text";
 import {
   StackCard,
@@ -31,13 +32,44 @@ import {
   ProfileBox,
   Center,
 } from "../styled/containers/containers";
-import { DecoratedUnderline, TransparentBg } from "../styled/items/items";
+import {
+  DecoratedUnderline,
+  TransparentBg,
+} from "../styled/items/items";
 import { StackCardImage, ImageBox } from "../styled/images/images";
 import { ButtonIcon, SkillIcon } from "../styled/icons/icons";
 import { FullProgressBar, ProgressBar } from "../styled/widgets/Widgets";
 import { IconButton } from "../styled/buttons/buttons";
+import Carousel from "../Carousel";
 
 function Home() {
+   const slides = [
+       <FlexRows>
+         <ProfileImage src="https://picsum.photos/300/300" />
+         <Heading2>Anthony Maina</Heading2>
+         <Paragraph>
+           Developer with strong debugging skills and the ability to identify
+           and fix <br /> software bugs efficiently.
+         </Paragraph>
+       </FlexRows>
+     ,
+     <FlexRows>
+       <ProfileImage src="https://picsum.photos/300/300" />
+       <Heading2>Anthony Maina</Heading2>
+       <Paragraph>
+         Developer with strong debugging skills and the ability to identify and
+         fix <br /> software bugs efficiently.
+       </Paragraph>
+     </FlexRows>,
+     <FlexRows>
+       <ProfileImage src="https://picsum.photos/300/300" />
+       <Heading2>Anthony Maina</Heading2>
+       <Paragraph>
+         Developer with strong debugging skills and the ability to identify and
+         fix <br /> software bugs efficiently.
+       </Paragraph>
+     </FlexRows>,
+   ];
   return (
     <>
       <Welcome>
@@ -133,6 +165,44 @@ function Home() {
           </InfoBox>
         </InfoCard>
       </PersonalInfo>
+      <Testimonials>
+        <StickyImage src="https://picsum.photos/1080" />
+        <TransparentBg>
+          <FlexColumns>
+            <FlexRows>
+              <SkillIcon className="fas fa-building" />
+              <Heading2>10</Heading2>
+              <DecoratedUnderline />
+
+              <ProgressTitle>ORGANISATIONS</ProgressTitle>
+            </FlexRows>
+
+            <FlexRows>
+              <SkillIcon className="fas fa-users" />
+              <Heading2>8</Heading2>
+              <DecoratedUnderline />
+
+              <ProgressTitle>CLIENTS</ProgressTitle>
+            </FlexRows>
+
+            <FlexRows>
+              <SkillIcon className="fas fa-clipboard-list" />
+              <Heading2>54</Heading2>
+              <DecoratedUnderline />
+
+              <ProgressTitle>JOBS COMPLETED</ProgressTitle>
+            </FlexRows>
+
+            <FlexRows>
+              <SkillIcon className="fas fa-hourglass" />
+              <Heading2>3</Heading2>
+              <DecoratedUnderline />
+
+              <ProgressTitle>YEARS EXPERIENCE</ProgressTitle>
+            </FlexRows>
+          </FlexColumns>
+        </TransparentBg>
+      </Testimonials>
       <Skills>
         <FlexRows>
           <Heading1>Services Offered</Heading1>
@@ -205,24 +275,14 @@ function Home() {
         </FlexRows>
       </Skills>
       <Testimonials>
-        <Heading1>Refferences and testimonials</Heading1>
         <StickyImage src="https://picsum.photos/1080" />
         <TransparentBg>
-          <Center>
-            <FlexRows>
-              <ProfileImage src="https://picsum.photos/300/300" />
-              <Heading2>Bug Fixing</Heading2>
-              <Paragraph>
-                Developer with strong debugging skills and the ability to
-                identify and fix <br /> software bugs efficiently.
-              </Paragraph>
-            </FlexRows>
-          </Center>
+            <Carousel slides={slides} />
         </TransparentBg>
       </Testimonials>
       <Stacks>
         <FlexRows>
-          <Heading1>My Technology Stacks</Heading1>
+          <Heading1>Completed Projects</Heading1>
           <DecoratedUnderline />
           <FlexColumns>
             <StackCard>

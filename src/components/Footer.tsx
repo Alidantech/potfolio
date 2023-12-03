@@ -94,8 +94,8 @@ const Footer = () => {
           <IconLink href="https://instagram.com/alidante_254">
             <LinkIcon className="fab fa-instagram" />
           </IconLink>
-          <IconLink href="https://tiktok.com/@alidante">
-            <LinkIcon className="fab fa-tiktok" />
+          <IconLink href="https://www.linkedin.com/in/peterirungu254/">
+            <LinkIcon className="fab fa-linkedin" />
           </IconLink>
         </FlexColumns>
       </Credits>

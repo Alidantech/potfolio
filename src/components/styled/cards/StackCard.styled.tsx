@@ -23,7 +23,7 @@ export const StackCard = styled.div`
     transform: scale(1.2);
   }
   @media screen and (max-width: 900px) {
-    min-width: 40vw;
+    min-width: 45vw;
     max-width: 45vw;
     font-size: xx-small;
     height: 200px;

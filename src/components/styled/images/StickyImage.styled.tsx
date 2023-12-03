@@ -5,6 +5,4 @@ export const StickyImage = styled.img`
   height: 100vh;
   position: absolute;
   z-index: -1;
-  top: 0;
-  background-color: pink;
 `;
