@@ -28,7 +28,7 @@ export const StackCard = styled.div`
     font-size: xx-small;
     height: 200px;
     & span {
-      font-size: smaller;
+      font-size: xx-small;
       padding: 4px 5px;
     }
   }
@@ -38,17 +38,17 @@ export const StackCardDetails = styled.div`
   width: 100%;
   padding: 20px;
   @media screen and (max-width: 900px) {
-    padding: 10px;
+    padding: 5px;
   }
 
 `;
 
 export const StackCardInfo = styled.div`
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: start;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   justify-content: space-between;
   overflow: hidden;
 `;

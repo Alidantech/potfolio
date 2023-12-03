@@ -234,7 +234,7 @@ function Home() {
                   <StackCardInfo>
                     <Heading2>Organizer</Heading2>
                     <p>
-                      <a href="">Mobile Development</a> / 18 Jun. 2023
+                      <a href="">Mobile App</a> / 18 Jun. 2023
                     </p>
                   </StackCardInfo>
                   <IconButton>
@@ -252,7 +252,7 @@ function Home() {
                   <StackCardInfo>
                     <Heading2>Dev Auto</Heading2>
                     <p>
-                      <a href="">Python</a> / 12 Jan. 2022
+                      <a href="">Dev Tool</a> / 12 Jan. 2022
                     </p>
                   </StackCardInfo>
                   <IconButton>
@@ -270,7 +270,7 @@ function Home() {
                   <StackCardInfo>
                     <Heading2>Webchat</Heading2>
                     <p>
-                      <a href="">Web Development</a> / 10 Mar. 2023
+                      <a href="">Website</a> / 10 Mar. 2023
                     </p>
                   </StackCardInfo>
                   <IconButton>
@@ -306,7 +306,7 @@ function Home() {
                   <StackCardInfo>
                     <Heading2>Sprianto IQ</Heading2>
                     <p>
-                      <a href="">Web Development</a> / 13 Jul. 2023
+                      <a href="">Website</a> / 13 Jul. 2023
                     </p>
                   </StackCardInfo>
                   <IconButton>
