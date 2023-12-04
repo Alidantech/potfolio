@@ -7,7 +7,8 @@ export const SkillCard = styled.div`
   min-width: 400px;
   max-width: 400px;
   margin: 0 0;
-  min-height: 300px;
+  min-height: 350px;
+  max-height: 350px;
   padding: 2vh 2vw;
   text-align: center;
   &:hover span {

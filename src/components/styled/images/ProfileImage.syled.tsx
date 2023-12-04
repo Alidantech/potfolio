@@ -8,8 +8,8 @@ export const ProfileImage = styled.img`
   @media screen and (max-width: 1000px) {
     display: flex;
     flex-wrap: wrap;
-    width: 45vw;
-    height: 45vw;
+    width: 35vw;
+    height: 35vw;
   }
 `;
 

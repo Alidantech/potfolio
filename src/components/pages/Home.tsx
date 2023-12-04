@@ -11,7 +11,6 @@ import {
   Heading2,
   Paragraph,
   InfoData,
-  InfoLabel,
   ProgressTitle,
 } from "../styled/text/text";
 import {
@@ -30,11 +29,13 @@ import {
   InfoBox,
   SkillsBox,
   ProfileBox,
+  DescBox,
   Center,
 } from "../styled/containers/containers";
 import {
   DecoratedUnderline,
   TransparentBg,
+  AnimatedFrame,
 } from "../styled/items/items";
 import { StackCardImage, ImageBox } from "../styled/images/images";
 import { ButtonIcon, SkillIcon } from "../styled/icons/icons";
@@ -43,39 +44,67 @@ import { IconButton } from "../styled/buttons/buttons";
 import Carousel from "../Carousel";
 
 function Home() {
-   const slides = [
-       <FlexRows>
-         <ProfileImage src="https://picsum.photos/300/300" />
-         <Heading2>John Doe</Heading2>
-         <Paragraph>
-           Developer with strong debugging skills and the ability to identify
-           and fix <br /> software bugs efficiently.
-         </Paragraph>
-       </FlexRows>
-     ,
-     <FlexRows>
-       <ProfileImage src="https://picsum.photos/300/300" />
-       <Heading2>Jane Williams</Heading2>
-       <Paragraph>
-         Developer with strong debugging skills and the ability to identify and
-         fix <br /> software bugs efficiently.
-       </Paragraph>
-     </FlexRows>,
-     <FlexRows>
-       <ProfileImage src="https://picsum.photos/300/300" />
-       <Heading2>Anthony Maina</Heading2>
-       <Paragraph>
-         Developer with strong debugging skills and the ability to identify and
-         fix <br /> software bugs efficiently.
-       </Paragraph>
-     </FlexRows>,
-   ];
+  const slides = [
+    <FlexRows>
+      <ProfileImage src="https://picsum.photos/300/300" />
+      <Heading2>John Doe</Heading2>
+      <Paragraph>
+        Developer with strong debugging skills and the ability to identify and
+        fix <br /> software bugs efficiently.
+      </Paragraph>
+    </FlexRows>,
+    <FlexRows>
+      <ProfileImage src="https://picsum.photos/300/300" />
+      <Heading2>Jane Williams</Heading2>
+      <Paragraph>
+        Developer with strong debugging skills and the ability to identify and
+        fix <br /> software bugs efficiently.
+      </Paragraph>
+    </FlexRows>,
+    <FlexRows>
+      <ProfileImage src="https://picsum.photos/300/300" />
+      <Heading2>Anthony Maina</Heading2>
+      <Paragraph>
+        Developer with strong debugging skills and the ability to identify and
+        fix <br /> software bugs efficiently.
+      </Paragraph>
+    </FlexRows>,
+  ];
   return (
     <>
       <Welcome>
-        <Heading1>Welcome to my potfolio</Heading1>
-        <DecoratedUnderline />
-        <Paragraph>I am a web developer and software engineer</Paragraph>
+        <DescBox>
+          <FlexRows>
+            <Heading1>
+              Welcome to My <br /> Developer Portfolio
+            </Heading1>
+            <Paragraph>
+              Passionate about coding and creating
+              <br /> innovative solutions. Explore my <br />
+              projects and experience
+              <br /> in the world of development.
+            </Paragraph>
+          </FlexRows>
+          <FlexRows>
+            <ProfileImage src="https://picsum.photos/300/300" />
+          </FlexRows>
+          <FlexRows>
+            <a>Explore</a>
+            <DecoratedUnderline />
+            Driven By:
+            <Paragraph>Passion</Paragraph>
+            <Paragraph>Determination</Paragraph>
+            <DecoratedUnderline />
+            <a>About me</a>
+          </FlexRows>
+        </DescBox>
+        <SpacedColumns>
+          <AnimatedFrame src="https://lottie.host/?file=c3773401-bd0e-463c-b40c-10fca3d8bb26/keuFXPbmXu.json" />
+          <AnimatedFrame src="https://lottie.host/?file=bb71dcd2-8f95-4ef8-b997-070589bc96e1/XMW1Ur76sG.json" />
+          <AnimatedFrame src="https://lottie.host/?file=b6d96d37-2763-4c49-b079-fe7d63e56e93/Wzfyp4LCXq.json" />
+          <AnimatedFrame src="https://lottie.host/?file=006a1cc3-969a-4544-8942-0c71aa4a2793/3Jz48sWM5y.json" />
+          <AnimatedFrame src="https://lottie.host/?file=5a1c7285-51c2-40a2-930d-493865e3954f/pnQ5sY6aKu.json" />
+        </SpacedColumns>
       </Welcome>
       <PersonalInfo>
         <InfoCard>
@@ -84,55 +113,51 @@ function Home() {
               <ProfileImage src="https://picsum.photos/300/300" />
               <InfoList>
                 <ListItem>
-                  <InfoLabel>Name:</InfoLabel>
                   <InfoData>Peter Irungu</InfoData>
                 </ListItem>
                 <ListItem>
-                  <InfoLabel>Profile:</InfoLabel>
-                  <InfoData>Web, Software Developer</InfoData>
+                  <InfoData>Software Developer</InfoData>
                 </ListItem>
                 <ListItem>
-                  <InfoLabel>Email:</InfoLabel>
-                  <InfoData>peteralidante254@gmail.com</InfoData>
+                  <InfoData>Data Scientist</InfoData>
                 </ListItem>
                 <ListItem>
-                  <InfoLabel>Phone:</InfoLabel>
-                  <InfoData>+254748311679</InfoData>
+                  <InfoData>Web Developer</InfoData>
                 </ListItem>
               </InfoList>
             </ProfileBox>
             <SkillsBox>
               <Heading2>Skills & Languages</Heading2>
 
-              <InfoData>Java</InfoData>
+              <Paragraph>Java</Paragraph>
               <FullProgressBar>
                 <ProgressBar
-                  width={99}
-                  customstyles="position: inherit; height: 10px; background-color: rgb(7, 133, 172);"
+                  width={98}
+                  customstyles="position: inherit; height: 15px; background-color: rgb(7, 133, 172);"
                 />
               </FullProgressBar>
 
-              <InfoData>Python</InfoData>
+              <Paragraph>Python</Paragraph>
               <FullProgressBar>
                 <ProgressBar
-                  width={79}
-                  customstyles="position: inherit; height: 10px; background-color: rgb(7, 133, 172);"
+                  width={75}
+                  customstyles="position: inherit; height: 15px; background-color: rgb(7, 133, 172);"
                 />
               </FullProgressBar>
 
-              <InfoData>Typescript/Js</InfoData>
+              <Paragraph>Typescript/Js</Paragraph>
               <FullProgressBar>
                 <ProgressBar
-                  width={99}
-                  customstyles="position: inherit; height: 10px; background-color: rgb(7, 133, 172);"
+                  width={95}
+                  customstyles="position: inherit; height: 15px; background-color: rgb(7, 133, 172);"
                 />
               </FullProgressBar>
 
-              <InfoData>Dart</InfoData>
+              <Paragraph>Dart</Paragraph>
               <FullProgressBar>
                 <ProgressBar
                   width={89}
-                  customstyles="position: inherit; height: 10px; background-color: rgb(7, 133, 172);"
+                  customstyles="position: inherit; height: 15px; background-color: rgb(7, 133, 172);"
                 />
               </FullProgressBar>
             </SkillsBox>
@@ -277,7 +302,7 @@ function Home() {
       <Testimonials>
         <StickyImage src="https://picsum.photos/1080" />
         <TransparentBg>
-            <Carousel slides={slides} />
+          <Carousel slides={slides} />
         </TransparentBg>
       </Testimonials>
       <Stacks>
