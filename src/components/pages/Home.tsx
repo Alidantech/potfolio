@@ -75,27 +75,26 @@ function Home() {
       <Welcome>
         <DescBox>
           <FlexRows>
-            <Heading1>
-              Welcome to My <br /> Developer Portfolio
-            </Heading1>
+            <Heading1>Welcome to My Developer Portfolio</Heading1>
             <Paragraph>
-              Passionate about coding and creating
-              <br /> innovative solutions. Explore my <br />
-              projects and experience
-              <br /> in the world of development.
+              Passionate about coding and creating innovative solutions. Explore
+              my projects and experience in the world of development.
             </Paragraph>
           </FlexRows>
           <FlexRows>
-            <ProfileImage src="https://picsum.photos/300/300" />
+            <ProfileImage src="assets\profile.png" />
           </FlexRows>
           <FlexRows>
-            <a>Explore</a>
+            <a href="/projects">Explore Projects</a>
             <DecoratedUnderline />
-            Driven By:
-            <Paragraph>Passion</Paragraph>
-            <Paragraph>Determination</Paragraph>
+            <Heading2>Driven BY:</Heading2>
+            <InfoList>
+              <ListItem>Focus</ListItem>
+              <ListItem>Determination</ListItem>
+              <ListItem>Passion</ListItem>
+            </InfoList>
             <DecoratedUnderline />
-            <a>About me</a>
+            <a href="/about">Learn More</a>
           </FlexRows>
         </DescBox>
         <SpacedColumns>

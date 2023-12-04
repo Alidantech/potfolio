@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const AppBar = styled.header<{ $isScrolled?: Boolean }>`
-  position: ${(props) => (props.$isScrolled ? "fixed" : "fixed")};
+  position: ${(props) => (props.$isScrolled ? "fixed" : "static")};
   background-color: ${(props) =>
     props.$isScrolled ? "#ffffffff" : "#00000000"};
   width: 100%;

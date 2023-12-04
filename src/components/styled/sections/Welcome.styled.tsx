@@ -1,8 +1,7 @@
 import { styled } from "styled-components";
 
 export const Welcome = styled.section`
-  height: 100svh;
-  padding-top: 25svh;
+  height: 80vh;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
