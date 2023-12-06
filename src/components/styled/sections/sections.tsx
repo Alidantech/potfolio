@@ -4,5 +4,14 @@ import { Skills } from "./Skills.styled";
 import { Stacks } from "./Stacks.styled";
 import { Testimonials } from "./Testimonials.styled";
 import { Welcome } from "./Welcome.styled";
+import { MusicPart } from "./MusicPart.styled";
 
-export { Welcome, Stacks, Skills, Testimonials, PersonalInfo, ContactPart };
+export {
+  Welcome,
+  Stacks,
+  Skills,
+  Testimonials,
+  PersonalInfo,
+  ContactPart,
+  MusicPart
+};
