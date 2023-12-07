@@ -1,13 +1,11 @@
-
-
+import { MusicCard } from "../styled/cards/cards";
+import { MusicPart } from "../styled/sections/sections";
 
 function Music() {
-  
-
   return (
-    <>
-      <h1>music page</h1>
-    </>
+    <MusicPart>
+      <MusicCard></MusicCard>
+    </MusicPart>
   );
 }
 
