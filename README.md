@@ -5,9 +5,8 @@ Welcome to my portfolio website! This is a showcase of my work, including projec
 ## Technologies Used 🚀
 
 - React-ts: ⚛️ JavaScript library for building user interfaces
+- Sytled-Components✍️: Framework create user interface in React using css; 
 - TypeScript: 🖥️ Programming language used to add interactivity and functionality to web pages
-- HTML: 🌐 Standard markup language for creating web pages
-- Bootstrap: 🎨 Popular CSS framework that provides pre-designed components and responsive layouts
 ## Features ✨
 
 - Projects: 📂 Explore the various projects I have worked on. Each project includes a description, technologies used, and a link to view the project.
@@ -18,7 +17,7 @@ Welcome to my portfolio website! This is a showcase of my work, including projec
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/potfolio.git
+   git clone https://github.com/Alidante254/potfolio.git
    ```
 2. Install dependencies:
    ```bash
