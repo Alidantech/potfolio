@@ -17,4 +17,7 @@ export const Welcome = styled.section`
   background-size: cover;
   background-repeat: no-repeat; 
   color: white;*/
+  @media screen and (max-width: 900px) {
+    height: 85vh;
+  }
 `;

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, Projects, Contact, Music, About } from "./pages/Pages";
+import { Home, Projects, Contact, About } from "./pages/Pages";
 import { MainContent } from "./styled/widgets/Widgets";
 
 interface PageProps {
@@ -25,7 +25,6 @@ const withCurrentPage = (
 const HomeWithCurrentPage = withCurrentPage(Home, "HOME");
 const ProjectsWithCurrentPage = withCurrentPage(Projects, "PROJECTS");
 const ContactWithCurrentPage = withCurrentPage(Contact, "CONTACT");
-const MusicWithCurrentPage = withCurrentPage(Music, " MUSIC");
 const AboutWithCurrentPage = withCurrentPage(About, "ABOUT");
 
 const Page: React.FC<PageProps> = ({ setCurrentPage }) => {
@@ -46,11 +45,7 @@ const Page: React.FC<PageProps> = ({ setCurrentPage }) => {
           <Route
             path="/contact"
             element={<ContactWithCurrentPage setCurrentPage={setCurrentPage} />}
-          />
-          <Route
-            path="/music"
-            element={<MusicWithCurrentPage setCurrentPage={setCurrentPage} />}
-          />
+          />       
           <Route
             path="/about"
             element={<AboutWithCurrentPage setCurrentPage={setCurrentPage} />}

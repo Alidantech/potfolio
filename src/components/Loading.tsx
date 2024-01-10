@@ -42,9 +42,9 @@ const Loading: React.FC<LoadingProps> = ({  }) => {
             />
           </FullProgressBar>
           <SpacedColumns>
-            <PageName color="gray">{"Previous"}</PageName>
+            <PageName color="gray">{"Hello"}</PageName>
             <AnimatedGif src="assets/loading.gif" />
-            <PageName color="rgb(7, 133, 172)">{"Next"}</PageName>
+            <PageName color="rgb(7, 133, 172)">{"Welcome"}</PageName>
           </SpacedColumns>
         </LoaderBox>
       </Center>

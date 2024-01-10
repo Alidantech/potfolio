@@ -11,11 +11,6 @@
                   "icon": "book"
             },
             {
-                  "label": "Music",
-                  "url": "/music",
-                  "icon": "music-note"
-            },
-            {
                   "label": "Contact",
                   "url": "/contact",
                   "icon": "phone"

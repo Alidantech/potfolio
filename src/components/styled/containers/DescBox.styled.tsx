@@ -30,21 +30,24 @@ export const DescBox = styled.div`
   }
   @media screen and (max-width: 900px) {
     padding: 0 10px;
-    height: 70svh;
+    height: 80vh;
     width: 90%;
     gap: 0;
     display: grid;
     grid-template-columns: initial;
     grid-template-rows: 60% 40% 0%;
     & div img {
-      width: 200px;
-      height: 200px;
+      width: 250px;
+      height: 250px;
       border-radius: 150px;
       margin: 0;
     }
     & div {
       max-width: 100vw;
       align-items: center;
+    }
+    & div:last-child{
+      display: none;
     }
   }
 `;

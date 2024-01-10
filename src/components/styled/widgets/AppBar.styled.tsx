@@ -12,7 +12,7 @@ export const AppBar = styled.header<{ $isScrolled?: Boolean }>`
   align-items: center;
   justify-content: space-between;
   padding: 0 100px;
-  transition: height 0.1s ease-in, background-color 2s ease-in;
+  transition: height 0.1s ease-in, background-color 1s ease-in;
   /* backdrop-filter: blur(1000px); */
   box-shadow: rgba(0, 0, 0, 0.45);
   box-shadow: 0px 25px 20px -20px ${(props) => (props.$isScrolled ? "rgba(0, 0, 0, 0.075)" : "transparent")};

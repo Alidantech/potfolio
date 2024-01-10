@@ -1,15 +1,197 @@
 {
-      "section1": [
+      "welcome": {
+            "heading1": "Welcome to My Developer Portfolio",
+            "paragraph": "Passionate about coding and creating innovative solutions. Explore my projects and experience in the world of development.",
+            "profileImage": "assets/profile.png",
+            "links": {
+                  "href": "/projects",
+                  "text": "Explore Projects"
+            },
+            "heading2": "Driven BY:",
+            "infoList": [
+                  "Focus",
+                  "Determination",
+                  "Passion"
+            ],
+            "a": {
+                  "href": "/about",
+                  "text": "Learn More"
+            },
+            "animatedFrame": [
+                  "https://lottie.host/?file=c3773401-bd0e-463c-b40c-10fca3d8bb26/keuFXPbmXu.json",
+                  "https://lottie.host/?file=bb71dcd2-8f95-4ef8-b997-070589bc96e1/XMW1Ur76sG.json",
+                  "https://lottie.host/?file=b6d96d37-2763-4c49-b079-fe7d63e56e93/Wzfyp4LCXq.json",
+                  "https://lottie.host/?file=006a1cc3-969a-4544-8942-0c71aa4a2793/3Jz48sWM5y.json",
+                  "https://lottie.host/?file=5a1c7285-51c2-40a2-930d-493865e3954f/pnQ5sY6aKu.json"
+            ]
+      },
+      "personalInfo": {
+            "profileImage": "https://picsum.photos/300/300",
+            "about": [
+                  "Hello, my name is Peter. I am a passionate web developer and software engineer based in Kenya. With a strong foundation in programming and a keen eye for design, I strive to create engaging and user-friendly web applications.",
+                  "My journey in the world of technology began on 2021. Over the years, I have gained expertise in Web Development, allowing me to tackle a variety of projects with confidence and efficiency.",
+                  "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying some quality time with my Music and Reading. I believe in continuous learning and am always excited to take on new challenges in the ever-evolving landscape of web development."
+            ],
+            "infoList": {
+                  "fullName": "Peter Irungu",
+                  "stack": [
+                        "Software Developer",
+                        "Data Scientist",
+                        "Web Developer"
+                  ]
+            },
+            "skills": {
+                  "heading2": "Skills & Languages",
+                  "progressView": {
+                        "Java": 98,
+                        "Python": 75,
+                        "Typescript/Js": 95,
+                        "Dart": 89
+                  }
+            }
+      },
+      "Statistics": {
+            "stickyImage": "https://picsum.photos/1080",
+            "skillsIcons": [
+                  {
+                        "skillIcon": "fas fa-building",
+                        "heading": "10",
+                        "skillTitle": "ORGANISATIONS"
+                  },
+                  {
+                        "skillIcon": "fas fa-users",
+                        "heading": "8",
+                        "progressTitle": "CLIENTS"
+                  },
+                  {
+                        "skillIcon": "fas fa-clipboard-list",
+                        "heading": "54",
+                        "progressTitle": "JOBS COMPLETED"
+                  },
+                  {
+                        "skillIcon": "fas fa-hourglass",
+                        "heading": "3",
+                        "progressTitle": "YEARS EXPERIENCE"
+                  }
+            ]
+      },
+      "services": {
+            "heading": "Services Offered",
+            "paragraph": "I offer the following services",
+            "servicesList": [
+                  {
+                        "serviceIcon": "fas fa-mobile-alt",
+                        "heading": "Mobile Development",
+                        "paragraph": "Mobile developer with experience in building responsive and user-friendly mobile applications."
+                  },
+                  {
+                        "serviceIcon": "fas fa-globe",
+                        "heading": "Web Development",
+                        "paragraph": "Web developer with expertise in building modern and scalable web applications using the latest technologies."
+                  },
+                  {
+                        "serviceIcon": "fas fa-chart-line",
+                        "heading": "Data Science",
+                        "paragraph": "Data scientist with strong analytical skills and experience in extracting insights from large datasets."
+                  },
+                  {
+                        "serviceIcon": "fas fa-paint-brush",
+                        "heading": "UI/UX Design",
+                        "paragraph": "UI/UX designer with the ability to create visually appealing and intuitive user interfaces."
+                  },
+                  {
+                        "serviceIcon": "fas fa-chart-bar",
+                        "heading": "Data Analysis",
+                        "paragraph": "Data analyst with expertise in analyzing and interpreting data to support informed business decisions."
+                  },
+                  {
+                        "serviceIcon": "fas fa-bug",
+                        "heading": "Bug Fixing",
+                        "paragraph": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
+                  }
+            ]
+      },
+      "Testimonials": [
             {
-                  "heading": "A Software Developer and a Data Scientist.",
-                  "paragraph": "Discover the work of an experienced developer with a diverse skill set Explore the projects I ve created across various domains and technologies, showcasing a commitment to excellence and a passion."
+                  "profileImage": "https://picsum.photos/300/300",
+                  "heading2": "John Doe",
+                  "paragraph": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
             },
             {
-                  "animation1":"https://lottie.host/?file=c3773401-bd0e-463c-b40c-10fca3d8bb26/keuFXPbmXu.json",
-                  "animation2": "https://lottie.host/?file=006a1cc3-969a-4544-8942-0c71aa4a2793/3Jz48sWM5y.json",
-                  "animation3": "https://lottie.host/?file=5a1c7285-51c2-40a2-930d-493865e3954f/pnQ5sY6aKu.json",
-                  "animation4": "https://lottie.host/?file=bb71dcd2-8f95-4ef8-b997-070589bc96e1/XMW1Ur76sG.json",
-                  "animation5": "https://lottie.host/?file=b6d96d37-2763-4c49-b079-fe7d63e56e93/Wzfyp4LCXq.json"
+                  "profileImage": "https://picsum.photos/300/300",
+                  "heading2": "Jane Williams",
+                  "paragraph": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
+            },
+            {
+                  "profileImage": "https://picsum.photos/300/300",
+                  "heading2": "Anthony Maina",
+                  "paragraph": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
             }
-      ]
+      ],
+      "projects": {
+            "heading1": "Completed Projects",
+            "paragraph": "In the last two years",
+            "projectsList": [
+                  {
+                        "image": "https://picsum.photos/980",
+                        "heading2": "Organizer",
+                        "stackName": "Mobile App",
+                        "date": "18 Jun. 2023",
+                        "link": {
+                              "href": "",
+                              "text": "Mobile App"
+                        }
+                  },
+                  {
+                        "src": "https://picsum.photos/1080",
+                        "heading2": "Dev Auto",
+                        "stackName": "Dev Tool",
+                        "date": "12 Jan. 2022",
+                        "link": {
+                              "href": "",
+                              "text": "Dev Tool"
+                        }
+                  },
+                  {
+                        "src": "https://picsum.photos/1180",
+                        "heading2": "Webchat",
+                        "stackName": "Website",
+                        "date": "10 Mar. 2023",
+                        "link": {
+                              "href": "",
+                              "text": "Website"
+                        }
+                  },
+                  {
+                        "src": "https://picsum.photos/900",
+                        "heading2": "Upcoming AI",
+                        "stackName": "Data Science",
+                        "date": "20 Feb. 2023",
+                        "link": {
+                              "href": "",
+                              "text": "Data Science"
+                        }
+                  },
+                  {
+                        "src": "https://picsum.photos/1800",
+                        "heading2": "Sprianto IQ",
+                        "stackName": "Website",
+                        "date": "13 Jul. 2023",
+                        "link": {
+                              "href": "",
+                              "text": "Website"
+                        }
+                  },
+                  {
+                        "src": "https://picsum.photos/1000",
+                        "heading2": "Farm AI",
+                        "stackName": "Data Science",
+                        "date": "7 Nov. 2023",
+                        "link": {
+                              "href": "",
+                              "text": "Data Science"
+                        }
+                  }
+            ]
+      }
 }
