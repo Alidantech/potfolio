@@ -1,23 +1,23 @@
 {
       "welcome": {
-            "heading1": "Welcome to My Developer Portfolio",
-            "paragraph": "Passionate about coding and creating innovative solutions. Explore my projects and experience in the world of development.",
-            "profileImage": "assets/profile.png",
-            "links": {
+            "heading": "Welcome to My Developer Portfolio",
+            "description": "Passionate about coding and creating innovative solutions. Explore my projects and experience in the world of development.",
+            "image": "assets/profile.png",
+            "link1": {
                   "href": "/projects",
                   "text": "Explore Projects"
             },
-            "heading2": "Driven BY:",
+            "title": "Driven BY:",
             "infoList": [
                   "Focus",
                   "Determination",
                   "Passion"
             ],
-            "a": {
+            "link2": {
                   "href": "/about",
                   "text": "Learn More"
             },
-            "animatedFrame": [
+            "animatedFrames": [
                   "https://lottie.host/?file=c3773401-bd0e-463c-b40c-10fca3d8bb26/keuFXPbmXu.json",
                   "https://lottie.host/?file=bb71dcd2-8f95-4ef8-b997-070589bc96e1/XMW1Ur76sG.json",
                   "https://lottie.host/?file=b6d96d37-2763-4c49-b079-fe7d63e56e93/Wzfyp4LCXq.json",
@@ -26,7 +26,7 @@
             ]
       },
       "personalInfo": {
-            "profileImage": "https://picsum.photos/300/300",
+            "image": "https://picsum.photos/300/300",
             "about": [
                   "Hello, my name is Peter. I am a passionate web developer and software engineer based in Kenya. With a strong foundation in programming and a keen eye for design, I strive to create engaging and user-friendly web applications.",
                   "My journey in the world of technology began on 2021. Over the years, I have gained expertise in Web Development, allowing me to tackle a variety of projects with confidence and efficiency.",
@@ -41,8 +41,8 @@
                   ]
             },
             "skills": {
-                  "heading2": "Skills & Languages",
-                  "progressView": {
+                  "title": "Skills & Languages",
+                  "progressList": {
                         "Java": 98,
                         "Python": 75,
                         "Typescript/Js": 95,
@@ -50,91 +50,94 @@
                   }
             }
       },
-      "Statistics": {
-            "stickyImage": "https://picsum.photos/1080",
-            "skillsIcons": [
+      "statistics": {
+            "bgImage": "https://picsum.photos/1080",
+            "statisticsList": [
                   {
-                        "skillIcon": "fas fa-building",
-                        "heading": "10",
-                        "skillTitle": "ORGANISATIONS"
+                        "icon": "fas fa-building",
+                        "title": "10",
+                        "subTitle": "ORGANISATIONS"
                   },
                   {
-                        "skillIcon": "fas fa-users",
-                        "heading": "8",
-                        "progressTitle": "CLIENTS"
+                        "icon": "fas fa-users",
+                        "title": "8",
+                        "subTitle": "CLIENTS"
                   },
                   {
-                        "skillIcon": "fas fa-clipboard-list",
-                        "heading": "54",
-                        "progressTitle": "JOBS COMPLETED"
+                        "icon": "fas fa-clipboard-list",
+                        "title": "54",
+                        "subTitle": "JOBS COMPLETED"
                   },
                   {
-                        "skillIcon": "fas fa-hourglass",
-                        "heading": "3",
-                        "progressTitle": "YEARS EXPERIENCE"
+                        "icon": "fas fa-hourglass",
+                        "title": "3",
+                        "subTitle": "YEARS EXPERIENCE"
                   }
             ]
       },
       "services": {
             "heading": "Services Offered",
-            "paragraph": "I offer the following services",
+            "description": "I offer the following services",
             "servicesList": [
                   {
-                        "serviceIcon": "fas fa-mobile-alt",
-                        "heading": "Mobile Development",
-                        "paragraph": "Mobile developer with experience in building responsive and user-friendly mobile applications."
+                        "icon": "fas fa-mobile-alt",
+                        "title": "Apps Development",
+                        "description": "Mobile developer with experience in building responsive and user-friendly mobile applications."
                   },
                   {
-                        "serviceIcon": "fas fa-globe",
-                        "heading": "Web Development",
-                        "paragraph": "Web developer with expertise in building modern and scalable web applications using the latest technologies."
+                        "icon": "fas fa-globe",
+                        "title": "Web Development",
+                        "description": "Web developer with expertise in building modern and scalable web applications using the latest technologies."
                   },
                   {
-                        "serviceIcon": "fas fa-chart-line",
-                        "heading": "Data Science",
-                        "paragraph": "Data scientist with strong analytical skills and experience in extracting insights from large datasets."
+                        "icon": "fas fa-chart-line",
+                        "title": "Data Science",
+                        "description": "Data scientist with strong analytical skills and experience in extracting insights from large datasets."
                   },
                   {
-                        "serviceIcon": "fas fa-paint-brush",
-                        "heading": "UI/UX Design",
-                        "paragraph": "UI/UX designer with the ability to create visually appealing and intuitive user interfaces."
+                        "icon": "fas fa-paint-brush",
+                        "title": "UI/UX Design",
+                        "description": "UI/UX designer with the ability to create visually appealing and intuitive user interfaces."
                   },
                   {
-                        "serviceIcon": "fas fa-chart-bar",
-                        "heading": "Data Analysis",
-                        "paragraph": "Data analyst with expertise in analyzing and interpreting data to support informed business decisions."
+                        "icon": "fas fa-chart-bar",
+                        "title": "Data Analysis",
+                        "description": "Data analyst with expertise in analyzing and interpreting data to support informed business decisions."
                   },
                   {
-                        "serviceIcon": "fas fa-bug",
-                        "heading": "Bug Fixing",
-                        "paragraph": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
+                        "icon": "fas fa-bug",
+                        "title": "Bug Fixing",
+                        "description": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
                   }
             ]
       },
-      "Testimonials": [
-            {
-                  "profileImage": "https://picsum.photos/300/300",
-                  "heading2": "John Doe",
-                  "paragraph": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
-            },
-            {
-                  "profileImage": "https://picsum.photos/300/300",
-                  "heading2": "Jane Williams",
-                  "paragraph": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
-            },
-            {
-                  "profileImage": "https://picsum.photos/300/300",
-                  "heading2": "Anthony Maina",
-                  "paragraph": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
-            }
-      ],
+      "testimonials": {
+            "bgImage": "https://picsum.photos/id12/1080",
+            "testimonies": [
+                  {
+                        "image": "https://picsum.photos/300/300",
+                        "title": "John Doe",
+                        "description": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
+                  },
+                  {
+                        "image": "https://picsum.photos/300/300",
+                        "title": "Jane Williams",
+                        "description": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
+                  },
+                  {
+                        "image": "https://picsum.photos/300/300",
+                        "title": "Anthony Maina",
+                        "description": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
+                  }
+            ]
+      },
       "projects": {
-            "heading1": "Completed Projects",
-            "paragraph": "In the last two years",
+            "heading": "Completed Projects",
+            "description": "In the last two years",
             "projectsList": [
                   {
                         "image": "https://picsum.photos/980",
-                        "heading2": "Organizer",
+                        "title": "Organizer",
                         "stackName": "Mobile App",
                         "date": "18 Jun. 2023",
                         "link": {
@@ -143,8 +146,8 @@
                         }
                   },
                   {
-                        "src": "https://picsum.photos/1080",
-                        "heading2": "Dev Auto",
+                        "image": "https://picsum.photos/1080",
+                        "title": "Dev Auto",
                         "stackName": "Dev Tool",
                         "date": "12 Jan. 2022",
                         "link": {
@@ -153,8 +156,8 @@
                         }
                   },
                   {
-                        "src": "https://picsum.photos/1180",
-                        "heading2": "Webchat",
+                        "image": "https://picsum.photos/1180",
+                        "title": "Webchat",
                         "stackName": "Website",
                         "date": "10 Mar. 2023",
                         "link": {
@@ -163,8 +166,8 @@
                         }
                   },
                   {
-                        "src": "https://picsum.photos/900",
-                        "heading2": "Upcoming AI",
+                        "image": "https://picsum.photos/900",
+                        "title": "Upcoming AI",
                         "stackName": "Data Science",
                         "date": "20 Feb. 2023",
                         "link": {
@@ -173,8 +176,8 @@
                         }
                   },
                   {
-                        "src": "https://picsum.photos/1800",
-                        "heading2": "Sprianto IQ",
+                        "image": "https://picsum.photos/1800",
+                        "title": "Sprianto IQ",
                         "stackName": "Website",
                         "date": "13 Jul. 2023",
                         "link": {
@@ -183,8 +186,8 @@
                         }
                   },
                   {
-                        "src": "https://picsum.photos/1000",
-                        "heading2": "Farm AI",
+                        "image": "https://picsum.photos/1000",
+                        "title": "Farm AI",
                         "stackName": "Data Science",
                         "date": "7 Nov. 2023",
                         "link": {

@@ -16,14 +16,14 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ currentPage }) => {
   //FETCH JSON DATA FROM A JSON FILE
-  const [links, setLinks] = useState<Link[]>([]);
+  const [headerdata, setHeaderData] = useState<Link[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("data/links.json");
+        const response = await fetch("data/header.json");
         const data = await response.json();
-        setLinks(data["Pages-Links"]);
+        setHeaderData(data["Pages-Links"]);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -75,18 +75,11 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
     <AppBar $isScrolled={isScrolled} ref={navRef}>
       <a href="/">
         <Logo>
-          <LogoImage src="assets/favicon.png" alt="logo" />
-          <LogoImage src="assets/l.png" alt="logo" />
-          <LogoImage src="assets/i.png" alt="logo" />
-          <LogoImage src="assets/d.png" alt="logo" />
-          <LogoImage src="assets/favicon.png" alt="logo" />
-          <LogoImage src="assets/n.png" alt="logo" />
-          <LogoImage src="assets/t.png" alt="logo" />
-          <LogoImage src="assets/e.png" alt="logo" />
+          <LogoImage src="assets/logo.png" alt="logo" />
         </Logo>
       </a>
       <NavBar $showLinks={showLinks}>
-        {links.map((link) => (
+        {headerdata.map((link) => (
           <HeaderLink key={link.label} href={link.url}>
             {link.label}
           </HeaderLink>

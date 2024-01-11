@@ -51,3 +51,24 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
 };
 
 export default Carousel;
+
+
+// const slides = [
+  //  ,
+  //   <FlexRows>
+  //     <ProfileImage src="https://picsum.photos/300/300" />
+  //     <Heading2>Jane Williams</Heading2>
+  //     <Paragraph>
+  //       Developer with strong debugging skills and the ability to identify and
+  //       fix <br /> software bugs efficiently.
+  //     </Paragraph>
+  //   </FlexRows>,
+  //   <FlexRows>
+  //     <ProfileImage src="https://picsum.photos/300/300" />
+  //     <Heading2>Anthony Maina</Heading2>
+  //     <Paragraph>
+  //       Developer with strong debugging skills and the ability to identify and
+  //       fix <br /> software bugs efficiently.
+  //     </Paragraph>
+  //   </FlexRows>,
+  // ];

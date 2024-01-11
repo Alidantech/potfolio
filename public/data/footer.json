@@ -1,0 +1,117 @@
+{
+      "statistics": [
+            {
+                  "title": "Projects",
+                  "count": "120"
+            },
+            {
+                  "title": "Websites",
+                  "count": "10"
+            },
+            {
+                  "title": "Mobile Apps",
+                  "count": "33"
+            }
+      ],
+      "info": {
+            "heading": "About Me",
+            "text": "Passionate developer with expertise in Data Science, OOP, and Web Development...",
+            "link": {
+                  "text": "Learn more",
+                  "href": "/about"
+            }
+      },
+      "links": [
+            {
+                  "heading": "Page Links",
+                  "list": [
+                        {
+                              "title": "home",
+                              "icon": "fas fa-phone",
+                              "link": "/"
+                        },
+                        {
+                              "title": "projects",
+                              "icon": "fas fa-phone",
+                              "link": "/projects"
+                        },
+                        {
+                              "title": "contacts",
+                              "icon": "fas fa-phone",
+                              "link": "/contact"
+                        },
+                        {
+                              "title": "about",
+                              "icon": "fas fa-phone",
+                              "link": "/music"
+                        }
+                  ]
+            },
+            {
+                  "heading": "Contacts",
+                  "list": [
+                        {
+                              "link": "tel:+254748311679",
+                              "icon": "fas fa-phone",
+                              "title": "Telephone"
+                        },
+                        {
+                              "link": "https://t.me/+254748311679",
+                              "icon": "fab fa-telegram",
+                              "title": "Telegram"
+                        },
+                        {
+                              "link": "https://wa.me/+254746977253",
+                              "icon": "fab fa-whatsapp",
+                              "title": "Whatsapp"
+                        }
+                  ]
+            },
+            {
+                  "heading": "Repositories",
+                  "list": [
+                        {
+                              "link": "https://github.com/Alidante254/upcoming",
+                              "icon": "fab fa-github",
+                              "title": "Upcoming"
+                        },
+                        {
+                              "link": "https://github.com/Alidante254/organiser",
+                              "icon": "fab fa-github",
+                              "title": "Organiser"
+                        },
+                        {
+                              "link": "https://github.com/Alidante254/dev-auto",
+                              "icon": "fab fa-github",
+                              "title": "Dev Auto"
+                        }
+                  ]
+            }
+      ],
+      "credits": {
+            "copyright": "2024",
+            "owner": "Alidante"
+      },
+      "socials": [
+            {
+                  "link": "https://twitter.com/alidantepeter",
+                  "icon": "fab fa-twitter",
+                  "title": "Twitter(X)"
+            },
+            {
+                  "link": "https://facebook.com/Alidante_Peter",
+                  "icon": "fab fa-facebook",
+                  "title": "Facebook"
+            },
+            {
+                  "link": "https://instagram.com/alidante_254",
+                  "icon": "fab fa-instagram",
+                  "title": "Instagram"
+            },
+            {
+                  "link": "https://www.linkedin.com/in/peterirungu254/",
+                  "icon": "fab fa-linkedin",
+                  "title": "Linkedin"
+            }
+      ]
+}
