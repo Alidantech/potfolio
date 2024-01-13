@@ -74,7 +74,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
   return (
     <AppBar $isScrolled={isScrolled} ref={navRef}>
       <a href="/">
-        <Logo>
+        <Logo >
           <LogoImage src="assets/logo.png" alt="logo" />
         </Logo>
       </a>
@@ -89,7 +89,7 @@ const Header: React.FC<HeaderProps> = ({ currentPage }) => {
         {currentPage}
         <ButtonIcon className="fas fa-caret-down" />
       </DropDownButton>
-      <SecondaryButton>Hire Me</SecondaryButton>
+      <SecondaryButton>HIRE ME</SecondaryButton>
     </AppBar>
   );
 };

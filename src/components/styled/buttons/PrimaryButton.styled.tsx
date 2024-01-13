@@ -19,9 +19,9 @@ export const PrimaryButton = styled(Button)`
   font-weight: bold;
   border: 2px solid rgb(7, 133, 172);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  border-radius: 10px 4px;
+  border-radius: 25PX;
   &:hover {
     background-color: transparent;
-    color: rgb(7, 133, 172);
+    scale: 1.1;
   }
 `;
