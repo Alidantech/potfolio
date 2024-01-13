@@ -26,7 +26,7 @@
             ]
       },
       "personalInfo": {
-            "image": "https://picsum.photos/300/300",
+            "image": "assets/profilepic.jpg",
             "about": [
                   "Hello, my name is Peter. I am a passionate web developer and software engineer based in Kenya. With a strong foundation in programming and a keen eye for design, I strive to create engaging and user-friendly web applications.",
                   "My journey in the world of technology began on 2021. Over the years, I have gained expertise in Web Development, allowing me to tackle a variety of projects with confidence and efficiency.",
@@ -112,22 +112,22 @@
             ]
       },
       "testimonials": {
-            "bgImage": "https://picsum.photos/id12/1080",
+            "bgImage": "https://picsum.photos/1100",
             "testimonies": [
                   {
-                        "image": "https://picsum.photos/300/300",
+                        "image": "https://picsum.photos/250",
                         "title": "John Doe",
-                        "description": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
+                        "description": "Peter's coding expertise is outstanding! Collaborating with him has been a pleasure—efficient problem-solving and top-notch quality."
                   },
                   {
-                        "image": "https://picsum.photos/300/300",
+                        "image": "https://picsum.photos/210",
                         "title": "Jane Williams",
-                        "description": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
+                        "description": "Peter's development skills are impressive. His attention to detail and commitment to quality make him a reliable and skilled professional."
                   },
                   {
-                        "image": "https://picsum.photos/300/300",
+                        "image": "https://picsum.photos/200",
                         "title": "Anthony Maina",
-                        "description": "Developer with strong debugging skills and the ability to identify and fix software bugs efficiently."
+                        "description": "Peter excels in debugging and consistently delivers exceptional results. A developer you can trust for high-quality work."
                   }
             ]
       },
@@ -136,62 +136,62 @@
             "description": "In the last two years",
             "projectsList": [
                   {
-                        "image": "https://picsum.photos/980",
+                        "image": "assets/organiser.jpg",
                         "title": "Organizer",
                         "stackName": "Mobile App",
                         "date": "18 Jun. 2023",
                         "link": {
-                              "href": "",
+                              "href": "https://github.com/Alidante254/organiser",
                               "text": "Mobile App"
                         }
                   },
                   {
-                        "image": "https://picsum.photos/1080",
+                        "image": "assets/devauto.png",
                         "title": "Dev Auto",
                         "stackName": "Dev Tool",
                         "date": "12 Jan. 2022",
                         "link": {
-                              "href": "",
+                              "href": "https://github.com/Alidante254/devauto",
                               "text": "Dev Tool"
                         }
                   },
                   {
-                        "image": "https://picsum.photos/1180",
+                        "image": "assets/webchat.png",
                         "title": "Webchat",
                         "stackName": "Website",
                         "date": "10 Mar. 2023",
                         "link": {
-                              "href": "",
+                              "href": "https://github.com/Alidante254/transchat",
                               "text": "Website"
                         }
                   },
                   {
-                        "image": "https://picsum.photos/900",
+                        "image": "assets/upcoming.png",
                         "title": "Upcoming AI",
                         "stackName": "Data Science",
                         "date": "20 Feb. 2023",
                         "link": {
-                              "href": "",
+                              "href": "https://alidante.pythonanywhere.com/",
                               "text": "Data Science"
                         }
                   },
                   {
-                        "image": "https://picsum.photos/1800",
+                        "image": "assets/spriantoiq.png",
                         "title": "Sprianto IQ",
                         "stackName": "Website",
                         "date": "13 Jul. 2023",
                         "link": {
-                              "href": "",
+                              "href": "https://spriantoiq.netlify.app",
                               "text": "Website"
                         }
                   },
                   {
-                        "image": "https://picsum.photos/1000",
+                        "image": "assets/farmai.png",
                         "title": "Farm AI",
                         "stackName": "Data Science",
                         "date": "7 Nov. 2023",
                         "link": {
-                              "href": "",
+                              "href": "https://github.com/Alidante254/farmai",
                               "text": "Data Science"
                         }
                   }

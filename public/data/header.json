@@ -1,22 +1,22 @@
 {
       "Pages-Links": [
             {
-                  "label": "Home",
+                  "label": "HOME",
                   "url": "/",
                   "icon": "house"
             },
             {
-                  "label": "Projects",
+                  "label": "PROJECTS",
                   "url": "/projects",
                   "icon": "book"
             },
             {
-                  "label": "Contact",
+                  "label": "CONTACT",
                   "url": "/contact",
                   "icon": "phone"
             },
             {
-                  "label": "About",
+                  "label": "ABOUT",
                   "url": "/about",
                   "icon": "moon"
             }
