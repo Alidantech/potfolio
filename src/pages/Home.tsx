@@ -4,22 +4,22 @@ import {
   Skills,
   Stacks,
   Testimonials,
-} from "../styled/sections/sections";
-import { ProfileImage, StickyImage } from "../styled/images/images";
+} from "../components/styled/sections/sections";
+import { ProfileImage, StickyImage } from "../components/styled/images/images";
 import {
   Heading1,
   Heading2,
   Paragraph,
   InfoData,
   ProgressTitle,
-} from "../styled/text/text";
+} from "../components/styled/text/text";
 import {
   StackCard,
   InfoCard,
   SkillCard,
   StackCardDetails,
   StackCardInfo,
-} from "../styled/cards/cards";
+} from "../components/styled/cards/cards";
 import {
   FlexColumns,
   SpacedColumns,
@@ -30,19 +30,19 @@ import {
   SkillsBox,
   ProfileBox,
   DescBox,
-} from "../styled/containers/containers";
+} from "../components/styled/containers/containers";
 import {
   DecoratedUnderline,
   TransparentBg,
   AnimatedFrame,
-} from "../styled/items/items";
-import { StackCardImage, ImageBox } from "../styled/images/images";
-import { ButtonIcon, SkillIcon } from "../styled/icons/icons";
-import { FullProgressBar, ProgressBar } from "../styled/widgets/Widgets";
+} from "../components/styled/items/items";
+import { StackCardImage, ImageBox } from "../components/styled/images/images";
+import { ButtonIcon, SkillIcon } from "../components/styled/icons/icons";
+import { FullProgressBar, ProgressBar } from "../components/styled/widgets/Widgets";
 import React, { useState, useEffect } from "react";
-import Carousel from "../Carousel";
-import { IconLink } from "../styled/links/IconLink.styled";
-import DataLoading from "../DataLoading";
+import Carousel from "../components/Carousel";
+import DataLoading from "../components/DataLoading";
+import { IconLink } from "../components/styled/links/links";
 
 function Home() {
   // Fetch homeData from the home.json file
