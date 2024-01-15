@@ -13,14 +13,15 @@ const Button = styled.button`
 `;
 
 export const SecondaryButton = styled(Button)`
-  padding: 1vh 2.5vh;
+  padding: 0.75vh 3vh;
   background-color: transparent;
   color: rgb(7, 133, 172);
   font-weight: bold;
-  border: 2px solid rgb(7, 133, 172);
-  border-radius: 10px 5px;
+  border: 1px solid rgb(7, 133, 172);
+  border-radius: 25px;
   &:hover {
     background-color: rgb(7, 133, 172);
     color: #ffffff;
+    scale: 1.1;
   }
 `;

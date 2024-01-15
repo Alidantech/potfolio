@@ -1,6 +1,7 @@
 # My Portfolio Website 🌟
 
 Welcome to my portfolio website! This is a showcase of my work, including projects I have developed and music I have created. Feel free to explore and get in touch! ✨
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0665a3cf-d8e4-48d3-b379-8183fad31c2d/deploy-status)](https://app.netlify.com/sites/alidante/deploys)
 
 ## Technologies Used 🚀
 
