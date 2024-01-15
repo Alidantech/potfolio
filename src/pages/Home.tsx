@@ -4,22 +4,22 @@ import {
   Skills,
   Stacks,
   Testimonials,
-} from "../styled/sections/sections";
-import { ProfileImage, StickyImage } from "../styled/images/images";
+} from "../components/styled/sections/sections";
+import { ProfileImage, StickyImage } from "../components/styled/images/images";
 import {
   Heading1,
   Heading2,
   Paragraph,
   InfoData,
   ProgressTitle,
-} from "../styled/text/text";
+} from "../components/styled/text/text";
 import {
   StackCard,
   InfoCard,
   SkillCard,
   StackCardDetails,
   StackCardInfo,
-} from "../styled/cards/cards";
+} from "../components/styled/cards/cards";
 import {
   FlexColumns,
   SpacedColumns,
@@ -30,18 +30,19 @@ import {
   SkillsBox,
   ProfileBox,
   DescBox,
-} from "../styled/containers/containers";
+} from "../components/styled/containers/containers";
 import {
   DecoratedUnderline,
   TransparentBg,
   AnimatedFrame,
-} from "../styled/items/items";
-import { StackCardImage, ImageBox } from "../styled/images/images";
-import { ButtonIcon, SkillIcon } from "../styled/icons/icons";
-import { FullProgressBar, ProgressBar } from "../styled/widgets/Widgets";
-import { IconButton } from "../styled/buttons/buttons";
+} from "../components/styled/items/items";
+import { StackCardImage, ImageBox } from "../components/styled/images/images";
+import { ButtonIcon, SkillIcon } from "../components/styled/icons/icons";
+import { FullProgressBar, ProgressBar } from "../components/styled/widgets/Widgets";
 import React, { useState, useEffect } from "react";
-import Carousel from "../Carousel";
+import Carousel from "../components/Carousel";
+import DataLoading from "../components/DataLoading";
+import { IconLink } from "../components/styled/links/links";
 
 function Home() {
   // Fetch homeData from the home.json file
@@ -62,7 +63,7 @@ function Home() {
   }, []);
 
   if (!homeData) {
-    return <div>Loading...</div>;
+    return <DataLoading />;
   }
 
   return (
@@ -78,7 +79,9 @@ function Home() {
             <ProfileImage src={homeData.welcome.image} />
           </FlexRows>
           <FlexRows>
-            <a href={homeData.welcome.link1.href}>{homeData.welcome.link1.text}</a>
+            <a href={homeData.welcome.link1.href}>
+              {homeData.welcome.link1.text}
+            </a>
             <DecoratedUnderline />
             <Heading2>{homeData.welcome.title}</Heading2>
             <InfoList>
@@ -87,13 +90,17 @@ function Home() {
               ))}
             </InfoList>
             <DecoratedUnderline />
-            <a href={homeData.welcome.link2.href}>{homeData.welcome.link2.text}</a>
+            <a href={homeData.welcome.link2.href}>
+              {homeData.welcome.link2.text}
+            </a>
           </FlexRows>
         </DescBox>
         <SpacedColumns>
-          {homeData.welcome.animatedFrames.map((frame: string, index: number) => (
-            <AnimatedFrame key={index} src={frame} />
-          ))}
+          {homeData.welcome.animatedFrames.map(
+            (frame: string, index: number) => (
+              <AnimatedFrame key={index} src={frame} />
+            )
+          )}
         </SpacedColumns>
       </Welcome>
 
@@ -257,9 +264,9 @@ function Home() {
                           {project.date}
                         </p>
                       </StackCardInfo>
-                      <IconButton>
+                      <IconLink href={project.link.href}>
                         <ButtonIcon className="fas fa-eye" />
-                      </IconButton>
+                      </IconLink>
                     </SpacedColumns>
                   </StackCardDetails>
                 </StackCard>

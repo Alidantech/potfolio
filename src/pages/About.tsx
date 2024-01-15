@@ -1,17 +1,17 @@
-import { InfoCard } from "../styled/cards/InfoCard.styled";
-import { FlexRows } from "../styled/containers/FlexRows.styled";
-import { InfoBox } from "../styled/containers/InfoBox.styled";
-import { InfoList } from "../styled/containers/InfoList.syled";
-import { ListItem } from "../styled/containers/ListItem.styled";
-import { ProfileBox } from "../styled/containers/ProfileBox.styled";
-import { SkillsBox } from "../styled/containers/SkillsBox.styled";
-import { ProfileImage } from "../styled/images/ProfileImage.syled";
-import { DecoratedUnderline } from "../styled/items/DecoratedUnderline.styled";
-import { PersonalInfo } from "../styled/sections/PesonalInfo.styled";
-import { Heading2 } from "../styled/text/Heading2.styled";
-import { InfoData } from "../styled/text/InfoData.styled";
-import { Paragraph } from "../styled/text/Paragraph.styled";
-import { FullProgressBar, ProgressBar } from "../styled/widgets/ProgressBar.styled";
+import { InfoCard } from "../components/styled/cards/InfoCard.styled";
+import { FlexRows } from "../components/styled/containers/FlexRows.styled";
+import { InfoBox } from "../components/styled/containers/InfoBox.styled";
+import { InfoList } from "../components/styled/containers/InfoList.syled";
+import { ListItem } from "../components/styled/containers/ListItem.styled";
+import { ProfileBox } from "../components/styled/containers/ProfileBox.styled";
+import { SkillsBox } from "../components/styled/containers/SkillsBox.styled";
+import { ProfileImage } from "../components/styled/images/ProfileImage.syled";
+import { DecoratedUnderline } from "../components/styled/items/DecoratedUnderline.styled";
+import { PersonalInfo } from "../components/styled/sections/PesonalInfo.styled";
+import { Heading2 } from "../components/styled/text/Heading2.styled";
+import { InfoData } from "../components/styled/text/InfoData.styled";
+import { Paragraph } from "../components/styled/text/Paragraph.styled";
+import { FullProgressBar, ProgressBar } from "../components/styled/widgets/ProgressBar.styled";
 
 
 function About() {

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, Projects, Contact, About } from "./pages/Pages";
+import { Home, Projects, Contact, About } from "../pages/Pages";
 import { MainContent } from "./styled/widgets/Widgets";
 
 interface PageProps {

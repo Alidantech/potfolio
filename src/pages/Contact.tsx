@@ -2,9 +2,9 @@ import {
   TexInput,
   TextArea,
   SubmitInput,
-} from "../styled/inputs/inputs.styled";
-import { ContactCard } from '../styled/cards/cards';
-import { ContactPart } from "../styled/sections/sections";
+} from "../components/styled/inputs/inputs.styled";
+import { ContactCard } from '../components/styled/cards/cards';
+import { ContactPart } from "../components/styled/sections/sections";
 
 function Contact() {
   

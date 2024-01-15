@@ -26,24 +26,24 @@
                   "heading": "Page Links",
                   "list": [
                         {
-                              "title": "home",
-                              "icon": "fas fa-phone",
+                              "title": "Homepage",
+                              "icon": "fas fa-home",
                               "link": "/"
                         },
                         {
-                              "title": "projects",
-                              "icon": "fas fa-phone",
+                              "title": "My Projects",
+                              "icon": "fas fa-code",
                               "link": "/projects"
                         },
                         {
-                              "title": "contacts",
-                              "icon": "fas fa-phone",
+                              "title": "Contacts",
+                              "icon": "fas fa-address-book",
                               "link": "/contact"
                         },
                         {
-                              "title": "about",
-                              "icon": "fas fa-phone",
-                              "link": "/music"
+                              "title": "About me",
+                              "icon": "fas fa-info-circle",
+                              "link": "/about"
                         }
                   ]
             },
@@ -81,7 +81,7 @@
                               "title": "Organiser"
                         },
                         {
-                              "link": "https://github.com/Alidante254/dev-auto",
+                              "link": "https://github.com/Alidante254/devauto",
                               "icon": "fab fa-github",
                               "title": "Dev Auto"
                         }
