@@ -1,15 +1,15 @@
-import { IconButton } from "../styled/buttons/IconButton.styled";
-import { StackCard, StackCardDetails, StackCardInfo } from "../styled/cards/StackCard.styled";
-import { FlexColumns } from "../styled/containers/FlexColumns.styled";
-import { FlexRows } from "../styled/containers/FlexRows.styled";
-import { SpacedColumns } from "../styled/containers/SpacedColumns.styled";
-import { ButtonIcon } from "../styled/icons/ButtonIcon.styled";
-import { ImageBox, StackCardImage } from "../styled/images/StackCardImage.styled";
-import { DecoratedUnderline } from "../styled/items/DecoratedUnderline.styled";
-import { Stacks } from "../styled/sections/Stacks.styled";
-import { Heading1 } from "../styled/text/Heading1.styled";
-import { Heading2 } from "../styled/text/Heading2.styled";
-import { Paragraph } from "../styled/text/Paragraph.styled";
+import { IconButton } from "../components/styled/buttons/IconButton.styled";
+import { StackCard, StackCardDetails, StackCardInfo } from "../components/styled/cards/StackCard.styled";
+import { FlexColumns } from "../components/styled/containers/FlexColumns.styled";
+import { FlexRows } from "../components/styled/containers/FlexRows.styled";
+import { SpacedColumns } from "../components/styled/containers/SpacedColumns.styled";
+import { ButtonIcon } from "../components/styled/icons/ButtonIcon.styled";
+import { ImageBox, StackCardImage } from "../components/styled/images/StackCardImage.styled";
+import { DecoratedUnderline } from "../components/styled/items/DecoratedUnderline.styled";
+import { Stacks } from "../components/styled/sections/Stacks.styled";
+import { Heading1 } from "../components/styled/text/Heading1.styled";
+import { Heading2 } from "../components/styled/text/Heading2.styled";
+import { Paragraph } from "../components/styled/text/Paragraph.styled";
 
 
 
