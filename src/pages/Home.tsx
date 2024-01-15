@@ -38,15 +38,22 @@ import {
 } from "../components/styled/items/items";
 import { StackCardImage, ImageBox } from "../components/styled/images/images";
 import { ButtonIcon, SkillIcon } from "../components/styled/icons/icons";
-import { FullProgressBar, ProgressBar } from "../components/styled/widgets/Widgets";
+import {
+  FullProgressBar,
+  ProgressBar,
+} from "../components/styled/widgets/Widgets";
 import React, { useState, useEffect } from "react";
 import Carousel from "../components/Carousel";
 import DataLoading from "../components/DataLoading";
 import { IconLink } from "../components/styled/links/links";
+import { MotionValue, motion } from "framer-motion";
+import useOnScreen from "../components/useOnScreen";
 
 function Home() {
   // Fetch homeData from the home.json file
   const [homeData, sethomeData] = useState<any | null>(null);
+  const [ref, isIntersecting] = useOnScreen({ options: { threshold: 0.2 } });
+  const [Skillref, isSRIntersecting] = useOnScreen({ options: { threshold: 0.2 } });
 
   useEffect(() => {
     const fetchhomeData = async () => {
@@ -66,14 +73,57 @@ function Home() {
     return <DataLoading />;
   }
 
+
+  const textVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1, 
+      },
+    },
+  };
+
+  const charVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  
   return (
     <>
       {/* Welcome Section */}
       <Welcome>
         <DescBox>
           <FlexRows>
-            <Heading1>{homeData.welcome.heading}</Heading1>
-            <Paragraph>{homeData.welcome.description}</Paragraph>
+            <Heading1>
+              <motion.div
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                {homeData.welcome.heading.split("").map((char: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | MotionValue<number> | MotionValue<string> | null | undefined, charIndex: React.Key | null | undefined) => (
+                  <motion.span key={charIndex} variants={charVariants}>
+                    {char}
+                  </motion.span>
+                ))}
+              </motion.div>
+            </Heading1>
+            <motion.div
+              variants={textVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              <Paragraph>
+                {homeData.welcome.description
+                  .split("")
+                  .map((char: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | MotionValue<number> | MotionValue<string> | null | undefined, charIndex: React.Key | null | undefined) => (
+                    <motion.span key={charIndex} variants={charVariants}>
+                      {char}
+                    </motion.span>
+                  ))}
+              </Paragraph>
+            </motion.div>
           </FlexRows>
           <FlexRows>
             <ProfileImage src={homeData.welcome.image} />
@@ -196,13 +246,28 @@ function Home() {
                 },
                 index: number
               ) => (
-                <SkillCard key={index}>
-                  <FlexRows>
-                    <SkillIcon className={service.icon} />
-                    <Heading1>{service.title}</Heading1>
-                    <Paragraph>{service.description}</Paragraph>
-                  </FlexRows>
-                </SkillCard>
+                <motion.div
+                  key={index}
+                  ref={Skillref}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={
+                    isSRIntersecting
+                      ? { opacity: 1, y: 20, scale: 1 }
+                      : {
+                          scale: 0,
+                          opacity: 0,
+                        }
+                  }
+                  transition={{ duration: 0.3 }}
+                >
+                  <SkillCard key={index}>
+                    <FlexRows>
+                      <SkillIcon className={service.icon} />
+                      <Heading1>{service.title}</Heading1>
+                      <Paragraph>{service.description}</Paragraph>
+                    </FlexRows>
+                  </SkillCard>
+                </motion.div>
               )
             )}
           </FlexColumns>
@@ -251,25 +316,42 @@ function Home() {
                 },
                 index: number
               ) => (
-                <StackCard key={index}>
-                  <ImageBox>
-                    <StackCardImage src={project.image} />
-                  </ImageBox>
-                  <StackCardDetails>
-                    <SpacedColumns>
-                      <StackCardInfo>
-                        <Heading2>{project.title}</Heading2>
-                        <p>
-                          <a href={project.link.href}>{project.link.text}</a> /{" "}
-                          {project.date}
-                        </p>
-                      </StackCardInfo>
-                      <IconLink href={project.link.href}>
-                        <ButtonIcon className="fas fa-eye" />
-                      </IconLink>
-                    </SpacedColumns>
-                  </StackCardDetails>
-                </StackCard>
+                <motion.div
+                  key={index}
+                  ref={ref}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={
+                    isIntersecting
+                      ? { opacity: 1, y: 20, scale: 1 }
+                      : {
+                          opacity: 0,
+                          y: index % 2 === 0 ? "0%" : "-10%",
+                          x: 0,
+                          scale: 1.1
+                        }
+                  }
+                  transition={{ duration: 0.3 }}
+                >
+                  <StackCard key={index}>
+                    <ImageBox>
+                      <StackCardImage src={project.image} />
+                    </ImageBox>
+                    <StackCardDetails>
+                      <SpacedColumns>
+                        <StackCardInfo>
+                          <Heading2>{project.title}</Heading2>
+                          <p>
+                            <a href={project.link.href}>{project.link.text}</a>{" "}
+                            / {project.date}
+                          </p>
+                        </StackCardInfo>
+                        <IconLink href={project.link.href}>
+                          <ButtonIcon className="fas fa-eye" />
+                        </IconLink>
+                      </SpacedColumns>
+                    </StackCardDetails>
+                  </StackCard>
+                </motion.div>
               )
             )}
           </FlexColumns>

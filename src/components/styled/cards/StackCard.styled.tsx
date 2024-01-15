@@ -3,11 +3,12 @@ import { styled } from "styled-components";
 export const StackCard = styled.div`
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   min-width: 450px;
+  max-width: 450px;
   margin: 0 0;
-  height: 350px;
+  height: 325px;
   font-size: smaller;
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 
   & span {
     color: rgb(7, 133, 172);
@@ -42,7 +43,7 @@ export const StackCard = styled.div`
 
 export const StackCardDetails = styled.div`
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   @media screen and (max-width: 900px) {
     padding: 5px;
   }
