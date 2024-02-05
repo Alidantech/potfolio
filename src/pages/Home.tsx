@@ -3,7 +3,7 @@ import {
   PersonalInfo,
   Skills,
   Stacks,
-  Testimonials,
+  ClearBackground,
 } from "../components/styled/sections/sections";
 import { ProfileImage, StickyImage } from "../components/styled/images/images";
 import {
@@ -102,11 +102,31 @@ function Home() {
                 initial="hidden"
                 animate="visible"
               >
-                {homeData.welcome.heading.split("").map((char: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | MotionValue<number> | MotionValue<string> | null | undefined, charIndex: React.Key | null | undefined) => (
-                  <motion.span key={charIndex} variants={charVariants}>
-                    {char}
-                  </motion.span>
-                ))}
+                {homeData.welcome.heading
+                  .split("")
+                  .map(
+                    (
+                      char:
+                        | string
+                        | number
+                        | boolean
+                        | React.ReactElement<
+                            any,
+                            string | React.JSXElementConstructor<any>
+                          >
+                        | Iterable<React.ReactNode>
+                        | React.ReactPortal
+                        | MotionValue<number>
+                        | MotionValue<string>
+                        | null
+                        | undefined,
+                      charIndex: React.Key | null | undefined
+                    ) => (
+                      <motion.span key={charIndex} variants={charVariants}>
+                        {char}
+                      </motion.span>
+                    )
+                  )}
               </motion.div>
             </Heading1>
             <motion.div
@@ -117,11 +137,29 @@ function Home() {
               <Paragraph>
                 {homeData.welcome.description
                   .split("")
-                  .map((char: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | MotionValue<number> | MotionValue<string> | null | undefined, charIndex: React.Key | null | undefined) => (
-                    <motion.span key={charIndex} variants={charVariants}>
-                      {char}
-                    </motion.span>
-                  ))}
+                  .map(
+                    (
+                      char:
+                        | string
+                        | number
+                        | boolean
+                        | React.ReactElement<
+                            any,
+                            string | React.JSXElementConstructor<any>
+                          >
+                        | Iterable<React.ReactNode>
+                        | React.ReactPortal
+                        | MotionValue<number>
+                        | MotionValue<string>
+                        | null
+                        | undefined,
+                      charIndex: React.Key | null | undefined
+                    ) => (
+                      <motion.span key={charIndex} variants={charVariants}>
+                        {char}
+                      </motion.span>
+                    )
+                  )}
               </Paragraph>
             </motion.div>
           </FlexRows>
@@ -205,7 +243,7 @@ function Home() {
       </PersonalInfo>
 
       {/* Statistics Section */}
-      <Testimonials>
+      <ClearBackground>
         <StickyImage src={homeData.statistics.bgImage} />
         <TransparentBg>
           <FlexColumns>
@@ -228,7 +266,7 @@ function Home() {
             )}
           </FlexColumns>
         </TransparentBg>
-      </Testimonials>
+      </ClearBackground>
 
       {/* Skills Section */}
       <Skills>
@@ -275,7 +313,7 @@ function Home() {
       </Skills>
 
       {/* Testimonials Section */}
-      <Testimonials>
+      <ClearBackground>
         <StickyImage src={homeData.testimonials.bgImage} />
         <TransparentBg>
           <Carousel
@@ -294,7 +332,7 @@ function Home() {
             )}
           ></Carousel>
         </TransparentBg>
-      </Testimonials>
+      </ClearBackground>
 
       {/* Stacks Section */}
       <Stacks>
@@ -327,7 +365,7 @@ function Home() {
                           opacity: 0,
                           y: index % 2 === 0 ? "0%" : "-10%",
                           x: 0,
-                          scale: 1.1
+                          scale: 1.1,
                         }
                   }
                   transition={{ duration: 0.3 }}

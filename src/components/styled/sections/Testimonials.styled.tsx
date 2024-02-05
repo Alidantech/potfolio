@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const Testimonials = styled.section`
+export const ClearBackground = styled.section`
   display: flex;
   flex-wrap: wrap;
   align-items: center;

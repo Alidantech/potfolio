@@ -3,8 +3,8 @@ import styled, { keyframes } from "styled-components";
 export const DataLoader = styled.div`
   height: 100vh;
   width: 100vw;
-  background-color: #0000002f;
-  backdrop-filter: blur(20px);
+  background-color: transparent;
+  backdrop-filter: blur(1px);
   position: fixed;
   display: flex;
   align-items: center;
